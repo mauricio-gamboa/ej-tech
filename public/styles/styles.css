@@ -8171,27 +8171,42 @@ Navigation Styles
     margin: 0; }
   .navigation .menu-toggler {
     float: right;
-    margin-top: 25px; }
+    height: 79px;
+    line-height: 79px; }
 
 .main-navigation > li {
   float: left;
   position: relative; }
-  .main-navigation > li > a {
+  .main-navigation > li > a,
+  .main-navigation > li > span {
     display: block;
     padding: 0 17px;
     color: #303030;
     font-size: 13px;
+    cursor: pointer;
     border-top: 6px solid white;
     font-family: 'proxima_nova_semibold';
     height: 79px;
     line-height: 73px;
-    text-transform: uppercase; }
-    .main-navigation > li > a:hover {
+    text-transform: uppercase;
+    cursor: pointer; }
+    .main-navigation > li > a .fa-caret-up,
+    .main-navigation > li > span .fa-caret-up {
+      display: inline-block; }
+    .main-navigation > li > a .fa-caret-down,
+    .main-navigation > li > span .fa-caret-down {
+      display: none; }
+    .main-navigation > li > a.collapsed .fa-caret-up,
+    .main-navigation > li > span.collapsed .fa-caret-up {
+      display: none; }
+    .main-navigation > li > a.collapsed .fa-caret-down,
+    .main-navigation > li > span.collapsed .fa-caret-down {
+      display: inline-block; }
+    .main-navigation > li > a:hover,
+    .main-navigation > li > span:hover {
       color: #0993e2; }
   .main-navigation > li.active a {
     border-top-color: #0993e2; }
-  .main-navigation > li:hover > .sub-menu {
-    display: block; }
 
 .main-navigation .sub-menu {
   background-color: white;
@@ -8199,13 +8214,13 @@ Navigation Styles
   width: 100%;
   left: 0;
   top: 79px;
-  display: none;
   z-index: 10; }
   .main-navigation .sub-menu li a {
     display: block;
     padding: 0 17px;
     color: #303030;
     font-size: 13px;
+    cursor: pointer;
     height: 38px;
     line-height: 38px; }
     .main-navigation .sub-menu li a:hover {
@@ -8215,9 +8230,68 @@ Navigation Styles
 .menu-toggler {
   cursor: pointer;
   font-size: 25px;
-  color: #0993e2; }
+  color: #0993e2;
+  background: none;
+  border: none; }
   .menu-toggler:hover {
     color: #097abb; }
+
+.nav-mobile .nav-mobile-header {
+  height: 79px;
+  margin-bottom: 35px; }
+  .nav-mobile .nav-mobile-header .logo {
+    margin-top: 24px;
+    float: left; }
+  .nav-mobile .nav-mobile-header .back {
+    height: 79px;
+    line-height: 79px;
+    float: right;
+    color: white;
+    cursor: pointer;
+    font-size: 23px; }
+
+.nav-mobile .nav-mobile-menu {
+  margin: 0;
+  text-align: center; }
+  .nav-mobile .nav-mobile-menu > li > a,
+  .nav-mobile .nav-mobile-menu > li > span {
+    display: block;
+    font-size: 17px;
+    color: white;
+    text-transform: uppercase;
+    line-height: 55px;
+    cursor: pointer;
+    cursor: pointer; }
+    .nav-mobile .nav-mobile-menu > li > a .fa-caret-up,
+    .nav-mobile .nav-mobile-menu > li > span .fa-caret-up {
+      display: inline-block; }
+    .nav-mobile .nav-mobile-menu > li > a .fa-caret-down,
+    .nav-mobile .nav-mobile-menu > li > span .fa-caret-down {
+      display: none; }
+    .nav-mobile .nav-mobile-menu > li > a.collapsed .fa-caret-up,
+    .nav-mobile .nav-mobile-menu > li > span.collapsed .fa-caret-up {
+      display: none; }
+    .nav-mobile .nav-mobile-menu > li > a.collapsed .fa-caret-down,
+    .nav-mobile .nav-mobile-menu > li > span.collapsed .fa-caret-down {
+      display: inline-block; }
+
+.nav-mobile .sub-menu li a {
+  display: block;
+  font-size: 17px;
+  color: white;
+  text-transform: uppercase;
+  line-height: 55px;
+  cursor: pointer;
+  text-transform: none; }
+
+.modal-menu .modal-dialog {
+  width: 100%;
+  margin: 0; }
+
+.modal-backdrop {
+  background-color: #0993e2; }
+  .modal-backdrop.in {
+    opacity: 0.95; }
 
 /***************************
 ****************************
@@ -8452,6 +8526,8 @@ a:focus {
     background: url("../images/logo-xub.png") no-repeat 0 0;
     width: 97px;
     height: 18px; }
+  .logo.white a {
+    background: url("../images/logo-white.png") no-repeat 0 0; }
 
 body {
   color: #303030;

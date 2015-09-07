@@ -61,6 +61,12 @@ a {
       height: 18px;
     }
   }
+
+  &.white {
+    a {
+      background: url("../images/logo-white.png") no-repeat 0 0;
+    }
+  }
 }
 
 body {

@@ -12,6 +12,16 @@ $nav-line-height: 73px;
   padding: 0 17px;
   color: $main-color;
   font-size: 13px;
+  cursor: pointer;
+}
+
+@mixin nav-font-settings-mobile {
+  display: block;
+  font-size: 17px;
+  color: white;
+  text-transform: uppercase;
+  line-height: 55px;
+  cursor: pointer;
 }
 
 .navigation {
@@ -30,7 +40,8 @@ $nav-line-height: 73px;
 
   .menu-toggler {
     float: right;
-    margin-top: 25px;
+    height: $nav-height;
+    line-height: $nav-height;
   }
 }
 
@@ -39,13 +50,33 @@ $nav-line-height: 73px;
     float: left;
     position: relative;
 
-    > a {
+    > a,
+    > span {
       @include nav-font-settings;
       border-top: 6px solid white;
       font-family: 'proxima_nova_semibold';
       height: $nav-height;
       line-height: $nav-line-height;
       text-transform: uppercase;
+      cursor: pointer;
+
+      .fa-caret-up {
+        display: inline-block;
+      }
+
+      .fa-caret-down {
+        display: none;
+      }
+
+      &.collapsed {
+        .fa-caret-up {
+          display: none;
+        }
+
+        .fa-caret-down {
+          display: inline-block;
+        }
+      }
 
       &:hover {
         color: $nav-color;
@@ -57,12 +88,6 @@ $nav-line-height: 73px;
         border-top-color: $nav-color;
       }
     }
-
-    &:hover {
-      > .sub-menu {
-        display: block;
-      }
-    }
   }
 
   .sub-menu {
@@ -71,7 +96,6 @@ $nav-line-height: 73px;
     width: 100%;
     left: 0;
     top: 79px;
-    display: none;
     z-index: 10;
 
     li {
@@ -93,8 +117,86 @@ $nav-line-height: 73px;
   cursor: pointer;
   font-size: 25px;
   color: $nav-color;
+  background: none;
+  border: none;
 
   &:hover {
     color: $nav-color-hover;
+  }
+}
+
+.nav-mobile {
+  .nav-mobile-header {
+    height: $nav-height;
+    margin-bottom: 35px;
+
+    .logo {
+      margin-top: 24px;
+      float: left;
+    }
+
+    .back {
+      height: $nav-height;
+      line-height: $nav-height;
+      float: right;
+      color: white;
+      cursor: pointer;
+      font-size: 23px;
+    }
+  }
+
+  .nav-mobile-menu {
+    margin: 0;
+    text-align: center;
+
+    > li {
+      > a,
+      > span {
+        @include nav-font-settings-mobile;
+        cursor: pointer;
+
+        .fa-caret-up {
+          display: inline-block;
+        }
+
+        .fa-caret-down {
+          display: none;
+        }
+
+        &.collapsed {
+          .fa-caret-up {
+            display: none;
+          }
+
+          .fa-caret-down {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+
+  .sub-menu {
+    li {
+      a {
+        @include nav-font-settings-mobile;
+        text-transform: none;
+      }
+    }
+  }
+}
+
+.modal-menu {
+  .modal-dialog {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.modal-backdrop {
+  background-color: $nav-color;
+
+  &.in {
+    opacity: 0.95;
   }
 }
