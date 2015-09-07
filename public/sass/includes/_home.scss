@@ -1,0 +1,226 @@
+/***************************
+****************************
+Home Styles
+****************************
+***************************/
+
+.home-header {
+  background: url("../images/bg-header-home.png") repeat-x 0 0;
+  height: 556px;
+
+  .header-product {
+    height: 556px;
+    padding-top: 95px;
+    position: relative;
+
+    .meta {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 45px;
+    }
+  }
+}
+
+.version {
+  background: url("../images/bg-version.png") no-repeat 0 0;
+  width: 43px;
+  height: 42px;
+  line-height: 37px;
+  padding-left: 3px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.header-product {
+  text-align: center;
+
+  .img-wrapper {
+    margin-bottom: 25px;
+    position: relative;
+
+    .version {
+      position: absolute;
+      margin-right: -75px;
+      right: 50%;
+    }
+  }
+
+  h4 {
+    font-size: 23px;
+    color: white;
+    background: url("../images/sep-1.png") no-repeat 50% 100%;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    @include font-settings-2;
+    color: white;
+    margin: 0;
+
+    br {
+      @media #{$small} {
+        display: none;
+      }
+    }
+  }
+
+  .meta {
+    background: url("../images/sep-2.png") no-repeat 50% 50%;
+    min-height: 76px;
+    margin: 45px 0 0 0;
+
+    li {
+      float: left;
+      width: 50%;
+
+      a {
+        font-size: 11px;
+        text-transform: uppercase;
+        color: white;
+        padding-top: 25px;
+        @include icon-bordered(105px, transparent, transparent, 3px);
+
+        @media #{$small} {
+          padding-top: 15px;
+          height: 85px;
+          width: 85px;
+        }
+
+        span {
+          display: block;
+          font-size: 25px;
+        }
+
+        &:hover {
+          @include icon-bordered(105px, white, $product-btn-border, 3px);
+          color: $product-btn-color;
+
+          @media #{$small} {
+            height: 85px;
+            width: 85px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.content-wrapper {
+  padding-top: 45px;
+}
+
+.site-title {
+  background: url("../images/sep-3.png") repeat-x 0 50%;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  overflow: hidden;
+
+  span {
+    background-color: white;
+    display: block;
+    height: 100%;
+    padding-right: 18px;
+    float: left;
+  }
+}
+
+.news-wrapper {
+  padding-bottom: 45px;
+
+  @media #{$xs} {
+    padding-bottom: 0;
+  }
+
+  .title {
+    line-height: normal;
+    margin-bottom: 20px;
+
+    .date {
+      color: $date-color;
+      font-size: 11px;
+    }
+
+    h6 {
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .ej-link {
+    display: block;
+    margin-top: 25px;
+  }
+}
+
+.products-home-slider {
+  .owl-controls {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 240px;
+    margin: 0;
+
+    .owl-buttons {
+      > div {
+        width: 54px;
+        height: 51px;
+        margin: 0;
+        background: none;
+        padding: 0;
+        border-radius: 0;
+        opacity: 0.2;
+
+        &:hover {
+          opacity: 0.4 !important;
+        }
+
+        &.owl-prev {
+          background: url("../images/arrow-left.png") no-repeat 0 0;
+          float: left;
+          margin-left: -15px;
+        }
+
+        &.owl-next {
+          background: url("../images/arrow-right.png") no-repeat 0 0;
+          float: right;
+          margin-right: -15px;
+        }
+      }
+    }
+  }
+}
+
+.news-slider {
+  .owl-controls {
+    margin-bottom: 45px;
+  }
+}
+
+.owl-controls {
+  .owl-pagination {
+    .owl-page {
+      span {
+        margin: 0 6px;
+        height: 13px;
+        width: 13px;
+        border: 1px solid $pagination-border;
+        background-color: white;
+      }
+
+      &.active {
+        span {
+          border-color: $nav-color;
+          background-color: $nav-color;
+        }
+      }
+    }
+  }
+}
