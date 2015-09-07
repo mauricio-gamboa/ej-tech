@@ -8122,6 +8122,41 @@ Links
 
 /***************************
 ****************************
+Responsive
+****************************
+***************************/
+.show-xs,
+.show-s,
+.show-m,
+.show-xl {
+  display: none; }
+
+@media (min-width: 1200px) {
+  .hide-xl {
+    display: none !important; }
+  .show-xl {
+    display: block; } }
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .hide-m {
+    display: none !important; }
+  .show-m {
+    display: block; } }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .hide-s {
+    display: none !important; }
+  .show-s {
+    display: block; } }
+
+@media (max-width: 767px) {
+  .hide-xs {
+    display: none !important; }
+  .show-xs {
+    display: block; } }
+
+/***************************
+****************************
 Navigation Styles
 ****************************
 ***************************/
@@ -8134,6 +8169,9 @@ Navigation Styles
   .navigation .main-navigation {
     float: right;
     margin: 0; }
+  .navigation .menu-toggler {
+    float: right;
+    margin-top: 25px; }
 
 .main-navigation > li {
   float: left;
@@ -8173,6 +8211,13 @@ Navigation Styles
     .main-navigation .sub-menu li a:hover {
       background-color: #0993e2;
       color: white; }
+
+.menu-toggler {
+  cursor: pointer;
+  font-size: 25px;
+  color: #0993e2; }
+  .menu-toggler:hover {
+    color: #097abb; }
 
 /***************************
 ****************************
@@ -8223,6 +8268,10 @@ Footer Styles
 Sidebar Styles
 ****************************
 ***************************/
+@media (min-width: 768px) and (max-width: 992px) {
+  .sidebar {
+    margin-bottom: 45px; } }
+
 .sidebar .widget {
   margin-bottom: 23px; }
   .sidebar .widget:last-of-type {
@@ -8247,8 +8296,16 @@ Home Styles
 ***************************/
 .home-header {
   background: url("../images/bg-header-home.png") repeat-x 0 0;
-  height: 556px;
-  padding-top: 95px; }
+  height: 556px; }
+  .home-header .header-product {
+    height: 556px;
+    padding-top: 95px;
+    position: relative; }
+    .home-header .header-product .meta {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 45px; }
 
 .version {
   background: url("../images/bg-version.png") no-repeat 0 0;
@@ -8270,6 +8327,12 @@ Home Styles
       position: absolute;
       right: 108px;
       top: -5px; }
+      @media (min-width: 993px) and (max-width: 1200px) {
+        .header-product .img-wrapper .version {
+          right: 74px; } }
+      @media (min-width: 768px) and (max-width: 992px) {
+        .header-product .img-wrapper .version {
+          right: 36px; } }
   .header-product h4 {
     font-size: 23px;
     color: white;
@@ -8281,6 +8344,9 @@ Home Styles
     line-height: 22px;
     color: white;
     margin: 0; }
+    @media (min-width: 768px) and (max-width: 992px) {
+      .header-product p br {
+        display: none; } }
   .header-product .meta {
     background: url("../images/sep-2.png") no-repeat 50% 50%;
     min-height: 76px;
@@ -8300,6 +8366,11 @@ Home Styles
         border: 3px solid transparent;
         background-color: transparent;
         border-radius: 100%; }
+        @media (min-width: 768px) and (max-width: 992px) {
+          .header-product .meta li a {
+            padding-top: 15px;
+            height: 85px;
+            width: 85px; } }
         .header-product .meta li a span {
           display: block;
           font-size: 25px; }
@@ -8312,6 +8383,10 @@ Home Styles
           background-color: white;
           border-radius: 100%;
           color: #23cf3b; }
+          @media (min-width: 768px) and (max-width: 992px) {
+            .header-product .meta li a:hover {
+              height: 85px;
+              width: 85px; } }
 
 .content-wrapper {
   padding-top: 45px; }

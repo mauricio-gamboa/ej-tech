@@ -5,6 +5,10 @@ Sidebar Styles
 ***************************/
 
 .sidebar {
+  @media #{$small} {
+    margin-bottom: 45px;
+  }
+
   .widget {
     margin-bottom: 23px;
 

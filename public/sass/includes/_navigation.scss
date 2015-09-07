@@ -27,6 +27,11 @@ $nav-line-height: 73px;
     float: right;
     margin: 0;
   }
+
+  .menu-toggler {
+    float: right;
+    margin-top: 25px;
+  }
 }
 
 .main-navigation {
@@ -81,5 +86,15 @@ $nav-line-height: 73px;
         }
       }
     }
+  }
+}
+
+.menu-toggler {
+  cursor: pointer;
+  font-size: 25px;
+  color: $nav-color;
+
+  &:hover {
+    color: $nav-color-hover;
   }
 }
