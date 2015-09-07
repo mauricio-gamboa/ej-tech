@@ -1,0 +1,18 @@
+/***************************
+****************************
+Links
+****************************
+***************************/
+
+.ej-link {
+  text-transform: uppercase;
+  font-size: 12px;
+
+  &.link-1 {
+    color: $nav-color;
+
+    &:hover {
+      color: $nav-color-hover;
+    }
+  }
+}

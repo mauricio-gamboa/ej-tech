@@ -79,3 +79,50 @@ Home Styles
     }
   }
 }
+
+.content-wrapper {
+  padding: 45px 0;
+}
+
+.site-title {
+  background: url("../images/sep-3.png") repeat-x 0 50%;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  overflow: hidden;
+
+  span {
+    background-color: white;
+    display: block;
+    height: 100%;
+    padding-right: 18px;
+    float: left;
+  }
+}
+
+.news-wrapper {
+  padding-bottom: 45px;
+
+  .title {
+    line-height: normal;
+    margin-bottom: 20px;
+
+    .date {
+      color: $date-color;
+      font-size: 11px;
+    }
+
+    h6 {
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .ej-link {
+    display: block;
+    margin-top: 25px;
+  }
+}
