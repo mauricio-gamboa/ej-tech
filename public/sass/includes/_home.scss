@@ -131,6 +131,10 @@ Home Styles
 .news-wrapper {
   padding-bottom: 45px;
 
+  @media #{$xs} {
+    padding-bottom: 0;
+  }
+
   .title {
     line-height: normal;
     margin-bottom: 20px;
@@ -188,6 +192,33 @@ Home Styles
           background: url("../images/arrow-right.png") no-repeat 0 0;
           float: right;
           margin-right: -15px;
+        }
+      }
+    }
+  }
+}
+
+.news-slider {
+  .owl-controls {
+    margin-bottom: 45px;
+  }
+}
+
+.owl-controls {
+  .owl-pagination {
+    .owl-page {
+      span {
+        margin: 0 6px;
+        height: 13px;
+        width: 13px;
+        border: 1px solid $pagination-border;
+        background-color: white;
+      }
+
+      &.active {
+        span {
+          border-color: $nav-color;
+          background-color: $nav-color;
         }
       }
     }

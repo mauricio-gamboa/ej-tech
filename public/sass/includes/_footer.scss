@@ -16,10 +16,27 @@ Footer Styles
 
     .logo {
       float: left;
+
+      @media #{$xs} {
+        float: none;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid $footer-border;
+        text-align: center;
+
+        a {
+          margin: 0 auto;
+        }
+      }
     }
 
     .footer-menu {
       float: right;
+
+      @media #{$xs} {
+        float: none;
+        text-align: center;
+      }
     }
   }
 
@@ -27,12 +44,30 @@ Footer Styles
     padding: 11px 0;
     line-height: 18px;
 
+    @media #{$xs} {
+      padding: 20px 0;
+    }
+
     .copy {
       float: left;
+
+      @media #{$xs} {
+        float: none;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid $footer-border;
+        text-align: center;
+      }
     }
 
     .designed-by {
       float: right;
+
+      @media #{$xs} {
+        float: none;
+        width: 173px;
+        margin: 0 auto;
+      }
 
       span {
         float: left;

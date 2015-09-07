@@ -8,4 +8,15 @@
     pagination: false,
     navigationText: false
   });
+
+  $('#latest-news-slider').owlCarousel({
+    autoPlay: true,
+    singleItem: true
+  });
+
+  $('#latest-blog-posts').owlCarousel({
+    autoPlay: true,
+    singleItem: true
+  });
+
 })(window, document, jQuery);

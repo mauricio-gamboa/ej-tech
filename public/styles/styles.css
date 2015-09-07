@@ -8308,15 +8308,43 @@ Footer Styles
     border-bottom: 1px solid #e3e8ea; }
     .footer .top .logo {
       float: left; }
+      @media (max-width: 767px) {
+        .footer .top .logo {
+          float: none;
+          padding-bottom: 20px;
+          margin-bottom: 20px;
+          border-bottom: 1px solid #e3e8ea;
+          text-align: center; }
+          .footer .top .logo a {
+            margin: 0 auto; } }
     .footer .top .footer-menu {
       float: right; }
+      @media (max-width: 767px) {
+        .footer .top .footer-menu {
+          float: none;
+          text-align: center; } }
   .footer .bottom {
     padding: 11px 0;
     line-height: 18px; }
+    @media (max-width: 767px) {
+      .footer .bottom {
+        padding: 20px 0; } }
     .footer .bottom .copy {
       float: left; }
+      @media (max-width: 767px) {
+        .footer .bottom .copy {
+          float: none;
+          padding-bottom: 20px;
+          margin-bottom: 20px;
+          border-bottom: 1px solid #e3e8ea;
+          text-align: center; } }
     .footer .bottom .designed-by {
       float: right; }
+      @media (max-width: 767px) {
+        .footer .bottom .designed-by {
+          float: none;
+          width: 173px;
+          margin: 0 auto; } }
       .footer .bottom .designed-by span {
         float: left;
         margin-right: 10px; }
@@ -8473,6 +8501,9 @@ Home Styles
 
 .news-wrapper {
   padding-bottom: 45px; }
+  @media (max-width: 767px) {
+    .news-wrapper {
+      padding-bottom: 0; } }
   .news-wrapper .title {
     line-height: normal;
     margin-bottom: 20px; }
@@ -8512,6 +8543,20 @@ Home Styles
       background: url("../images/arrow-right.png") no-repeat 0 0;
       float: right;
       margin-right: -15px; }
+
+.news-slider .owl-controls {
+  margin-bottom: 45px; }
+
+.owl-controls .owl-pagination .owl-page span {
+  margin: 0 6px;
+  height: 13px;
+  width: 13px;
+  border: 1px solid #bbbbbb;
+  background-color: white; }
+
+.owl-controls .owl-pagination .owl-page.active span {
+  border-color: #0993e2;
+  background-color: #0993e2; }
 
 /***************************
 ****************************
