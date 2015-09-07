@@ -1,0 +1,84 @@
+/***************************
+****************************
+Navigation Styles
+****************************
+***************************/
+
+$nav-height: 79px;
+$nav-line-height: 73px;
+
+@mixin nav-font-settings {
+  display: block;
+  padding: 0 17px;
+  color: $main-color;
+  font-size: 13px;
+}
+
+.navigation {
+  height: $nav-height;
+  background-color: white;
+
+  .logo {
+    float: left;
+    margin-top: 24px;
+  }
+
+  .main-navigation {
+    float: right;
+    margin: 0;
+  }
+}
+
+.main-navigation {
+  > li {
+    float: left;
+    position: relative;
+
+    > a {
+      @include nav-font-settings;
+      border-top: 6px solid white;
+      font-family: 'proxima_nova_semibold';
+      height: $nav-height;
+      line-height: $nav-line-height;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $nav-color;
+      }
+    }
+
+    &.active {
+      a {
+        border-top-color: $nav-color;
+      }
+    }
+
+    &:hover {
+      > .sub-menu {
+        display: block;
+      }
+    }
+  }
+
+  .sub-menu {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 79px;
+    display: none;
+
+    li {
+      a {
+        @include nav-font-settings;
+        height: 38px;
+        line-height: 38px;
+
+        &:hover {
+          background-color: $nav-color;
+          color: white;
+        }
+      }
+    }
+  }
+}

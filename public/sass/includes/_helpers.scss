@@ -1,0 +1,27 @@
+/***************************
+****************************
+Colors
+****************************
+***************************/
+
+$main-color: #303030;
+$nav-color: #0993e2;
+
+$product-btn-border: #84c7ff;
+$product-btn-color: #23cf3b;
+
+/***************************
+****************************
+Mixins
+****************************
+***************************/
+
+@mixin icon-bordered($size, $bg-color, $border-color, $border-size) {
+  height: $size;
+  width: $size;
+  text-align: center;
+  display: inline-block;
+  border: $border-size solid $border-color;
+  background-color: $bg-color;
+  border-radius: 100%;
+}

@@ -1,0 +1,81 @@
+/***************************
+****************************
+Home Styles
+****************************
+***************************/
+
+.home-header {
+  background: url("../images/bg-header-home.png") repeat-x 0 0;
+  height: 556px;
+  padding-top: 95px;
+}
+
+.version {
+  background: url("../images/bg-version.png") no-repeat 0 0;
+  width: 43px;
+  height: 42px;
+  line-height: 37px;
+  padding-left: 3px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.header-product {
+  text-align: center;
+
+  .img-wrapper {
+    margin-bottom: 25px;
+    position: relative;
+
+    .version {
+      position: absolute;
+      right: 108px;
+      top: -5px;
+    }
+  }
+
+  h4 {
+    font-size: 23px;
+    color: white;
+    background: url("../images/sep-1.png") no-repeat 50% 100%;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    @include font-settings-2;
+    color: white;
+    margin: 0;
+  }
+
+  .meta {
+    background: url("../images/sep-2.png") no-repeat 50% 50%;
+    min-height: 76px;
+    margin: 45px 0 0 0;
+
+    li {
+      float: left;
+      width: 50%;
+
+      a {
+        font-size: 11px;
+        text-transform: uppercase;
+        color: white;
+        padding-top: 25px;
+        @include icon-bordered(105px, transparent, transparent, 3px);
+
+        span {
+          display: block;
+          font-size: 25px;
+        }
+
+        &:hover {
+          @include icon-bordered(105px, white, $product-btn-border, 3px);
+          color: $product-btn-color;
+        }
+      }
+    }
+  }
+}
