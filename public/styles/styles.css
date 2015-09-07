@@ -8342,7 +8342,7 @@ Footer Styles
 Sidebar Styles
 ****************************
 ***************************/
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
   .sidebar {
     margin-bottom: 45px; } }
 
@@ -8399,14 +8399,8 @@ Home Styles
     position: relative; }
     .header-product .img-wrapper .version {
       position: absolute;
-      right: 108px;
-      top: -5px; }
-      @media (min-width: 993px) and (max-width: 1200px) {
-        .header-product .img-wrapper .version {
-          right: 74px; } }
-      @media (min-width: 768px) and (max-width: 992px) {
-        .header-product .img-wrapper .version {
-          right: 36px; } }
+      margin-right: -75px;
+      right: 50%; }
   .header-product h4 {
     font-size: 23px;
     color: white;
@@ -8493,6 +8487,31 @@ Home Styles
   .news-wrapper .ej-link {
     display: block;
     margin-top: 25px; }
+
+.products-home-slider .owl-controls {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 240px;
+  margin: 0; }
+  .products-home-slider .owl-controls .owl-buttons > div {
+    width: 54px;
+    height: 51px;
+    margin: 0;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    opacity: 0.2; }
+    .products-home-slider .owl-controls .owl-buttons > div:hover {
+      opacity: 0.4 !important; }
+    .products-home-slider .owl-controls .owl-buttons > div.owl-prev {
+      background: url("../images/arrow-left.png") no-repeat 0 0;
+      float: left;
+      margin-left: -15px; }
+    .products-home-slider .owl-controls .owl-buttons > div.owl-next {
+      background: url("../images/arrow-right.png") no-repeat 0 0;
+      float: right;
+      margin-right: -15px; }
 
 /***************************
 ****************************

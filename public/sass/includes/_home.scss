@@ -43,16 +43,8 @@ Home Styles
 
     .version {
       position: absolute;
-      right: 108px;
-      top: -5px;
-
-      @media #{$medium} {
-        right: 74px;
-      }
-
-      @media #{$small} {
-        right: 36px;
-      }
+      margin-right: -75px;
+      right: 50%;
     }
   }
 
@@ -161,5 +153,43 @@ Home Styles
   .ej-link {
     display: block;
     margin-top: 25px;
+  }
+}
+
+.products-home-slider {
+  .owl-controls {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 240px;
+    margin: 0;
+
+    .owl-buttons {
+      > div {
+        width: 54px;
+        height: 51px;
+        margin: 0;
+        background: none;
+        padding: 0;
+        border-radius: 0;
+        opacity: 0.2;
+
+        &:hover {
+          opacity: 0.4 !important;
+        }
+
+        &.owl-prev {
+          background: url("../images/arrow-left.png") no-repeat 0 0;
+          float: left;
+          margin-left: -15px;
+        }
+
+        &.owl-next {
+          background: url("../images/arrow-right.png") no-repeat 0 0;
+          float: right;
+          margin-right: -15px;
+        }
+      }
+    }
   }
 }

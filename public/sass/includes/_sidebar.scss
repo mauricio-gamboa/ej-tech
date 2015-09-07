@@ -5,7 +5,7 @@ Sidebar Styles
 ***************************/
 
 .sidebar {
-  @media #{$small} {
+  @media #{$small, $xs} {
     margin-bottom: 45px;
   }
 
