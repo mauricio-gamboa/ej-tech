@@ -1,0 +1,68 @@
+/***************************
+****************************
+Footer Styles
+****************************
+***************************/
+
+.footer {
+  background-color: $footer-color;
+  font-size: 11px;
+  color: $footer-font-color;
+  overflow: hidden;
+
+  .top {
+    padding: 20px 0;
+    border-bottom: 1px solid $footer-border;
+
+    .logo {
+      float: left;
+    }
+
+    .footer-menu {
+      float: right;
+    }
+  }
+
+  .bottom {
+    padding: 11px 0;
+    line-height: 18px;
+
+    .copy {
+      float: left;
+    }
+
+    .designed-by {
+      float: right;
+
+      span {
+        float: left;
+        margin-right: 10px;
+      }
+
+      .logo {
+        float: left;
+      }
+    }
+  }
+}
+
+.footer-menu {
+  > * {
+    line-height: 25px;
+    display: inline-block;
+  }
+
+  a {
+    color: $nav-color;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $nav-color-hover;
+    }
+  }
+
+  span {
+    color: $footer-bull;
+    margin: 0 15px;
+  }
+}

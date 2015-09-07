@@ -1,0 +1,36 @@
+/***************************
+****************************
+Sidebar Styles
+****************************
+***************************/
+
+.sidebar {
+  .widget {
+    margin-bottom: 23px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.widget {
+  border: 1px solid $sidebar-border;
+  padding: 14px 10px;
+
+  &.award {
+    .img-wrapper {
+      width: 75px;
+      text-align: center;
+      float: left;
+      margin-right: 15px;
+    }
+
+    .text {
+      h6 {
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
