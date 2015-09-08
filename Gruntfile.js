@@ -16,9 +16,13 @@ module.exports = function (grunt) {
     cssmin: {
       combine: {
         files: {
-          'public/styles/styles.min.css': [
+          'public/styles/libs.min.css': [
+            'bower_components/bootstrap/dist/css/bootstrap.css',
+            'bower_components/font-awesome/css/font-awesome.min.css',
             'bower_components/OwlCarousel/owl-carousel/owl.carousel.css',
-            'bower_components/OwlCarousel/owl-carousel/owl.theme.css',
+            'bower_components/OwlCarousel/owl-carousel/owl.theme.css'
+          ],
+          'public/styles/styles.min.css': [
             'public/styles/styles.css'
           ]
         }
@@ -32,7 +36,7 @@ module.exports = function (grunt) {
       js: {
         src: [
           'bower_components/jquery/dist/jquery.js',
-          'bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
+          'bower_components/bootstrap/dist/js/bootstrap.js',
           'bower_components/OwlCarousel/owl-carousel/owl.carousel.js'
         ],
         dest: 'public/js/libs.js'
