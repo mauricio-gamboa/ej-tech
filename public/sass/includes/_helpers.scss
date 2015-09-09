@@ -4,6 +4,8 @@ Colors
 ****************************
 ***************************/
 
+$side-padding: 45px;
+
 $main-color: #303030;
 $nav-color: #0993e2;
 $nav-color-hover: #097abb;
@@ -21,6 +23,10 @@ $sidebar-border: #e5e5e5;
 
 $pagination-border: #bbbbbb;
 
+$btn-primary-hover: #085c8c;
+
+$content-section-border: #f0f0f0;
+
 /***************************
 ****************************
 Mixins
@@ -35,4 +41,51 @@ Mixins
   border: $border-size solid $border-color;
   background-color: $bg-color;
   border-radius: 100%;
+}
+
+@mixin make-icon($size, $bg-color, $color) {
+  height: $size;
+  width: $size;
+  text-align: center;
+  display: inline-block;
+  background-color: $bg-color;
+  border-radius: 100%;
+  color: $color;
+  line-height: $size;
+}
+
+@mixin site-padding {
+  padding: $side-padding 0;
+}
+
+@mixin site-padding-top {
+  padding-top: $side-padding;
+}
+
+@mixin site-padding-bottom {
+  padding-bottom: $side-padding;
+}
+
+@mixin reset-last {
+  padding-bottom: 0;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+/***************************
+****************************
+Helper Classes
+****************************
+***************************/
+
+.site-padding {
+  @include site-padding;
+}
+
+.site-padding-top {
+  @include site-padding-top;
+}
+
+.site-padding-bottom {
+  @include site-padding-bottom;
 }

@@ -18,12 +18,25 @@ General Styles
 ****************************
 ***************************/
 
+body {
+  color: $main-color;
+  font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
+  @include font-settings-1;
+}
+
+html, body {
+  height: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'proxima_nova_semibold';
   margin-top: 0;
+  line-height: normal;
 }
 
 a {
+  color: $nav-color;
+
   &:link
   &:visited,
   &:hover,
@@ -31,6 +44,29 @@ a {
   &:focus {
     outline: none;
     text-decoration: none;
+  }
+
+  &:hover {
+    color: $nav-color-hover;
+  }
+}
+
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -107px;
+
+  @media #{$xs} {
+    margin-bottom: -250px;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    height: 107px;
+
+    @media #{$xs} {
+      height: 250px;
+    }
   }
 }
 
@@ -68,8 +104,128 @@ a {
   }
 }
 
-body {
-  color: $main-color;
-  font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
-  @include font-settings-1;
+.header {
+  background-color: $nav-color;
+  padding: 24px 0;
+
+  h4 {
+    margin: 0;
+    font-size: 17px;
+    color: white;
+    text-transform: uppercase;
+    line-height: 31px;
+    float: left;
+  }
+
+  .sub-nav {
+    float: right;
+  }
+}
+
+.content {
+  @include site-padding;
+  @include font-settings-3;
+}
+
+.site-title {
+  background: url("../images/sep-3.png") repeat-x 0 50%;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  overflow: hidden;
+
+  span {
+    background-color: white;
+    display: block;
+    height: 100%;
+    padding-right: 18px;
+    float: left;
+  }
+}
+
+.site-title-line {
+  background: url("../images/sep-4.png") no-repeat 0 100%;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.content-section {
+  border-bottom: 1px solid $content-section-border;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+
+  &:last-of-type {
+    @include reset-last;
+  }
+
+  .site-title-line {
+    margin-bottom: 30px;
+  }
+
+  .site-subtitle {
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.site-subtitle {
+  text-transform: uppercase;
+  color: $nav-color;
+}
+
+.double-items {
+  .item {
+    float: left;
+    width: 50%;
+  }
+}
+
+.detail {
+  line-height: normal;
+  margin-bottom: 35px;
+  position: relative;
+
+  &:last-of-type {
+    @include reset-last;
+  }
+
+  > * {
+    margin: 0;
+  }
+
+  .ej-icon {
+    @include make-icon(32px, $footer-color, $footer-font-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .fa {
+      font-size: 16px;
+      vertical-align: middle;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  h6 {
+    @include small-title;
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  p {
+    @include font-settings-4;
+  }
+
+  &.has-icon {
+    padding-left: 45px;
+
+    h6 {
+      margin-bottom: 4px;
+    }
+  }
 }

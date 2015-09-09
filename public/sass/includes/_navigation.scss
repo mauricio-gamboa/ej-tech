@@ -205,3 +205,26 @@ $nav-line-height: 73px;
     opacity: 0.95;
   }
 }
+
+.sub-nav {
+  margin: 0;
+
+  li {
+    float: left;
+    margin: 0 5px;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &.active {
+      a {
+        background-color: $btn-primary-hover;
+      }
+    }
+  }
+}
