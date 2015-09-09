@@ -79,4 +79,5 @@ Fonts Mixins
 @mixin small-title {
   font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
   font-weight: bold;
+  color: $main-color;
 }
