@@ -60,6 +60,10 @@ $nav-line-height: 73px;
       text-transform: uppercase;
       cursor: pointer;
 
+      .fa {
+        font-size: 12px;
+      }
+
       .fa-caret-up {
         display: inline-block;
       }
@@ -86,6 +90,7 @@ $nav-line-height: 73px;
     &.active {
       a {
         border-top-color: $nav-color;
+        color: $nav-color;
       }
     }
   }

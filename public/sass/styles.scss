@@ -3,7 +3,6 @@
 Imports
 ****************************
 ***************************/
-
 @import "includes/fonts";
 @import "includes/helpers";
 @import "includes/buttons";
@@ -20,6 +19,7 @@ General Styles
 ***************************/
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'proxima_nova_semibold';
   margin-top: 0;
 }
 

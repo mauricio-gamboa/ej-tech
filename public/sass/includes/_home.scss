@@ -69,6 +69,7 @@ Home Styles
   }
 
   .meta {
+    font-family: 'proxima_nova_semibold';
     background: url("../images/sep-2.png") no-repeat 50% 50%;
     min-height: 76px;
     margin: 45px 0 0 0;
@@ -82,6 +83,7 @@ Home Styles
         text-transform: uppercase;
         color: white;
         padding-top: 25px;
+        line-height: normal;
         @include icon-bordered(105px, transparent, transparent, 3px);
 
         @media #{$small} {
@@ -145,7 +147,7 @@ Home Styles
     }
 
     h6 {
-      font-weight: bold;
+      @include small-title;
       margin: 0;
     }
   }
