@@ -236,7 +236,6 @@ a {
 }
 
 .version-item {
-  position: relative;
   line-height: 18px;
   min-height: 48px;
 
@@ -249,13 +248,13 @@ a {
   .img-wrapper {
     width: 48px;
     text-align: center;
-    position: absolute;
-    top: 0;
-    left: 0;
+    margin-right: 17px;
+    float: left;
   }
 
   .text-wrapper {
-    margin-left: 65px;
+    float: left;
+    width: calc(100% - 65px);
     border-bottom: 1px solid $sidebar-border;
     padding-bottom: 14px;
     color: $sidebar-border;
@@ -278,4 +277,38 @@ a {
       }
     }
   }
+}
+
+/***************************
+****************************
+Helper Classes
+****************************
+***************************/
+
+.right-bordered {
+  border-right: 1px solid $sidebar-border;
+}
+
+.left-bordered {
+  border-left: 1px solid $sidebar-border;
+}
+
+.site-padding {
+  @include site-padding;
+}
+
+.site-padding-top {
+  @include site-padding-top;
+}
+
+.site-padding-right {
+  @include site-padding-right;
+}
+
+.site-padding-bottom {
+  @include site-padding-bottom;
+}
+
+.site-padding-left {
+  @include site-padding-left;
 }

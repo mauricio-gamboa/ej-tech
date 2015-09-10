@@ -63,30 +63,28 @@ Mixins
   padding-top: $side-padding;
 }
 
+@mixin site-padding-right {
+  padding-right: $side-padding;
+
+  @media #{$medium} {
+    padding-right: 20px;
+  }
+}
+
 @mixin site-padding-bottom {
   padding-bottom: $side-padding;
+}
+
+@mixin site-padding-left {
+  padding-left: $side-padding;
+
+  @media #{$medium} {
+    padding-left: 20px;
+  }
 }
 
 @mixin reset-last {
   padding-bottom: 0;
   border-bottom: none;
   margin-bottom: 0;
-}
-
-/***************************
-****************************
-Helper Classes
-****************************
-***************************/
-
-.site-padding {
-  @include site-padding;
-}
-
-.site-padding-top {
-  @include site-padding-top;
-}
-
-.site-padding-bottom {
-  @include site-padding-bottom;
 }
