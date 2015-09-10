@@ -35,11 +35,41 @@ Fonts
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon-download:before {
+.icon-address:before {
   content: "\e600"; }
 
-.icon-see_more:before {
+.icon-award:before {
   content: "\e601"; }
+
+.icon-directors:before {
+  content: "\e602"; }
+
+.icon-download:before {
+  content: "\e603"; }
+
+.icon-fax:before {
+  content: "\e604"; }
+
+.icon-mail:before {
+  content: "\e605"; }
+
+.icon-phone:before {
+  content: "\e606"; }
+
+.icon-register:before {
+  content: "\e607"; }
+
+.icon-rss:before {
+  content: "\e608"; }
+
+.icon-see_more:before {
+  content: "\e609"; }
+
+.icon-vat:before {
+  content: "\e60a"; }
+
+.icon-versions:before {
+  content: "\e60b"; }
 
 /***************************
 ****************************
@@ -780,6 +810,8 @@ a:visited,
     margin-bottom: 20px; }
   .content-section p {
     margin: 0; }
+  .content-section .customers-grid {
+    margin-top: 30px; }
 
 .site-subtitle {
   text-transform: uppercase;
@@ -828,7 +860,7 @@ a:visited,
     left: 0; }
     .detail .ej-icon .fa {
       font-size: 16px;
-      vertical-align: middle; }
+      margin-top: 8px; }
   .detail a {
     text-decoration: underline; }
   .detail h6 {
@@ -882,6 +914,38 @@ a:visited,
       font-size: 12px; }
       .version-item .text-wrapper a:hover {
         color: #1fb434; }
+
+.customers-grid > div {
+  float: left;
+  width: calc(100% / 3);
+  text-align: center;
+  height: 140px;
+  line-height: 138px;
+  border-bottom: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5; }
+  @media (max-width: 767px) {
+    .customers-grid > div {
+      width: 50%; }
+      .customers-grid > div:last-child {
+        display: none; } }
+  .customers-grid > div:nth-last-child(-n+3) {
+    border-bottom: none; }
+  .customers-grid > div:nth-child(3n) {
+    border-right: none; }
+    @media (max-width: 767px) {
+      .customers-grid > div:nth-child(3n) {
+        border-right: 1px solid #e5e5e5; } }
+  @media (max-width: 767px) {
+    .customers-grid > div:nth-child(2n) {
+      border-right: none; } }
+  .customers-grid > div img {
+    max-width: 100%; }
+    @media (min-width: 768px) and (max-width: 992px) {
+      .customers-grid > div img {
+        max-width: 60%; } }
+    @media (max-width: 767px) {
+      .customers-grid > div img {
+        max-width: 70%; } }
 
 /***************************
 ****************************
