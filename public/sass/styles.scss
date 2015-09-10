@@ -180,6 +180,10 @@ a {
   p {
     margin: 0;
   }
+
+  .customers-grid {
+    margin-top: 30px;
+  }
 }
 
 .site-subtitle {
@@ -314,6 +318,56 @@ a {
 
       &:hover {
         color: $product-btn-color-hover;
+      }
+    }
+  }
+}
+
+.customers-grid {
+  > div {
+    float: left;
+    width: calc(100% / 3);
+    text-align: center;
+    height: 140px;
+    line-height: 138px;
+    border-bottom: 1px solid $sidebar-border;
+    border-right: 1px solid $sidebar-border;
+
+    @media #{$xs} {
+      width: 50%;
+
+      &:last-child {
+        display: none;
+      }
+    }
+
+    &:nth-last-child(-n+3) {
+      border-bottom: none;
+    }
+
+    &:nth-child(3n) {
+      border-right: none;
+
+      @media #{$xs} {
+        border-right: 1px solid $sidebar-border;
+      }
+    }
+
+    &:nth-child(2n) {
+      @media #{$xs} {
+        border-right: none;
+      }
+    }
+
+    img {
+      max-width: 100%;
+
+      @media #{$small} {
+        max-width: 60%;
+      }
+
+      @media #{$xs} {
+        max-width: 70%;
       }
     }
   }
