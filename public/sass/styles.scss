@@ -18,12 +18,25 @@ General Styles
 ****************************
 ***************************/
 
+body {
+  color: $main-color;
+  font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
+  @include font-settings-1;
+}
+
+html, body {
+  height: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'proxima_nova_semibold';
   margin-top: 0;
+  line-height: normal;
 }
 
 a {
+  color: $nav-color;
+
   &:link
   &:visited,
   &:hover,
@@ -31,6 +44,29 @@ a {
   &:focus {
     outline: none;
     text-decoration: none;
+  }
+
+  &:hover {
+    color: $nav-color-hover;
+  }
+}
+
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -107px;
+
+  @media #{$xs} {
+    margin-bottom: -250px;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    height: 107px;
+
+    @media #{$xs} {
+      height: 250px;
+    }
   }
 }
 
@@ -68,8 +104,257 @@ a {
   }
 }
 
-body {
-  color: $main-color;
-  font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
-  @include font-settings-1;
+.header {
+  background-color: $nav-color;
+  padding: 24px 0;
+
+  @media #{$xs} {
+    position: relative;
+  }
+
+  h4 {
+    margin: 0;
+    font-size: 17px;
+    color: white;
+    text-transform: uppercase;
+    line-height: 31px;
+    float: left;
+  }
+
+  .sub-nav {
+    float: right;
+
+    @media #{$xs} {
+      float: none;
+      position: absolute;
+      width: 100%;
+      top: 55px;
+      left: 0;
+    }
+  }
+}
+
+.content {
+  @include site-padding;
+  @include font-settings-3;
+}
+
+.site-title {
+  background: url("../images/sep-3.png") repeat-x 0 50%;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  overflow: hidden;
+
+  span {
+    background-color: white;
+    display: block;
+    height: 100%;
+    padding-right: 18px;
+    float: left;
+  }
+}
+
+.site-title-line {
+  background: url("../images/sep-4.png") no-repeat 0 100%;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.content-section {
+  border-bottom: 1px solid $content-section-border;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+
+  &:last-of-type {
+    @include reset-last;
+  }
+
+  .site-title-line {
+    margin-bottom: 30px;
+  }
+
+  .site-subtitle {
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.site-subtitle {
+  text-transform: uppercase;
+  color: $nav-color;
+}
+
+.double-items {
+  .item {
+    float: left;
+    width: 50%;
+
+    @media #{$xs} {
+      float: none;
+      width: auto;
+      margin-bottom: 35px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &.responsive {
+    .item {
+      @media #{$small} {
+        float: none;
+        width: auto;
+        margin-bottom: 35px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.detail {
+  line-height: normal;
+  margin-bottom: 35px;
+  position: relative;
+
+  &:last-of-type {
+    @include reset-last;
+  }
+
+  > * {
+    margin: 0;
+  }
+
+  .ej-icon {
+    @include make-icon(32px, $footer-color, $footer-font-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .fa {
+      font-size: 16px;
+      vertical-align: middle;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  h6 {
+    @include small-title;
+    font-size: 13px;
+    margin-bottom: 8px;
+
+    @media #{$small} {
+      margin-bottom: 0;
+    }
+  }
+
+  p {
+    @include font-settings-4;
+  }
+
+  &.has-icon {
+    padding-left: 45px;
+
+    h6 {
+      margin-bottom: 4px;
+    }
+  }
+}
+
+.date {
+  color: $date-color;
+  font-size: 11px;
+}
+
+.version-item {
+  line-height: 18px;
+  min-height: 48px;
+
+  &:last-of-type {
+    .text-wrapper {
+      @include reset-last;
+    }
+  }
+
+  .img-wrapper {
+    width: 48px;
+    text-align: center;
+    margin-right: 17px;
+    float: left;
+  }
+
+  .text-wrapper {
+    float: left;
+    width: calc(100% - 65px);
+    border-bottom: 1px solid $sidebar-border;
+    padding-bottom: 14px;
+    color: $sidebar-border;
+
+    > .date {
+      display: block;
+    }
+
+    h6 {
+      @include small-title;
+      margin: 0;
+    }
+
+    a {
+      color: $product-btn-color;
+      font-size: 12px;
+
+      &:hover {
+        color: $product-btn-color-hover;
+      }
+    }
+  }
+}
+
+/***************************
+****************************
+Helper Classes
+****************************
+***************************/
+
+.right-bordered {
+  border-right: 1px solid $sidebar-border;
+}
+
+.border-top-xs {
+  @media #{$xs} {
+    border-top: 1px solid $nav-color;
+  }
+}
+
+.left-bordered {
+  border-left: 1px solid $sidebar-border;
+}
+
+.site-padding {
+  @include site-padding;
+}
+
+.site-padding-top {
+  @include site-padding-top;
+}
+
+.site-padding-right {
+  @include site-padding-right;
+}
+
+.site-padding-bottom {
+  @include site-padding-bottom;
+}
+
+.site-padding-left {
+  @include site-padding-left;
 }

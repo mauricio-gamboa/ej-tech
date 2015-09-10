@@ -124,9 +124,49 @@ $nav-line-height: 73px;
   color: $nav-color;
   background: none;
   border: none;
+  padding: 0;
 
   &:hover {
     color: $nav-color-hover;
+  }
+
+  &.rounded {
+    @include make-icon(31px, $btn-primary-hover, white);
+    font-size: 20px;
+
+    &.show-xs {
+      display: none;
+
+      @media #{$xs} {
+        display: block;
+      }
+    }
+  }
+
+  &.caret {
+    .fa {
+      vertical-align: middle;
+    }
+
+    .fa-caret-up {
+      display: inline-block;
+      margin-top: -8px;
+    }
+
+    .fa-caret-down {
+      display: none;
+      margin-top: -2px;
+    }
+
+    &.collapsed {
+      .fa-caret-up {
+        display: none;
+      }
+
+      .fa-caret-down {
+        display: inline-block;
+      }
+    }
   }
 }
 
@@ -203,5 +243,79 @@ $nav-line-height: 73px;
 
   &.in {
     opacity: 0.95;
+  }
+}
+
+.sub-nav {
+  margin: 0;
+
+  li {
+    float: left;
+    margin: 0 5px;
+
+    @media #{$xs} {
+      float: none;
+      margin: 0;
+      border-bottom: 1px solid $btn-primary;
+    }
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+
+      @media #{$xs} {
+        border-bottom: none;
+      }
+    }
+
+    .ej-btn {
+      @media #{$xs} {
+        padding: 0 15px;
+        display: block;
+        border-radius: 0;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+      }
+
+      &:hover {
+        @media #{$xs} {
+          background-color: $btn-primary;
+        }
+      }
+
+      span {
+        display: none;
+      }
+    }
+
+    &.active {
+      .ej-btn {
+        background-color: $btn-primary-hover;
+
+        @media #{$xs} {
+          background-color: $nav-color;
+
+          span {
+            display: inline-block;
+          }
+        }
+
+        &:hover {
+          @media #{$xs} {
+            background-color: $btn-primary;
+          }
+        }
+      }
+    }
+  }
+
+  @media #{$xs} {
+    border-top: 1px solid white;
+    background-color: $nav-color;
+    z-index: 10;
   }
 }

@@ -4,6 +4,14 @@ Footer Styles
 ****************************
 ***************************/
 
+#footer {
+  height: 107px;
+
+  @media #{$xs} {
+    height: 250px;
+  }
+}
+
 .footer {
   background-color: $footer-color;
   font-size: 11px;

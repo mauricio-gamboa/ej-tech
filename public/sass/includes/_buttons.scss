@@ -4,6 +4,29 @@ Links
 ****************************
 ***************************/
 
+.ej-btn {
+  font-family: 'proxima_nova_semibold';
+  text-transform: uppercase;
+  color: white;
+  display: inline-block;
+  border-radius: 25px;
+  padding: 0 17px;
+  line-height: 31px;
+  font-size: 13px;
+
+  &:hover {
+    color: white;
+  }
+
+  &.btn-primary {
+    background-color: $nav-color;
+
+    &:hover {
+      background-color: $btn-primary-hover;
+    }
+  }
+}
+
 .ej-link {
   font-family: 'proxima_nova_semibold';
   text-transform: uppercase;

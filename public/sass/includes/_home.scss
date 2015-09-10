@@ -82,7 +82,7 @@ Home Styles
         font-size: 11px;
         text-transform: uppercase;
         color: white;
-        padding-top: 25px;
+        padding-top: 20px;
         line-height: normal;
         @include icon-bordered(105px, transparent, transparent, 3px);
 
@@ -94,7 +94,7 @@ Home Styles
 
         span {
           display: block;
-          font-size: 25px;
+          font-size: 30px;
         }
 
         &:hover {
@@ -111,25 +111,6 @@ Home Styles
   }
 }
 
-.content-wrapper {
-  padding-top: 45px;
-}
-
-.site-title {
-  background: url("../images/sep-3.png") repeat-x 0 50%;
-  text-transform: uppercase;
-  margin-bottom: 35px;
-  overflow: hidden;
-
-  span {
-    background-color: white;
-    display: block;
-    height: 100%;
-    padding-right: 18px;
-    float: left;
-  }
-}
-
 .news-wrapper {
   padding-bottom: 45px;
 
@@ -140,11 +121,6 @@ Home Styles
   .title {
     line-height: normal;
     margin-bottom: 20px;
-
-    .date {
-      color: $date-color;
-      font-size: 11px;
-    }
 
     h6 {
       @include small-title;

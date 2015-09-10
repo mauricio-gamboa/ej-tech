@@ -4,12 +4,15 @@ Colors
 ****************************
 ***************************/
 
+$side-padding: 45px;
+
 $main-color: #303030;
 $nav-color: #0993e2;
 $nav-color-hover: #097abb;
 
 $product-btn-border: #84c7ff;
 $product-btn-color: #23cf3b;
+$product-btn-color-hover: #1fb434;
 $date-color: #898989;
 
 $footer-color: #eef3f5;
@@ -20,6 +23,11 @@ $footer-font-color: #9ba4a8;
 $sidebar-border: #e5e5e5;
 
 $pagination-border: #bbbbbb;
+
+$btn-primary: #0988d1;
+$btn-primary-hover: #085c8c;
+
+$content-section-border: #f0f0f0;
 
 /***************************
 ****************************
@@ -35,4 +43,57 @@ Mixins
   border: $border-size solid $border-color;
   background-color: $bg-color;
   border-radius: 100%;
+}
+
+@mixin make-icon($size, $bg-color, $color) {
+  height: $size;
+  width: $size;
+  text-align: center;
+  display: inline-block;
+  background-color: $bg-color;
+  border-radius: 100%;
+  color: $color;
+  line-height: $size;
+}
+
+@mixin site-padding {
+  padding: $side-padding 0;
+}
+
+@mixin site-padding-top {
+  padding-top: $side-padding;
+}
+
+@mixin site-padding-right {
+  padding-right: $side-padding;
+
+  @media #{$medium} {
+    padding-right: 20px;
+  }
+
+  @media #{$small, $xs} {
+    padding-right: 0;
+  }
+}
+
+@mixin site-padding-bottom {
+  padding-bottom: $side-padding;
+}
+
+@mixin site-padding-left {
+  padding-left: $side-padding;
+
+  @media #{$medium} {
+    padding-left: 20px;
+  }
+
+  @media #{$small, $xs} {
+    padding-left: 0;
+  }
+}
+
+@mixin reset-last {
+  padding-bottom: 0;
+  border-bottom: none;
+  margin-bottom: 0;
 }

@@ -16,24 +16,88 @@ Sidebar Styles
       margin-bottom: 0;
     }
   }
+
+  &.inner {
+    @media #{$small, $xs} {
+      margin-bottom: 0;
+    }
+
+    .site-title {
+      background: url("../images/sep-5.png") no-repeat 0 100%;
+      padding-bottom: 18px;
+      margin-bottom: 19px;
+
+      .fa {
+        color: $footer-font-color;
+        font-size: 16px;
+        margin-right: 4px;
+      }
+
+      span {
+        display: inline;
+        float: none;
+      }
+    }
+  }
 }
 
 .widget {
-  border: 1px solid $sidebar-border;
-  padding: 14px 10px;
+  border-bottom: 1px solid $sidebar-border;
+  padding: 14px 0;
 
   &.award {
+    border: 1px solid $sidebar-border;
+    padding: 14px 10px;
+    overflow: hidden;
+
     .img-wrapper {
-      width: 75px;
+      width: 68px;
       text-align: center;
       float: left;
-      margin-right: 15px;
+      margin-right: 20px;
+
+      @media #{$medium} {
+        margin-right: 10px;
+      }
+
+      > img {
+        max-width: 100%;
+      }
     }
 
     .text {
+      float: left;
+      width: calc(100% - 88px);
+
       h6 {
         @include small-title;
         margin-bottom: 15px;
+      }
+
+      p {
+        line-height: normal;
+
+        @media #{$small} {
+          font-size: 11px;
+        }
+
+        br {
+          @media #{$small} {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  &.versions {
+    padding-top: 0;
+
+    .version-item {
+      margin-bottom: 27px;
+
+      &:last-of-type {
+        @include reset-last;
       }
     }
   }
