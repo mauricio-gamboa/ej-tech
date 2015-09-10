@@ -507,8 +507,6 @@ Home Styles
       bottom: 45px; }
 
 .version {
-  background: url("../images/bg-version.png") no-repeat 0 0;
-  width: 43px;
   height: 42px;
   line-height: 37px;
   padding-left: 3px;
@@ -516,6 +514,15 @@ Home Styles
   text-align: center;
   font-size: 14px;
   display: inline-block; }
+  .version.version-1 {
+    background: url("../images/bg-version-1.png") no-repeat 0 0;
+    width: 43px; }
+  .version.version-2 {
+    background: url("../images/bg-version-2.png") no-repeat 0 0;
+    width: 44px; }
+  .version.version-3 {
+    background: url("../images/bg-version-3.png") no-repeat 0 0;
+    width: 44px; }
 
 .header-product {
   text-align: center; }
@@ -524,8 +531,17 @@ Home Styles
     position: relative; }
     .header-product .img-wrapper .version {
       position: absolute;
-      margin-right: -75px;
+      top: 0;
       right: 50%; }
+      .header-product .img-wrapper .version.version-1 {
+        margin-right: -62px;
+        top: 2px; }
+      .header-product .img-wrapper .version.version-2 {
+        margin-right: -60px;
+        top: -10px; }
+      .header-product .img-wrapper .version.version-3 {
+        margin-right: -86px;
+        top: -7px; }
   .header-product h4 {
     font-size: 23px;
     color: white;
@@ -552,7 +568,7 @@ Home Styles
         font-size: 11px;
         text-transform: uppercase;
         color: white;
-        padding-top: 20px;
+        padding-top: 15px;
         line-height: normal;
         height: 105px;
         width: 105px;
@@ -568,7 +584,7 @@ Home Styles
             width: 85px; } }
         .header-product .meta li a span {
           display: block;
-          font-size: 30px; }
+          font-size: 35px; }
         .header-product .meta li a:hover {
           height: 105px;
           width: 105px;
