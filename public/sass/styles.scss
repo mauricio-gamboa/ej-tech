@@ -180,6 +180,20 @@ a {
     float: left;
     width: 50%;
   }
+
+  &.responsive {
+    .item {
+      @media #{$small} {
+        float: none;
+        width: auto;
+        margin-bottom: 18px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
 }
 
 .detail {
@@ -215,6 +229,10 @@ a {
     @include small-title;
     font-size: 13px;
     margin-bottom: 8px;
+
+    @media #{$small} {
+      margin-bottom: 0;
+    }
   }
 
   p {

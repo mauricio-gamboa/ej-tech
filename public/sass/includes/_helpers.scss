@@ -69,6 +69,10 @@ Mixins
   @media #{$medium} {
     padding-right: 20px;
   }
+
+  @media #{$small} {
+    padding-right: 0;
+  }
 }
 
 @mixin site-padding-bottom {
@@ -80,6 +84,10 @@ Mixins
 
   @media #{$medium} {
     padding-left: 20px;
+  }
+
+  @media #{$small} {
+    padding-left: 0;
   }
 }
 

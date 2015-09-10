@@ -407,6 +407,12 @@ Sidebar Styles
         margin-bottom: 15px; }
       .widget.award .text p {
         line-height: normal; }
+        @media (min-width: 768px) and (max-width: 992px) {
+          .widget.award .text p {
+            font-size: 11px; } }
+        @media (min-width: 768px) and (max-width: 992px) {
+          .widget.award .text p br {
+            display: none; } }
   .widget.versions {
     padding-top: 0; }
     .widget.versions .version-item {
@@ -691,6 +697,14 @@ a:visited,
   float: left;
   width: 50%; }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .double-items.responsive .item {
+    float: none;
+    width: auto;
+    margin-bottom: 18px; }
+    .double-items.responsive .item:last-of-type {
+      margin-bottom: 0; } }
+
 .detail {
   line-height: normal;
   margin-bottom: 35px;
@@ -724,6 +738,9 @@ a:visited,
     color: #303030;
     font-size: 13px;
     margin-bottom: 8px; }
+    @media (min-width: 768px) and (max-width: 992px) {
+      .detail h6 {
+        margin-bottom: 0; } }
   .detail p {
     font-size: 13px;
     line-height: 19px; }
@@ -789,6 +806,9 @@ Helper Classes
   @media (min-width: 993px) and (max-width: 1200px) {
     .site-padding-right {
       padding-right: 20px; } }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .site-padding-right {
+      padding-right: 0; } }
 
 .site-padding-bottom {
   padding-bottom: 45px; }
@@ -798,5 +818,8 @@ Helper Classes
   @media (min-width: 993px) and (max-width: 1200px) {
     .site-padding-left {
       padding-left: 20px; } }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .site-padding-left {
+      padding-left: 0; } }
 
 /*# sourceMappingURL=styles.css.map */
