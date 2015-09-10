@@ -108,6 +108,10 @@ a {
   background-color: $nav-color;
   padding: 24px 0;
 
+  @media #{$xs} {
+    position: relative;
+  }
+
   h4 {
     margin: 0;
     font-size: 17px;
@@ -119,6 +123,14 @@ a {
 
   .sub-nav {
     float: right;
+
+    @media #{$xs} {
+      float: none;
+      position: absolute;
+      width: 100%;
+      top: 55px;
+      left: 0;
+    }
   }
 }
 
@@ -179,6 +191,16 @@ a {
   .item {
     float: left;
     width: 50%;
+
+    @media #{$xs} {
+      float: none;
+      width: auto;
+      margin-bottom: 35px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &.responsive {
@@ -186,7 +208,7 @@ a {
       @media #{$small} {
         float: none;
         width: auto;
-        margin-bottom: 18px;
+        margin-bottom: 35px;
 
         &:last-of-type {
           margin-bottom: 0;
@@ -305,6 +327,12 @@ Helper Classes
 
 .right-bordered {
   border-right: 1px solid $sidebar-border;
+}
+
+.border-top-xs {
+  @media #{$xs} {
+    border-top: 1px solid $nav-color;
+  }
 }
 
 .left-bordered {

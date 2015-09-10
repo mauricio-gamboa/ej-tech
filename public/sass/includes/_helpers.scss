@@ -24,6 +24,7 @@ $sidebar-border: #e5e5e5;
 
 $pagination-border: #bbbbbb;
 
+$btn-primary: #0988d1;
 $btn-primary-hover: #085c8c;
 
 $content-section-border: #f0f0f0;
@@ -70,7 +71,7 @@ Mixins
     padding-right: 20px;
   }
 
-  @media #{$small} {
+  @media #{$small, $xs} {
     padding-right: 0;
   }
 }
@@ -86,7 +87,7 @@ Mixins
     padding-left: 20px;
   }
 
-  @media #{$small} {
+  @media #{$small, $xs} {
     padding-left: 0;
   }
 }

@@ -18,6 +18,10 @@ Sidebar Styles
   }
 
   &.inner {
+    @media #{$small, $xs} {
+      margin-bottom: 0;
+    }
+
     .site-title {
       background: url("../images/sep-5.png") no-repeat 0 100%;
       padding-bottom: 18px;
