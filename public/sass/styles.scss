@@ -182,7 +182,15 @@ a {
   }
 
   p {
-    margin: 0;
+    margin-bottom: 0;
+  }
+
+  > p {
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .customers-grid {
@@ -201,12 +209,16 @@ a {
   &.text-wrapper {
     p {
       margin-bottom: 35px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
-    li {
-      margin-bottom: 15px;
+    ul {
+      margin-bottom: 35px;
 
-      &:last-of-type {
+      &:last-child {
         margin-bottom: 0;
       }
     }

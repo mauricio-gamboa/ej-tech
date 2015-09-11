@@ -69,3 +69,140 @@
     }
   }
 }
+
+.get-notified-item {
+  > * {
+    float: left;
+  }
+
+  .contact-form {
+    width: 540px;
+
+    @media #{$medium} {
+      width: 440px;
+    }
+
+    @media #{$small, $xs} {
+      width: 100%;
+      float: none;
+    }
+
+    .form-group {
+
+      > * {
+        float: left;
+      }
+
+      .form-control {
+        width: 388px;
+        margin-right: 12px;
+
+        @media #{$medium} {
+          width: 300px;
+        }
+
+        @media #{$small} {
+          width: 320px;
+        }
+
+        @media #{$xs} {
+          float: none;
+          width: 100%;
+        }
+      }
+
+      .ej-btn {
+        width: calc(100% - 400px);
+
+        @media #{$medium} {
+          width: calc(100% - 312px);
+        }
+
+        @media #{$small} {
+          width: calc(100% - 332px);
+        }
+
+        @media #{$xs} {
+          float: none;
+          width: 100%;
+          margin-top: 11px;
+        }
+      }
+    }
+  }
+
+  > ul {
+    margin: 0;
+    width: calc(100% - 540px);
+    text-align: right;
+
+    @media #{$medium} {
+      width: calc(100% - 440px);
+    }
+
+    @media #{$small, $xs} {
+      width: 100%;
+      float: none;
+      margin-top: 12px;
+    }
+
+    li {
+      float: right;
+      line-height: 44px;
+      height: 44px;
+      padding: 0 14px;
+      border-left: 1px solid $sidebar-border;
+
+      @media #{$small, $xs} {
+        float: left;
+        border-right: 1px solid $sidebar-border;
+        border-left: none;
+        padding: 0 14px;
+        line-height: 30px;
+        height: 30px;
+      }
+
+      &:first-of-type {
+        margin-right: 0;
+        padding-right: 0;
+
+        @media #{$small, $xs} {
+          padding: 0 14px 0 0;
+        }
+      }
+
+      &:last-of-type {
+        margin-left: 0;
+        padding-left: 0;
+        border-left: 0;
+
+        @media #{$small, $xs} {
+          padding: 0 0 0 14px;
+          border-right: 0;
+        }
+      }
+
+      a {
+        font-family: 'proxima_nova_semibold';
+        color: $rss-links;
+        text-transform: uppercase;
+        font-size: 13px;
+
+        &:hover {
+          color: $rss-links-hover;
+
+          .fa {
+            color: $rss-links-hover;
+          }
+        }
+
+        .fa {
+          color: $footer-font-color;
+          font-size: 16px;
+          position: relative;
+          top: 2px;
+        }
+      }
+    }
+  }
+}
