@@ -11,6 +11,7 @@ Imports
 @import "includes/footer";
 @import "includes/sidebar";
 @import "includes/home";
+@import "includes/form";
 
 /***************************
 ****************************
@@ -183,6 +184,24 @@ a {
 
   .customers-grid {
     margin-top: 30px;
+  }
+
+  > .detail {
+    line-height: normal;
+    margin-bottom: 15px;
+
+    h6 {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: $product-btn-color;
+      text-decoration: none;
+
+      &:hover {
+        color: $product-btn-color-hover;
+      }
+    }
   }
 }
 
@@ -369,6 +388,25 @@ a {
       @media #{$xs} {
         max-width: 70%;
       }
+    }
+  }
+}
+
+/***************************
+****************************
+Contact Page Styles
+****************************
+***************************/
+
+.contact-page {
+  .contact-form {
+    textarea {
+      height: 214px;
+    }
+
+    .btn-submit,
+    p {
+      margin-top: 20px;
     }
   }
 }
