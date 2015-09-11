@@ -99,13 +99,18 @@ Links
   border-radius: 25px;
   padding: 0 17px;
   line-height: 31px;
-  font-size: 13px; }
+  font-size: 13px;
+  border: none; }
   .ej-btn:hover {
     color: white; }
   .ej-btn.btn-primary {
     background-color: #0993e2; }
     .ej-btn.btn-primary:hover {
       background-color: #085c8c; }
+  .ej-btn.btn-submit {
+    background-color: #23cf3b; }
+    .ej-btn.btn-submit:hover {
+      background-color: #1fb434; }
 
 .ej-link {
   font-family: 'proxima_nova_semibold';
@@ -687,6 +692,55 @@ Home Styles
   border-color: #0993e2;
   background-color: #0993e2; }
 
+.contact-form {
+  line-height: normal; }
+  .contact-form .control-label {
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 10px; }
+  .contact-form .form-control,
+  .contact-form .dropdown-toggle {
+    resize: none;
+    border-radius: 2px;
+    background-color: white;
+    box-shadow: none;
+    height: 44px;
+    border: 1px solid #c8c8c8; }
+    .contact-form .form-control:focus,
+    .contact-form .dropdown-toggle:focus {
+      border-color: #23cf3b; }
+    .contact-form .form-control:active
+.contact-form .form-control:hover,
+    .contact-form .dropdown-toggle:active
+.contact-form .dropdown-toggle:hover {
+      border: 1px solid #c8c8c8;
+      background-color: white; }
+  .contact-form .dropdown > * {
+    width: 100%;
+    font-size: 13px; }
+  .contact-form .dropdown .dropdown-toggle {
+    text-align: left;
+    position: relative; }
+    .contact-form .dropdown .dropdown-toggle .caret {
+      position: absolute;
+      right: 12px;
+      top: 20px; }
+  .contact-form .dropdown.open .dropdown-toggle {
+    background-color: white;
+    border-color: #23cf3b; }
+  .contact-form .btn-submit {
+    height: 44px;
+    line-height: 44px;
+    padding: 0;
+    width: 170px;
+    text-align: center;
+    font-size: 14px; }
+  .contact-form p {
+    text-align: right;
+    color: #898989;
+    font-size: 11px;
+    line-height: 16px; }
+
 /***************************
 ****************************
 General Styles
@@ -812,6 +866,16 @@ a:visited,
     margin: 0; }
   .content-section .customers-grid {
     margin-top: 30px; }
+  .content-section > .detail {
+    line-height: normal;
+    margin-bottom: 15px; }
+    .content-section > .detail h6 {
+      margin-bottom: 0; }
+    .content-section > .detail a {
+      color: #23cf3b;
+      text-decoration: none; }
+      .content-section > .detail a:hover {
+        color: #1fb434; }
 
 .site-subtitle {
   text-transform: uppercase;
@@ -946,6 +1010,22 @@ a:visited,
     @media (max-width: 767px) {
       .customers-grid > div img {
         max-width: 70%; } }
+
+/***************************
+****************************
+Contact Page Styles
+****************************
+***************************/
+.contact-page .contact-form textarea {
+  height: 214px; }
+
+.contact-page .contact-form .btn-submit,
+.contact-page .contact-form p {
+  margin-top: 20px; }
+
+@media (max-width: 767px) {
+  .contact-page .contact-form .btn-submit {
+    width: 100%; } }
 
 /***************************
 ****************************

@@ -13,6 +13,7 @@ Links
   padding: 0 17px;
   line-height: 31px;
   font-size: 13px;
+  border: none;
 
   &:hover {
     color: white;
@@ -23,6 +24,14 @@ Links
 
     &:hover {
       background-color: $btn-primary-hover;
+    }
+  }
+
+  &.btn-submit {
+    background-color: $product-btn-color;
+
+    &:hover {
+      background-color: $product-btn-color-hover;
     }
   }
 }
