@@ -1,0 +1,12 @@
+.contact-page {
+  .detail {
+    a {
+      color: $product-btn-color;
+      text-decoration: none;
+
+      &:hover {
+        color: $product-btn-color-hover;
+      }
+    }
+  }
+}

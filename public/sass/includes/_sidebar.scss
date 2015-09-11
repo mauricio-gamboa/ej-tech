@@ -22,6 +22,14 @@ Sidebar Styles
       margin-bottom: 0;
     }
 
+    .widget {
+      padding-top: 0;
+
+      &.award {
+        padding: 14px 10px;
+      }
+    }
+
     .site-title {
       background: url("../images/sep-5.png") no-repeat 0 100%;
       padding-bottom: 18px;
@@ -91,14 +99,24 @@ Sidebar Styles
   }
 
   &.versions {
-    padding-top: 0;
-
     .version-item {
       margin-bottom: 27px;
 
       &:last-of-type {
         @include reset-last;
       }
+    }
+  }
+
+  &.subscribe {
+    .ej-btn {
+      width: 100%;
+    }
+
+    p {
+      text-align: center;
+      font-size: 11px;
+      margin: 15px 0 0 0;
     }
   }
 }

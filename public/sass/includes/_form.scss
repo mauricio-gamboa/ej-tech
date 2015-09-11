@@ -1,6 +1,12 @@
 .contact-form {
   line-height: normal;
 
+  .form-group {
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+
   .control-label {
     font-size: 13px;
     font-weight: normal;

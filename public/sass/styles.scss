@@ -12,6 +12,8 @@ Imports
 @import "includes/sidebar";
 @import "includes/home";
 @import "includes/form";
+@import "includes/contact";
+@import "includes/news";
 
 /***************************
 ****************************
@@ -36,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: $nav-color;
+  color: $product-btn-color;
 
   &:link
   &:visited,
@@ -48,7 +50,7 @@ a {
   }
 
   &:hover {
-    color: $nav-color-hover;
+    color: $product-btn-color-hover;
   }
 }
 
@@ -194,15 +196,6 @@ a {
     h6 {
       margin-bottom: 0;
     }
-
-    a {
-      color: $product-btn-color;
-      text-decoration: none;
-
-      &:hover {
-        color: $product-btn-color-hover;
-      }
-    }
   }
 
   &.text-wrapper {
@@ -283,7 +276,16 @@ h5,
   }
 
   a {
+
+  }
+
+  a {
+    color: $nav-color;
     text-decoration: underline;
+
+    &:hover {
+      color: $nav-color-hover;
+    }
   }
 
   h6 {
@@ -348,12 +350,7 @@ h5,
     }
 
     a {
-      color: $product-btn-color;
       font-size: 12px;
-
-      &:hover {
-        color: $product-btn-color-hover;
-      }
     }
   }
 }
@@ -430,6 +427,87 @@ Contact Page Styles
         width: 100%;
       }
     }
+  }
+}
+
+/***************************
+****************************
+Pagination Classes
+****************************
+***************************/
+
+.ej-pagination {
+  font-family: 'proxima_nova_semibold';
+
+  > ul {
+    margin: 0;
+    float: left;
+
+    li {
+      float: left;
+      margin: 0 4px;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      &.active {
+        a,
+        span {
+          background-color: $pagination-color;
+          color: white;
+
+          &:hover {
+            background-color: $pagination-color;
+            color: white;
+          }
+        }
+      }
+
+      @media #{$xs} {
+        display: none;
+
+        &:first-of-type {
+          display: block;
+        }
+
+        &:last-of-type {
+          display: block;
+        }
+      }
+
+      a,
+      span {
+        @include make-icon(34px, white, $product-btn-color);
+        border: 1px solid $pagination-color;
+
+        &:hover {
+          background-color: $pagination-color-hover;
+        }
+      }
+
+      span {
+        border-color: white;
+        color: $pagination-color;
+        font-size: 20px;
+
+        &:hover {
+          border-color: white;
+          color: $pagination-color;
+          background-color: white;
+        }
+      }
+    }
+  }
+
+  > a {
+    text-transform: uppercase;
+    float: right;
+    line-height: 34px;
   }
 }
 

@@ -19,11 +19,11 @@ Fonts
 
 @font-face {
   font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot?4pjks7');
-  src: url('../fonts/icomoon.eot?#iefix4pjks7') format('embedded-opentype'),
-  url('../fonts/icomoon.ttf?4pjks7') format('truetype'),
-  url('../fonts/icomoon.woff?4pjks7') format('woff'),
-  url('../fonts/icomoon.svg?4pjks7#icomoon') format('svg');
+  src: url('../fonts/icomoon.eot?pi4l4k');
+  src: url('../fonts/icomoon.eot?#iefixpi4l4k') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?pi4l4k') format('truetype'),
+  url('../fonts/icomoon.woff?pi4l4k') format('woff'),
+  url('../fonts/icomoon.svg?pi4l4k#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -50,44 +50,48 @@ Fonts
   content: "\e601";
 }
 
-.icon-directors:before {
+.icon-calendar:before {
   content: "\e602";
 }
 
-.icon-download:before {
+.icon-directors:before {
   content: "\e603";
 }
 
-.icon-fax:before {
+.icon-download:before {
   content: "\e604";
 }
 
-.icon-mail:before {
+.icon-fax:before {
   content: "\e605";
 }
 
-.icon-phone:before {
+.icon-mail:before {
   content: "\e606";
 }
 
-.icon-register:before {
+.icon-phone:before {
   content: "\e607";
 }
 
-.icon-rss:before {
+.icon-register:before {
   content: "\e608";
 }
 
-.icon-see_more:before {
+.icon-rss:before {
   content: "\e609";
 }
 
-.icon-vat:before {
+.icon-see_more:before {
   content: "\e60a";
 }
 
-.icon-versions:before {
+.icon-vat:before {
   content: "\e60b";
+}
+
+.icon-versions:before {
+  content: "\e60c";
 }
 
 /***************************
