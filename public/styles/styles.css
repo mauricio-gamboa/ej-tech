@@ -837,7 +837,8 @@ a:visited,
   background: url("../images/sep-3.png") repeat-x 0 50%;
   text-transform: uppercase;
   margin-bottom: 35px;
-  overflow: hidden; }
+  overflow: hidden;
+  color: #303030; }
   .site-title span {
     background-color: white;
     display: block;
@@ -876,7 +877,14 @@ a:visited,
       text-decoration: none; }
       .content-section > .detail a:hover {
         color: #1fb434; }
+  .content-section.text-wrapper p {
+    margin-bottom: 35px; }
+  .content-section.text-wrapper li {
+    margin-bottom: 15px; }
+    .content-section.text-wrapper li:last-of-type {
+      margin-bottom: 0; }
 
+h5,
 .site-subtitle {
   text-transform: uppercase;
   color: #0993e2; }

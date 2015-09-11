@@ -145,6 +145,7 @@ a {
   text-transform: uppercase;
   margin-bottom: 35px;
   overflow: hidden;
+  color: $main-color;
 
   span {
     background-color: white;
@@ -203,8 +204,23 @@ a {
       }
     }
   }
+
+  &.text-wrapper {
+    p {
+      margin-bottom: 35px;
+    }
+
+    li {
+      margin-bottom: 15px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
+h5,
 .site-subtitle {
   text-transform: uppercase;
   color: $nav-color;
