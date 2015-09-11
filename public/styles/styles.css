@@ -1023,6 +1023,10 @@ Contact Page Styles
 .contact-page .contact-form p {
   margin-top: 20px; }
 
+@media (max-width: 767px) {
+  .contact-page .contact-form .btn-submit {
+    width: 100%; } }
+
 /***************************
 ****************************
 Helper Classes

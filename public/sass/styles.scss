@@ -408,6 +408,12 @@ Contact Page Styles
     p {
       margin-top: 20px;
     }
+
+    .btn-submit {
+      @media #{$xs} {
+        width: 100%;
+      }
+    }
   }
 }
 
