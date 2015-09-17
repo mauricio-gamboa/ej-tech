@@ -963,6 +963,9 @@ Home Styles
         position: relative;
         top: 2px; }
 
+.product-overview-page .product-summary {
+  margin: -15px 0; }
+
 .product-overview {
   padding: 21px 0 0 0; }
 
@@ -985,8 +988,56 @@ Home Styles
   .product-overview-content .product-overview-img {
     display: block;
     margin: 0 auto;
-    width: 100%;
     max-width: 100%; }
+
+.product-summary > div {
+  float: left; }
+
+.product-summary .img-wrapper {
+  width: 132px;
+  margin-right: 16px;
+  position: relative; }
+  .product-summary .img-wrapper .version {
+    position: absolute;
+    right: 50%; }
+    .product-summary .img-wrapper .version.version-1 {
+      margin-right: -62px;
+      top: 2px; }
+
+.product-summary .product-text {
+  width: calc(100% - 148px); }
+  .product-summary .product-text h6 {
+    font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #303030;
+    font-size: 15px; }
+  .product-summary .product-text p {
+    font-size: 15px;
+    line-height: 25px; }
+
+.product-features .site-title-line-secondary {
+  margin-bottom: 25px; }
+
+.product-features > div {
+  float: left; }
+  @media (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
+    .product-features > div {
+      float: none; } }
+  .product-features > div:first-of-type {
+    width: calc(100% - 220px);
+    padding-right: 35px; }
+    @media (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
+      .product-features > div:first-of-type {
+        width: 100%;
+        padding-right: 0; } }
+  .product-features > div:last-of-type {
+    width: 220px; }
+    @media (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
+      .product-features > div:last-of-type {
+        margin-top: 25px;
+        width: 100%; } }
+    .product-features > div:last-of-type > img {
+      width: 100%; }
 
 /***************************
 ****************************
@@ -1079,9 +1130,18 @@ a:visited,
   font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
   color: white;
   font-size: 29px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   background: url("../images/sep-6.png") no-repeat 50% 100%;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  text-transform: uppercase; }
+
+.site-title-line-secondary {
+  color: #0993e2;
+  font-size: 17px;
+  margin-bottom: 25px;
+  background: url("../images/sep-4.png") no-repeat 0 100%;
+  padding-bottom: 25px;
+  text-transform: uppercase; }
 
 .content-section {
   border-bottom: 1px solid #f0f0f0;
