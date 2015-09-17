@@ -1,0 +1,38 @@
+.product-overview {
+  padding: 21px 0 0 0;
+}
+
+.product-overview-content {
+  text-align: center;
+  color: white;
+
+  .ribbon {
+    margin-bottom: 30px;
+  }
+
+  .site-title-line-big {
+    margin-bottom: 25px;
+  }
+
+  p {
+    @include font-settings-7;
+    margin-bottom: 25px;
+
+    br {
+      @media #{$xs} {
+        display: none;
+      }
+    }
+  }
+
+  .btn-secondary {
+    margin-bottom: 25px;
+  }
+
+  .product-overview-img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+  }
+}

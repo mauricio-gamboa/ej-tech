@@ -107,6 +107,14 @@ Links
   line-height: 31px;
   font-size: 13px;
   border: none; }
+  .ej-btn.larger {
+    line-height: 49px;
+    padding: 0 26px;
+    font-size: 15px; }
+    .ej-btn.larger .fa {
+      font-size: 25px;
+      margin-right: 10px;
+      vertical-align: middle; }
   .ej-btn:hover {
     color: white; }
   .ej-btn.btn-primary {
@@ -117,6 +125,12 @@ Links
     background-color: #23cf3b; }
     .ej-btn.btn-submit:hover {
       background-color: #1fb434; }
+  .ej-btn.btn-secondary {
+    background-color: white;
+    color: #f26c4f; }
+    .ej-btn.btn-secondary:hover {
+      background-color: white;
+      color: #c45841; }
 
 .ej-link {
   font-family: 'proxima_nova_semibold';
@@ -377,6 +391,47 @@ Navigation Styles
       border-top: 1px solid white;
       background-color: #0993e2;
       z-index: 10; } }
+
+.header {
+  background-color: #0993e2;
+  padding: 24px 0; }
+  @media (max-width: 767px) {
+    .header {
+      position: relative; } }
+  .header h4 {
+    margin: 0;
+    font-size: 17px;
+    color: white;
+    text-transform: uppercase;
+    line-height: 31px;
+    float: left; }
+  .header .sub-nav {
+    float: right; }
+    @media (max-width: 767px) {
+      .header .sub-nav {
+        float: none;
+        position: absolute;
+        width: 100%;
+        top: 55px;
+        left: 0; } }
+  .header.product-head {
+    padding: 18px 0;
+    border-bottom: 1px solid #3aa9e8; }
+    .header.product-head h4 {
+      position: relative;
+      padding-left: 56px;
+      line-height: 48px; }
+      .header.product-head h4 > img {
+        position: absolute;
+        top: 0;
+        left: 0; }
+    .header.product-head .sub-nav li {
+      line-height: 48px; }
+    @media (max-width: 767px) {
+      .header.product-head .sub-nav {
+        top: 66px; } }
+    .header.product-head .menu-toggler {
+      margin-top: 10px; }
 
 /***************************
 ****************************
@@ -908,6 +963,31 @@ Home Styles
         position: relative;
         top: 2px; }
 
+.product-overview {
+  padding: 21px 0 0 0; }
+
+.product-overview-content {
+  text-align: center;
+  color: white; }
+  .product-overview-content .ribbon {
+    margin-bottom: 30px; }
+  .product-overview-content .site-title-line-big {
+    margin-bottom: 25px; }
+  .product-overview-content p {
+    font-size: 17px;
+    line-height: 26px;
+    margin-bottom: 25px; }
+    @media (max-width: 767px) {
+      .product-overview-content p br {
+        display: none; } }
+  .product-overview-content .btn-secondary {
+    margin-bottom: 25px; }
+  .product-overview-content .product-overview-img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%; }
+
 /***************************
 ****************************
 General Styles
@@ -972,29 +1052,6 @@ a:visited,
   .logo.white a {
     background: url("../images/logo-white.png") no-repeat 0 0; }
 
-.header {
-  background-color: #0993e2;
-  padding: 24px 0; }
-  @media (max-width: 767px) {
-    .header {
-      position: relative; } }
-  .header h4 {
-    margin: 0;
-    font-size: 17px;
-    color: white;
-    text-transform: uppercase;
-    line-height: 31px;
-    float: left; }
-  .header .sub-nav {
-    float: right; }
-    @media (max-width: 767px) {
-      .header .sub-nav {
-        float: none;
-        position: absolute;
-        width: 100%;
-        top: 55px;
-        left: 0; } }
-
 .content {
   padding: 45px 0;
   font-size: 13px;
@@ -1017,6 +1074,14 @@ a:visited,
   background: url("../images/sep-4.png") no-repeat 0 100%;
   text-transform: uppercase;
   padding-bottom: 20px; }
+
+.site-title-line-big {
+  font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 29px;
+  margin-bottom: 10px;
+  background: url("../images/sep-6.png") no-repeat 50% 100%;
+  padding-bottom: 25px; }
 
 .content-section {
   border-bottom: 1px solid #f0f0f0;
@@ -1186,6 +1251,28 @@ h5,
     @media (max-width: 767px) {
       .customers-grid > div img {
         max-width: 70%; } }
+
+.ribbon {
+  font-family: 'proxima_nova_semibold';
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  display: inline-block;
+  height: 33px;
+  line-height: 33px;
+  display: inline-block;
+  position: relative; }
+  .ribbon > span {
+    padding-left: 22px;
+    background: url("../images/ribbon.png") no-repeat 0 0;
+    display: block; }
+    .ribbon > span + span {
+      background: url("../images/ribbon-right.png") no-repeat 100% 0;
+      position: absolute;
+      height: 33px;
+      width: 22px;
+      top: 0;
+      right: -22px; }
 
 /***************************
 ****************************

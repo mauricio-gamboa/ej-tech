@@ -8,12 +8,14 @@ Imports
 @import "includes/buttons";
 @import "includes/responsive";
 @import "includes/navigation";
+@import "includes/header";
 @import "includes/footer";
 @import "includes/sidebar";
 @import "includes/home";
 @import "includes/form";
 @import "includes/contact";
 @import "includes/news";
+@import "includes/product";
 
 /***************************
 ****************************
@@ -23,7 +25,7 @@ General Styles
 
 body {
   color: $main-color;
-  font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
+  @include lucida;
   @include font-settings-1;
 }
 
@@ -107,36 +109,6 @@ a {
   }
 }
 
-.header {
-  background-color: $nav-color;
-  padding: 24px 0;
-
-  @media #{$xs} {
-    position: relative;
-  }
-
-  h4 {
-    margin: 0;
-    font-size: 17px;
-    color: white;
-    text-transform: uppercase;
-    line-height: 31px;
-    float: left;
-  }
-
-  .sub-nav {
-    float: right;
-
-    @media #{$xs} {
-      float: none;
-      position: absolute;
-      width: 100%;
-      top: 55px;
-      left: 0;
-    }
-  }
-}
-
 .content {
   @include site-padding;
   @include font-settings-3;
@@ -162,6 +134,15 @@ a {
   background: url("../images/sep-4.png") no-repeat 0 100%;
   text-transform: uppercase;
   padding-bottom: 20px;
+}
+
+.site-title-line-big {
+  @include lucida;
+  color: white;
+  font-size: 29px;
+  margin-bottom: 10px;
+  background: url("../images/sep-6.png") no-repeat 50% 100%;
+  padding-bottom: 25px;
 }
 
 .content-section {
@@ -413,6 +394,33 @@ h5,
       @media #{$xs} {
         max-width: 70%;
       }
+    }
+  }
+}
+
+.ribbon {
+  font-family: 'proxima_nova_semibold';
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  display: inline-block;
+  height: 33px;
+  line-height: 33px;
+  display: inline-block;
+  position: relative;
+
+  > span {
+    padding-left: 22px;
+    background: url("../images/ribbon.png") no-repeat 0 0;
+    display: block;
+
+    & + span {
+      background: url("../images/ribbon-right.png") no-repeat 100% 0;
+      position: absolute;
+      height: 33px;
+      width: 22px;
+      top: 0;
+      right: -22px;
     }
   }
 }
