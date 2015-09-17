@@ -1,0 +1,60 @@
+.header {
+  background-color: $nav-color;
+  padding: 24px 0;
+
+  @media #{$xs} {
+    position: relative;
+  }
+
+  h4 {
+    margin: 0;
+    font-size: 17px;
+    color: white;
+    text-transform: uppercase;
+    line-height: 31px;
+    float: left;
+  }
+
+  .sub-nav {
+    float: right;
+
+    @media #{$xs} {
+      float: none;
+      position: absolute;
+      width: 100%;
+      top: 55px;
+      left: 0;
+    }
+  }
+
+  &.product-head {
+    padding: 18px 0;
+    border-bottom: 1px solid $header-border;
+
+    h4 {
+      position: relative;
+      padding-left: 56px;
+      line-height: 48px;
+
+      > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    .sub-nav {
+      li {
+        line-height: 48px;
+      }
+
+      @media #{$xs} {
+        top: 66px;
+      }
+    }
+
+    .menu-toggler {
+      margin-top: 10px;
+    }
+  }
+}

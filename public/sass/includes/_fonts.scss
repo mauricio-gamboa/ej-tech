@@ -129,8 +129,22 @@ Fonts Mixins
   line-height: 16px;
 }
 
+@mixin font-settings-7 {
+  font-size: 17px;
+  line-height: 26px;
+}
+
+@mixin font-settings-8 {
+  font-size: 15px;
+  line-height: 25px;
+}
+
 @mixin small-title {
   font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
   font-weight: bold;
   color: $main-color;
+}
+
+@mixin lucida {
+  font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
 }

@@ -27,6 +27,9 @@ $pagination-border: #bbbbbb;
 $btn-primary: #0988d1;
 $btn-primary-hover: #085c8c;
 
+$btn-secondary: #f26c4f;
+$btn-secondary-hover: #c45841;
+
 $content-section-border: #f0f0f0;
 
 $form-control-border: #c8c8c8;
@@ -36,6 +39,13 @@ $pagination-color-hover: #f1f1f1;
 
 $rss-links: #636363;
 $rss-links-hover: #4a4949;
+
+$header-border: #3aa9e8;
+
+$download-link: #1cbbb4;
+$download-link-hover: #19a19b;
+
+$product-pagination: #184583;
 
 /***************************
 ****************************
@@ -51,6 +61,7 @@ Mixins
   border: $border-size solid $border-color;
   background-color: $bg-color;
   border-radius: 100%;
+  line-height: $size;
 }
 
 @mixin make-icon($size, $bg-color, $color) {

@@ -19,4 +19,8 @@
     singleItem: true
   });
 
+  $('#product-overview-slider').owlCarousel({
+    autoPlay: true,
+    singleItem: true
+  });
 })(window, document, jQuery);

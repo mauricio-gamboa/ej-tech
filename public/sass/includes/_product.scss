@@ -1,0 +1,152 @@
+.product-overview-page {
+  .product-summary {
+    margin: -15px 0;
+  }
+}
+
+.product-overview {
+  padding: 21px 0 0 0;
+}
+
+.product-overview-content {
+  text-align: center;
+  color: white;
+
+  .ribbon {
+    margin-bottom: 30px;
+  }
+
+  .site-title-line-big {
+    margin-bottom: 25px;
+  }
+
+  p {
+    @include font-settings-7;
+    margin-bottom: 25px;
+
+    br {
+      @media #{$xs} {
+        display: none;
+      }
+    }
+  }
+
+  .btn-secondary {
+    margin-bottom: 25px;
+  }
+
+  .product-overview-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+
+.product-summary {
+  > div {
+    float: left;
+  }
+
+  .img-wrapper {
+    width: 132px;
+    margin-right: 16px;
+    position: relative;
+
+    .version {
+      position: absolute;
+      right: 50%;
+
+      &.version-1 {
+        margin-right: -62px;
+        top: 2px;
+      }
+    }
+  }
+
+  .product-text {
+    width: calc(100% - 148px);
+
+    h6 {
+      @include small-title;
+      font-size: 15px;
+    }
+
+    p {
+      @include font-settings-8;
+    }
+  }
+}
+
+.product-features {
+  .site-title-line-secondary {
+    margin-bottom: 25px;
+  }
+
+  > div {
+    float: left;
+
+    @media #{$small, $xs} {
+      float: none;
+    }
+
+    &:first-of-type {
+      width: calc(100% - 220px);
+      padding-right: 35px;
+
+      @media #{$small, $xs} {
+        width: 100%;
+        padding-right: 0;
+      }
+    }
+
+    &:last-of-type {
+      width: 220px;
+
+      @media #{$small, $xs} {
+        margin-top: 25px;
+        width: 100%;
+      }
+
+      > img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.product-overview-slider {
+  padding-top: 36px;
+
+  .product-overview-slide {
+    img {
+      width: 100%;
+    }
+  }
+
+  .owl-controls {
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .owl-pagination {
+      .owl-page {
+        span {
+          border: 4px solid $nav-color;
+          background-color: $product-pagination;
+          height: 14px;
+          width: 14px;
+          border-radius: 100%;
+        }
+
+        &.active {
+          span {
+            background-color: white;
+            border-color: white;
+          }
+        }
+      }
+    }
+  }
+}

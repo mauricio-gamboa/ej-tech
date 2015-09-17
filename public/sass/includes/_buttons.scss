@@ -15,6 +15,18 @@ Links
   font-size: 13px;
   border: none;
 
+  &.larger {
+    line-height: 49px;
+    padding: 0 26px;
+    font-size: 15px;
+
+    .fa {
+      font-size: 25px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+  }
+
   &:hover {
     color: white;
   }
@@ -32,6 +44,16 @@ Links
 
     &:hover {
       background-color: $product-btn-color-hover;
+    }
+  }
+
+  &.btn-secondary {
+    background-color: white;
+    color: $btn-secondary;
+
+    &:hover {
+      background-color: white;
+      color: $btn-secondary-hover;
     }
   }
 }
