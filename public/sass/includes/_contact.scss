@@ -9,4 +9,21 @@
       }
     }
   }
+
+  .contact-form {
+    textarea {
+      height: 214px;
+    }
+
+    .btn-submit,
+    p {
+      margin-top: 20px;
+    }
+
+    .btn-submit {
+      @media #{$xs} {
+        width: 100%;
+      }
+    }
+  }
 }

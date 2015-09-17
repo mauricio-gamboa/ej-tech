@@ -113,3 +113,40 @@
     }
   }
 }
+
+.product-overview-slider {
+  padding-top: 36px;
+
+  .product-overview-slide {
+    img {
+      width: 100%;
+    }
+  }
+
+  .owl-controls {
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .owl-pagination {
+      .owl-page {
+        span {
+          border: 4px solid $nav-color;
+          background-color: $product-pagination;
+          height: 14px;
+          width: 14px;
+          border-radius: 100%;
+        }
+
+        &.active {
+          span {
+            background-color: white;
+            border-color: white;
+          }
+        }
+      }
+    }
+  }
+}

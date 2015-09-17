@@ -42,6 +42,11 @@ $rss-links-hover: #4a4949;
 
 $header-border: #3aa9e8;
 
+$download-link: #1cbbb4;
+$download-link-hover: #19a19b;
+
+$product-pagination: #184583;
+
 /***************************
 ****************************
 Mixins
@@ -56,6 +61,7 @@ Mixins
   border: $border-size solid $border-color;
   background-color: $bg-color;
   border-radius: 100%;
+  line-height: $size;
 }
 
 @mixin make-icon($size, $bg-color, $color) {

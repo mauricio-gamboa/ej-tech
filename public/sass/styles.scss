@@ -435,26 +435,107 @@ h5,
   }
 }
 
-/***************************
-****************************
-Contact Page Styles
-****************************
-***************************/
+.action-links {
+  ul {
+    margin: 0;
 
-.contact-page {
-  .contact-form {
-    textarea {
-      height: 214px;
-    }
+    li {
+      margin-bottom: 17px;
 
-    .btn-submit,
-    p {
-      margin-top: 20px;
-    }
-
-    .btn-submit {
       @media #{$xs} {
-        width: 100%;
+        margin-bottom: 0;
+        float: left;
+        width: calc(100% / 3);
+        text-align: center;
+        border-right: 1px solid $content-section-border;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+        border-right: none;
+      }
+
+      a {
+        color: $btn-secondary;
+        display: block;
+
+        &:hover {
+          color: $btn-secondary-hover;
+        }
+
+        > * {
+          float: left;
+
+          @media #{$xs} {
+            float: none;
+            width: auto;
+            margin: 0;
+          }
+        }
+
+        > span {
+          @include icon-bordered(36px, white, $btn-secondary, 2px);
+          margin-right: 14px;
+
+          .fa {
+            vertical-align: middle;
+            font-size: 18px;
+            margin-top: -5px;
+          }
+
+          @media #{$xs} {
+            margin: 0;
+          }
+        }
+
+        > div {
+          font-family: 'proxima_nova_semibold';
+          width: calc(100% - 50px);
+          line-height: 36px;
+          text-transform: uppercase;
+          font-size: 15px;
+          padding-bottom: 18px;
+          border-bottom: 1px solid $content-section-border;
+
+          @media #{$xs} {
+            @include reset-last;
+            width: auto;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        a {
+          color: $download-link;
+
+          &:hover {
+            color: $download-link-hover;
+          }
+
+          > span {
+            color: $download-link;
+            border-color: $download-link;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        a {
+          color: $product-btn-color;
+
+          &:hover {
+            color: $product-btn-color-hover;
+          }
+
+          > span {
+            color: $product-btn-color;
+            border-color: $product-btn-color;
+          }
+
+          > div {
+            @include reset-last;
+          }
+        }
       }
     }
   }
