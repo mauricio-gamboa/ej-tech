@@ -13,7 +13,7 @@ Sidebar Styles
     margin-bottom: 23px;
 
     &:last-of-type {
-      margin-bottom: 0;
+      @include reset-last;
     }
   }
 
@@ -25,8 +25,10 @@ Sidebar Styles
     .widget {
       padding-top: 0;
 
-      &.award {
-        padding: 14px 10px;
+      &.awards {
+        .award {
+          padding: 14px 10px;
+        }
       }
     }
 
@@ -51,47 +53,58 @@ Sidebar Styles
 
 .widget {
   border-bottom: 1px solid $sidebar-border;
-  padding: 14px 0;
+  padding-bottom: 14px;
 
-  &.award {
-    border: 1px solid $sidebar-border;
-    padding: 14px 10px;
-    overflow: hidden;
+  &:last-of-type {
+    @include reset-last;
+  }
 
-    .img-wrapper {
-      width: 68px;
-      text-align: center;
-      float: left;
-      margin-right: 20px;
+  &.awards {
+    .award {
+      border: 1px solid $sidebar-border;
+      padding: 14px 10px;
+      overflow: hidden;
+      margin-bottom: 23px;
 
-      @media #{$medium} {
-        margin-right: 10px;
+      &:last-of-type {
+        margin-bottom: 0;
       }
 
-      > img {
-        max-width: 100%;
-      }
-    }
+      .img-wrapper {
+        width: 68px;
+        text-align: center;
+        float: left;
+        margin-right: 20px;
 
-    .text {
-      float: left;
-      width: calc(100% - 88px);
-
-      h6 {
-        @include small-title;
-        margin-bottom: 15px;
-      }
-
-      p {
-        line-height: normal;
-
-        @media #{$small} {
-          font-size: 11px;
+        @media #{$medium} {
+          margin-right: 10px;
         }
 
-        br {
+        > img {
+          max-width: 100%;
+        }
+      }
+
+      .text {
+        float: left;
+        width: calc(100% - 88px);
+
+        h6 {
+          @include small-title;
+          margin-bottom: 15px;
+        }
+
+        p {
+          line-height: normal;
+
           @media #{$small} {
-            display: none;
+            font-size: 11px;
+          }
+
+          br {
+            @media #{$small} {
+              display: none;
+            }
           }
         }
       }
@@ -117,6 +130,27 @@ Sidebar Styles
       text-align: center;
       font-size: 11px;
       margin: 15px 0 0 0;
+    }
+  }
+
+  &.blog {
+    ul {
+      margin: 0;
+
+      li {
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid $sidebar-border;
+        line-height: 18px;
+
+        &:last-of-type {
+          @include reset-last;
+        }
+
+        p {
+          margin: 0;
+        }
+      }
     }
   }
 }
