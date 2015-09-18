@@ -1,3 +1,9 @@
+/***************************
+****************************
+Product Overview Page
+****************************
+***************************/
+
 .product-overview-page {
   .product-summary {
     margin: -15px 0;
@@ -147,6 +153,83 @@
           }
         }
       }
+    }
+  }
+}
+
+/***************************
+****************************
+Product What's New Page
+****************************
+***************************/
+
+.product-whats-new-page {
+  .content-section {
+    &:first-child {
+      margin-bottom: 12px;
+      padding-bottom: 12px;
+
+      a {
+        color: $nav-color;
+
+        &:hover {
+          color: $nav-color-hover;
+        }
+      }
+    }
+  }
+}
+
+.whats-new-section {
+  border-bottom: 1px solid $content-section-border;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+
+  a {
+    color: $nav-color;
+
+    &:hover {
+      color: $nav-color-hover;
+    }
+  }
+
+  &:last-of-type {
+    @include reset-last;
+  }
+
+  > .info {
+    background-color: $news-section;
+    padding: 20px 0;
+
+    > div {
+      float: left;
+
+      &:nth-child(1) {
+        text-align: center;
+        padding: 0 20px;
+
+        img {
+          margin-top: 5px;
+        }
+      }
+
+      &:nth-child(2) {
+        width: calc(100% - 68px);
+        padding-right: 20px;
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  > .img {
+    background-color: $news-section;
+    padding: 20px;
+
+    img {
+      width: 100%;
     }
   }
 }
