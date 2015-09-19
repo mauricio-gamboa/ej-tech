@@ -1169,6 +1169,9 @@ Product Features Page
   .features-tabs .title ul {
     float: right;
     margin: 0; }
+    @media (max-width: 767px) {
+      .features-tabs .title ul {
+        float: none; } }
     .features-tabs .title ul > li {
       float: left;
       margin: 0 17px; }
@@ -1195,15 +1198,20 @@ Product Features Page
   border-bottom: 1px solid #eef3f5;
   padding-bottom: 20px; }
   .feature-section .feature-title h5 {
+    line-height: normal;
     background-color: #f6fafb;
-    padding: 0 15px;
+    padding: 18px 15px;
     margin: 0 0 20px 0;
     text-transform: uppercase;
-    color: #0993e2;
-    line-height: 50px;
-    height: 50px; }
+    color: #0993e2; }
+    .feature-section .feature-title h5 > * {
+      float: left;
+      display: block; }
+    .feature-section .feature-title h5 span {
+      width: calc(100% - 70px); }
     .feature-section .feature-title h5 a {
-      float: right; }
+      text-align: right;
+      width: 70px; }
   .feature-section .feature-title p {
     margin: 0; }
 
@@ -1257,6 +1265,7 @@ a:visited,
   a:hover,
   a:active,
   a:focus {
+    color: #23cf3b;
     outline: none;
     text-decoration: none; }
   a:hover {

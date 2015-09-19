@@ -267,6 +267,10 @@ Product Features Page
       float: right;
       margin: 0;
 
+      @media #{$xs} {
+        float: none;
+      }
+
       > li {
         float: left;
         margin: 0 17px;
@@ -313,16 +317,25 @@ Product Features Page
     padding-bottom: 20px;
 
     h5 {
+      line-height: normal;
       background-color: $news-section;
-      padding: 0 15px;
+      padding: 18px 15px;
       margin: 0 0 20px 0;
       text-transform: uppercase;
       color: $nav-color;
-      line-height: 50px;
-      height: 50px;
+
+      > * {
+        float: left;
+        display: block;
+      }
+
+      span {
+        width: calc(100% - 70px);
+      }
 
       a {
-        float: right;
+        text-align: right;
+        width: 70px;
       }
     }
 

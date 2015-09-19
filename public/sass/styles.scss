@@ -47,6 +47,7 @@ a {
   &:hover,
   &:active,
   &:focus {
+    color: $product-btn-color;
     outline: none;
     text-decoration: none;
   }
