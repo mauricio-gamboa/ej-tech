@@ -233,3 +233,153 @@ Product What's New Page
     }
   }
 }
+
+/***************************
+****************************
+Product Features Page
+****************************
+***************************/
+
+.product-features-page {
+  .content-section {
+    &:first-child {
+      margin-bottom: 0;
+      padding-bottom: 20px;
+      border: none;
+    }
+  }
+}
+
+.features-tabs {
+  .title {
+    height: 40px;
+    border-bottom: 2px solid $footer-color;
+    line-height: normal;
+    margin-bottom: 20px;
+
+    .site-title-line {
+      @include reset-last;
+      background: none;
+      float: left;
+    }
+
+    ul {
+      float: right;
+      margin: 0;
+
+      @media #{$xs} {
+        float: none;
+      }
+
+      > li {
+        float: left;
+        margin: 0 17px;
+
+        &:first-of-type {
+          margin-left: 0;
+        }
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        a {
+          border-bottom: 2px solid $footer-color;
+          color: $feature-tabs;
+          text-transform: uppercase;
+          font-family: 'proxima_nova_semibold';
+          display: block;
+          height: 40px;
+
+          &:hover {
+            color: $product-btn-color;
+          }
+        }
+
+        &.active {
+          a {
+            color: $product-btn-color;
+            border-color: $product-btn-color;
+
+            &:hover {
+              color: $product-btn-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.feature-section {
+  .feature-title {
+    border-bottom: 1px solid $footer-color;
+    padding-bottom: 20px;
+
+    h5 {
+      line-height: normal;
+      background-color: $news-section;
+      padding: 18px 15px;
+      margin: 0 0 20px 0;
+      text-transform: uppercase;
+      color: $nav-color;
+
+      > * {
+        float: left;
+        display: block;
+      }
+
+      span {
+        width: calc(100% - 70px);
+      }
+
+      a {
+        text-align: right;
+        width: 70px;
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.features-list {
+  margin: 0;
+
+  li {
+    border-bottom: 1px solid $footer-color;
+
+    &:last-of-type {
+      @include reset-last;
+    }
+
+    .title {
+      font-weight: bold;
+      height: 49px;
+      line-height: 49px;
+
+      a {
+        float: right;
+        text-transform: uppercase;
+        font-family: 'proxima_nova_semibold';
+        font-weight: normal;
+      }
+    }
+
+    .text {
+      display: none;
+
+      p {
+        margin-bottom: 20px;
+      }
+    }
+
+    &.opened {
+      .text {
+        display: block;
+      }
+    }
+  }
+}

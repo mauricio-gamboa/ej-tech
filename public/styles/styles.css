@@ -1147,6 +1147,100 @@ Product What's New Page
 
 /***************************
 ****************************
+Product Features Page
+****************************
+***************************/
+.product-features-page .content-section:first-child {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  border: none; }
+
+.features-tabs .title {
+  height: 40px;
+  border-bottom: 2px solid #eef3f5;
+  line-height: normal;
+  margin-bottom: 20px; }
+  .features-tabs .title .site-title-line {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+    background: none;
+    float: left; }
+  .features-tabs .title ul {
+    float: right;
+    margin: 0; }
+    @media (max-width: 767px) {
+      .features-tabs .title ul {
+        float: none; } }
+    .features-tabs .title ul > li {
+      float: left;
+      margin: 0 17px; }
+      .features-tabs .title ul > li:first-of-type {
+        margin-left: 0; }
+      .features-tabs .title ul > li:last-of-type {
+        margin-right: 0; }
+      .features-tabs .title ul > li a {
+        border-bottom: 2px solid #eef3f5;
+        color: #363636;
+        text-transform: uppercase;
+        font-family: 'proxima_nova_semibold';
+        display: block;
+        height: 40px; }
+        .features-tabs .title ul > li a:hover {
+          color: #23cf3b; }
+      .features-tabs .title ul > li.active a {
+        color: #23cf3b;
+        border-color: #23cf3b; }
+        .features-tabs .title ul > li.active a:hover {
+          color: #23cf3b; }
+
+.feature-section .feature-title {
+  border-bottom: 1px solid #eef3f5;
+  padding-bottom: 20px; }
+  .feature-section .feature-title h5 {
+    line-height: normal;
+    background-color: #f6fafb;
+    padding: 18px 15px;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    color: #0993e2; }
+    .feature-section .feature-title h5 > * {
+      float: left;
+      display: block; }
+    .feature-section .feature-title h5 span {
+      width: calc(100% - 70px); }
+    .feature-section .feature-title h5 a {
+      text-align: right;
+      width: 70px; }
+  .feature-section .feature-title p {
+    margin: 0; }
+
+.features-list {
+  margin: 0; }
+  .features-list li {
+    border-bottom: 1px solid #eef3f5; }
+    .features-list li:last-of-type {
+      padding-bottom: 0;
+      border-bottom: none;
+      margin-bottom: 0; }
+    .features-list li .title {
+      font-weight: bold;
+      height: 49px;
+      line-height: 49px; }
+      .features-list li .title a {
+        float: right;
+        text-transform: uppercase;
+        font-family: 'proxima_nova_semibold';
+        font-weight: normal; }
+    .features-list li .text {
+      display: none; }
+      .features-list li .text p {
+        margin-bottom: 20px; }
+    .features-list li.opened .text {
+      display: block; }
+
+/***************************
+****************************
 General Styles
 ****************************
 ***************************/
@@ -1171,6 +1265,7 @@ a:visited,
   a:hover,
   a:active,
   a:focus {
+    color: #23cf3b;
     outline: none;
     text-decoration: none; }
   a:hover {
