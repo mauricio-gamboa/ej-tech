@@ -696,7 +696,6 @@ Home Styles
         text-transform: uppercase;
         color: white;
         padding-top: 15px;
-        line-height: normal;
         height: 105px;
         width: 105px;
         text-align: center;
@@ -704,7 +703,8 @@ Home Styles
         border: 3px solid transparent;
         background-color: transparent;
         border-radius: 100%;
-        line-height: 105px; }
+        line-height: 105px;
+        line-height: normal; }
         @media (min-width: 768px) and (max-width: 992px) {
           .header-product .meta li a {
             padding-top: 15px;
@@ -722,7 +722,8 @@ Home Styles
           background-color: white;
           border-radius: 100%;
           line-height: 105px;
-          color: #23cf3b; }
+          color: #23cf3b;
+          line-height: normal; }
           @media (min-width: 768px) and (max-width: 992px) {
             .header-product .meta li a:hover {
               height: 85px;
@@ -1179,6 +1180,9 @@ Product Features Page
         margin-left: 0; }
       .features-tabs .title ul > li:last-of-type {
         margin-right: 0; }
+        @media (max-width: 767px) {
+          .features-tabs .title ul > li:last-of-type {
+            float: right; } }
       .features-tabs .title ul > li a {
         border-bottom: 2px solid #eef3f5;
         color: #363636;
@@ -1669,6 +1673,23 @@ Pagination Classes
     text-transform: uppercase;
     float: right;
     line-height: 34px; }
+
+.table .fa {
+  color: #23cf3b; }
+
+.table:last-of-type {
+  margin-bottom: 0; }
+
+.table thead tr th {
+  background-color: #f6fafb;
+  border-bottom: none !important;
+  padding-top: 12px;
+  padding-bottom: 12px; }
+
+.table tbody tr td {
+  border-color: #f0f0f0;
+  padding-top: 12px;
+  padding-bottom: 12px; }
 
 /***************************
 ****************************
