@@ -18,8 +18,8 @@ Fonts
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?zh5jp5");
-  src: url("../fonts/icomoon.eot?#iefixzh5jp5") format("embedded-opentype"), url("../fonts/icomoon.ttf?zh5jp5") format("truetype"), url("../fonts/icomoon.woff?zh5jp5") format("woff"), url("../fonts/icomoon.svg?zh5jp5#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?57sdzr");
+  src: url("../fonts/icomoon.eot?#iefix57sdzr") format("embedded-opentype"), url("../fonts/icomoon.ttf?57sdzr") format("truetype"), url("../fonts/icomoon.woff?57sdzr") format("woff"), url("../fonts/icomoon.svg?57sdzr#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -41,41 +41,56 @@ Fonts
 .icon-award:before {
   content: "\e601"; }
 
-.icon-calendar:before {
+.icon-blog_post:before {
   content: "\e602"; }
 
-.icon-directors:before {
+.icon-calendar:before {
   content: "\e603"; }
 
-.icon-download:before {
+.icon-cube:before {
   content: "\e604"; }
 
-.icon-fax:before {
+.icon-directors:before {
   content: "\e605"; }
 
-.icon-mail:before {
+.icon-documentation:before {
   content: "\e606"; }
 
-.icon-phone:before {
+.icon-download:before {
   content: "\e607"; }
 
-.icon-register:before {
+.icon-fax:before {
   content: "\e608"; }
 
-.icon-rss:before {
+.icon-mail:before {
   content: "\e609"; }
 
-.icon-see_more:before {
+.icon-order:before {
   content: "\e60a"; }
 
-.icon-vat:before {
+.icon-phone:before {
   content: "\e60b"; }
 
-.icon-versions:before {
+.icon-register:before {
   content: "\e60c"; }
 
-.icon-view:before {
+.icon-rss:before {
   content: "\e60d"; }
+
+.icon-see_more:before {
+  content: "\e60e"; }
+
+.icon-support:before {
+  content: "\e60f"; }
+
+.icon-vat:before {
+  content: "\e610"; }
+
+.icon-versions:before {
+  content: "\e611"; }
+
+.icon-view:before {
+  content: "\e612"; }
 
 /***************************
 ****************************
