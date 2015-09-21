@@ -24,6 +24,11 @@
     singleItem: true
   });
 
+  $('.single-item-slider').owlCarousel({
+    autoPlay: true,
+    singleItem: true
+  });
+
   var $featureTrigger = $('.feature-title a');
 
   $featureTrigger.on('click', function (e) {

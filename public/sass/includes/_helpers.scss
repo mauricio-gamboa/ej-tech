@@ -51,6 +51,8 @@ $news-section: #f6fafb;
 
 $feature-tabs: #363636;
 
+$carousel-pagination: #cccccc;
+
 /***************************
 ****************************
 Mixins
@@ -85,6 +87,7 @@ Mixins
 
 @mixin site-padding-top {
   padding-top: $side-padding;
+  padding-bottom: 0;
 }
 
 @mixin site-padding-right {
@@ -101,6 +104,7 @@ Mixins
 
 @mixin site-padding-bottom {
   padding-bottom: $side-padding;
+  padding-top: 0;
 }
 
 @mixin site-padding-left {
