@@ -1,0 +1,55 @@
+.bottom-widget {
+
+  > div {
+    float: left;
+
+    @media #{$small, $xs} {
+      float: none;
+      text-align: center;
+    }
+
+    &.icon-wrapper {
+      width: 79px;
+
+      @media #{$small, $xs} {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      span {
+        @include icon-bordered(60px, white, $footer-font-color, 3px);
+        color: $footer-font-color;
+        font-size: 30px;
+        margin-right: 19px;
+
+        @media #{$small, $xs} {
+          margin: 0;
+        }
+
+        .fa {
+          position: relative;
+          top: -3px;
+        }
+      }
+    }
+
+    &.text-wrapper {
+      width: calc(100% - 79px);
+
+      @media #{$small, $xs} {
+        width: 100%;
+      }
+
+      .ej-btn {
+        padding: 0 23px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 14px;
+
+        @media #{$small, $xs} {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
