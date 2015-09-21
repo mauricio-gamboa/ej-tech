@@ -39,6 +39,17 @@ Links
     }
   }
 
+  &.btn-submit-transparent {
+    background-color: white;
+    border: 1px solid $product-btn-color;
+    color: $product-btn-color;
+
+    &:hover {
+      border-color: $product-btn-color-hover;
+      color: $product-btn-color-hover;
+    }
+  }
+
   &.btn-submit {
     background-color: $product-btn-color;
 
