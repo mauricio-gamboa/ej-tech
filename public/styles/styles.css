@@ -121,6 +121,13 @@ Links
     background-color: #0993e2; }
     .ej-btn.btn-primary:hover {
       background-color: #085c8c; }
+  .ej-btn.btn-submit-transparent {
+    background-color: white;
+    border: 1px solid #23cf3b;
+    color: #23cf3b; }
+    .ej-btn.btn-submit-transparent:hover {
+      border-color: #1fb434;
+      color: #1fb434; }
   .ej-btn.btn-submit {
     background-color: #23cf3b; }
     .ej-btn.btn-submit:hover {
@@ -1244,7 +1251,13 @@ Product Features Page
     .features-list li.opened .text {
       display: block; }
 
-.product-live-demo-page .content-section:first-child {
+/***************************
+****************************
+Product Live Demo Page
+****************************
+***************************/
+.product-live-demo-page .content-section:first-child,
+.product-docs-page .content-section:first-child {
   margin-bottom: 0;
   padding-bottom: 20px;
   border: none; }
@@ -1252,12 +1265,6 @@ Product Features Page
 .demo-section {
   position: relative; }
   .demo-section .ej-btn {
-    padding: 0;
-    width: 195px;
-    text-align: center;
-    line-height: 49px;
-    height: 49px;
-    font-size: 15px;
     position: absolute;
     right: 0;
     bottom: 50%;
@@ -1268,16 +1275,52 @@ Product Features Page
         right: auto;
         bottom: auto;
         margin: 0; } }
-    .demo-section .ej-btn span {
-      font-size: 25px;
-      margin-right: 4px;
-      padding-top: 5px;
-      vertical-align: middle; }
   .demo-section.image-gallery {
     margin: 0 -8px; }
     @media (max-width: 767px) {
       .demo-section.image-gallery {
         margin: 0; } }
+
+/***************************
+****************************
+Product Docs Page
+****************************
+***************************/
+.doc-section {
+  margin-bottom: 45px; }
+  .doc-section:last-of-type {
+    margin-bottom: 0; }
+  .doc-section > div {
+    float: left; }
+    .doc-section > div.logo-wrapper {
+      width: 31px;
+      margin-right: 19px; }
+    .doc-section > div.text-wrapper {
+      width: calc(100% - 50px);
+      position: relative;
+      padding-right: 150px; }
+      @media (max-width: 767px) {
+        .doc-section > div.text-wrapper {
+          padding: 0; } }
+      .doc-section > div.text-wrapper .site-subtitle {
+        margin-bottom: 5px; }
+      .doc-section > div.text-wrapper p {
+        margin: 0; }
+      .doc-section > div.text-wrapper .ej-btn {
+        width: 102px;
+        text-align: center;
+        padding: 0;
+        height: 31px;
+        line-height: 31px;
+        position: absolute;
+        top: 21px;
+        right: 0; }
+        @media (max-width: 767px) {
+          .doc-section > div.text-wrapper .ej-btn {
+            position: static;
+            top: auto;
+            right: auto;
+            margin-top: 10px; } }
 
 .bottom-widget > div {
   float: left; }

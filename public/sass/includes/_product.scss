@@ -387,3 +387,110 @@ Product Features Page
     }
   }
 }
+
+/***************************
+****************************
+Product Live Demo Page
+****************************
+***************************/
+
+.product-live-demo-page,
+.product-docs-page {
+  .content-section {
+    &:first-child {
+      margin-bottom: 0;
+      padding-bottom: 20px;
+      border: none;
+    }
+  }
+}
+
+.demo-section {
+  position: relative;
+
+  .ej-btn {
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    margin-bottom: -25px;
+
+    @media #{$small, $xs} {
+      position: static;
+      right: auto;
+      bottom: auto;
+      margin: 0;
+    }
+  }
+
+  &.image-gallery {
+    margin: 0 -8px;
+
+    @media #{$xs} {
+      margin: 0;
+    }
+  }
+}
+
+/***************************
+****************************
+Product Docs Page
+****************************
+***************************/
+
+.product-docs-page {
+
+}
+
+.doc-section {
+  margin-bottom: 45px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  > div {
+    float: left;
+
+    &.logo-wrapper {
+      width: 31px;
+      margin-right: 19px;
+    }
+
+    &.text-wrapper {
+      width: calc(100% - 50px);
+      position: relative;
+      padding-right: 150px;
+
+      @media #{$xs} {
+        padding: 0;
+      }
+
+      .site-subtitle {
+        margin-bottom: 5px;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .ej-btn {
+        width: 102px;
+        text-align: center;
+        padding: 0;
+        height: 31px;
+        line-height: 31px;
+
+        position: absolute;
+        top: 21px;
+        right: 0;
+
+        @media #{$xs} {
+          position: static;
+          top: auto;
+          right: auto;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
