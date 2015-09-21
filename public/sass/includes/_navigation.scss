@@ -88,7 +88,8 @@ $nav-line-height: 73px;
     }
 
     &.active {
-      a {
+      a,
+      span {
         border-top-color: $nav-color;
         color: $nav-color;
       }

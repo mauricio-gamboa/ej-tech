@@ -229,7 +229,8 @@ Navigation Styles
     .main-navigation > li > a:hover,
     .main-navigation > li > span:hover {
       color: #0993e2; }
-  .main-navigation > li.active a {
+  .main-navigation > li.active a,
+  .main-navigation > li.active span {
     border-top-color: #0993e2;
     color: #0993e2; }
 
