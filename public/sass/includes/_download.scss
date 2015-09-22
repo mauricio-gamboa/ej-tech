@@ -1,0 +1,123 @@
+/***************************
+****************************
+Download Page
+****************************
+***************************/
+
+.download-download-page {
+  .content-section {
+    &:first-child {
+      margin-bottom: 0;
+      padding-bottom: 20px;
+      border: none;
+    }
+  }
+}
+
+.download-section {
+  border-top: 1px solid $content-section-border;
+  padding-top: 20px;
+
+  .download-selector {
+    margin-bottom: 21px;
+
+    .version-meta {
+      float: left;
+
+      @media #{$xs} {
+        border-top: 1px solid $content-section-border;
+        float: none;
+        padding-top: 20px;
+      }
+
+      .site-subtitle {
+        margin: 0;
+      }
+    }
+
+    .selector {
+      float: right;
+      padding-bottom: 20px;
+
+      @media #{$xs} {
+        float: none;
+      }
+    }
+  }
+}
+
+.download-items {
+  .download-item {
+    padding: 15px 0;
+    border-bottom: 1px solid $content-section-border;
+
+    &:last-of-type {
+      @include reset-last;
+    }
+
+    > div {
+      float: left;
+
+      &.icon-wrapper {
+        width: 57px;
+      }
+
+      &.text-wrapper {
+        position: relative;
+        width: calc(100% - 57px);
+
+        .site-subtitle {
+          margin-bottom: 15px;
+        }
+
+        p {
+          @include font-settings-1;
+        }
+
+        .ej-btn {
+          bottom: 25px;
+          position: absolute;
+          right: 0;
+
+          @media #{$small, $xs} {
+            position: static;
+            bottom: auto;
+            right: auto;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+
+    &.yours {
+      padding: 16px 26px;
+      background-color: $news-section;
+      border-color: $news-section;
+
+      > div {
+        &.icon-wrapper {
+          width: 78px;
+        }
+
+        &.text-wrapper {
+          width: calc(100% - 78px);
+          min-height: 49px;
+
+          .ej-btn {
+            bottom: 50%;
+            margin-bottom: -28px;
+
+            @media #{$small, $xs} {
+              position: static;
+              bottom: auto;
+              right: auto;
+              margin-top: 20px;
+              margin-bottom: 0;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

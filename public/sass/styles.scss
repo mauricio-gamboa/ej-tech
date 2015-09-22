@@ -17,6 +17,7 @@ Imports
 @import "includes/news";
 @import "includes/product";
 @import "includes/bottom_sidebar";
+@import "includes/download";
 
 /***************************
 ****************************
@@ -746,6 +747,37 @@ Pagination Classes
           }
         }
       }
+    }
+  }
+}
+
+.selector {
+  position: relative;
+  color: black;
+
+  > * {
+    float: left;
+  }
+
+  > span {
+    height: 39px;
+    line-height: 37px;
+    margin-right: 11px;
+  }
+
+  .dropdown {
+    position: relative;
+
+    .btn {
+      border-radius: 25px;
+      padding: 0 24px;
+      height: 39px;
+      line-height: 37px;
+      border-color: $selector;
+    }
+
+    ul {
+      width: 100%;
     }
   }
 }
