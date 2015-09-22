@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>EJ Technologies - News - All News</title>
+  <title>EJ Technologies - Perfino - Change Log</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="public/styles/libs.min.css">
   <link rel="stylesheet" href="public/styles/styles.min.css">
 </head>
 <body>
-<div class="page-wrap news-all-page">
+<div class="page-wrap download-change-log-page">
   <nav id="navigation" class="navigation">
     <div class="container">
       <div class="row">
@@ -17,7 +17,7 @@
           <ul class="main-navigation clearfix list-unstyled hide-s hide-xs">
             <li><a href="">Home</a></li>
             <li><a href="">Company</a></li>
-            <li class="active"><a href="">News</a></li>
+            <li><a href="">News</a></li>
             <li>
             <span class="toggler collapsed" data-toggle="collapse" data-target="#nav-1">
               Products <i class="fa fa-caret-down"></i><i class="fa fa-caret-up"></i>
@@ -28,7 +28,7 @@
                 <li><a href="">Install4J</a></li>
               </ul>
             </li>
-            <li>
+            <li class="active">
             <span class="toggler collapsed" data-toggle="collapse" data-target="#nav-2">
               Download <i class="fa fa-caret-down"></i><i class="fa fa-caret-up"></i>
             </span>
@@ -48,11 +48,11 @@
       </div>
     </div>
   </nav>
-  <header id="header" class="header">
+  <header id="header" class="header product-head">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h4>News</h4>
+          <h4><img src="public/images/content/icon-app-1.png" alt=""/> Perfino</h4>
           <button
             type="button"
             class="menu-toggler rounded caret collapsed show-xs pull-right"
@@ -61,22 +61,35 @@
             <i class="fa fa-caret-down"></i><i class="fa fa-caret-up"></i>
           </button>
           <ul class="sub-nav list-unstyled clearfix hide-xs">
-            <li class="active">
-              <a href="" class="ej-btn btn-primary">All news</a>
+            <li>
+              <a href="" class="ej-btn btn-primary">Download</a>
             </li>
             <li>
-              <a href="" class="ej-btn btn-primary">get notified</a>
+              <a href="" class="ej-btn btn-primary">Trial Key</a>
+            </li>
+            <li class="active">
+              <a href="" class="ej-btn btn-primary">Change Log</a>
             </li>
           </ul>
           <div class="show-xs">
             <ul id="sub-menu" class="sub-nav list-unstyled clearfix collapse">
-              <li class="active">
-                <a href="" class="ej-btn btn-primary">All news <span class="pull-right"><i
-                  class="fa fa-check"></i></span></a>
+              <li>
+                <a href="" class="ej-btn btn-primary">
+                  Download
+                  <span class="pull-right"><i class="fa fa-check"></i></span>
+                </a>
               </li>
               <li>
-                <a href="" class="ej-btn btn-primary">get notified <span class="pull-right"><i
-                  class="fa fa-check"></i></span></a>
+                <a href="" class="ej-btn btn-primary">
+                  Trial Key
+                  <span class="pull-right"><i class="fa fa-check"></i></span>
+                </a>
+              </li>
+              <li class="active">
+                <a href="" class="ej-btn btn-primary">
+                  Change Log
+                  <span class="pull-right"><i class="fa fa-check"></i></span>
+                </a>
               </li>
             </ul>
           </div>
@@ -88,115 +101,155 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 right-bordered">
-          <div class="content site-padding-right">
+          <div class="content site-padding">
             <div class="content-section">
-              <h4 class="site-title-line">lastest news</h4>
-
-              <p>Showing 1 to 10 out of 55 news</p>
-            </div>
-            <div class="content-section text-wrapper">
-              <div class="news-item clearfix">
-                <div class="meta">
-                  <h6>Product launch of perfino</h6>
-                  <span class="date"><i class="fa fa-fw icon-calendar"></i> Oct 27, 2015</span>
-                </div>
-                <div class="news">
-                  <p>This release adds</p>
-                  <ul>
-                    <li>MBean browser</li>
-                    <li>JavaScript XHR tracking from the browser into a profiled VM, with call tree splitting in the
-                      call tree view
-                    </li>
-                    <li>Custom telemetries, featuring MBean attribute and script data sources</li>
-                    <li>Multi-level HTTP call tree splitting, with freely configurable scripts</li>
-                    <li>Method splitting in the call tree</li>
-                    <li>Heap walker improvements</li>
-                  </ul>
-                  <p>Please see the <a href="">what's new page</a> and the <a href="">change log</a> in the download
-                    section for more detailed information about new features and bug fixes.</p>
+              <div class="features-tabs">
+                <div class="title clearfix">
+                  <h4 class="site-title-line">Change Log</h4>
                 </div>
               </div>
             </div>
-            <div class="content-section text-wrapper">
-              <div class="news-item clearfix">
-                <div class="meta">
-                  <h6>Product launch of perfino</h6>
-                  <span class="date"><i class="fa fa-fw icon-calendar"></i> Oct 27, 2015</span>
-                </div>
-                <div class="news">
-                  <p>This is the initial release of perfino, a comprehensive and ultra low-overhead Java APM
-                    solution.</p>
+            <div class="content-section">
+              <div class="change-log-section">
+                <div class="title clearfix">
+                  <div>
+                    <h5 class="site-subtitle">Release 2.0.1</h5>
 
-                  <p>With perfino, ej-technologies brings a new spirit to JVM monitoring that is based on the experience
-                    of more than a decade of technical excellence and innovations in the Java profiling space.</p>
-
-                  <p>Check out the <a href="">product page</a> for a high-level overview and the <a href="">list of
-                    features</a> for a detailed presentation of perfino's capabilities.</p>
-
-                  <p>perfino is available for <a href="">download</a> and as a <a href="">live demo</a>.</p>
+                    <p>2015-07-15</p>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="content-section text-wrapper">
-              <div class="news-item clearfix">
-                <div class="meta">
-                  <h6>install4j Release 6.0</h6>
-                  <span class="date"><i class="fa fa-fw icon-calendar"></i> Oct 27, 2015</span>
-                </div>
-                <div class="news">
-                  <p>This release adds</p>
-                  <ul>
-                    <li>Added a gradle plugin</li>
-                    <li>Added properties file actions: "Read a properties file", "Remove keys from properties file" and
-                      "Write properties to file"
-                    </li>
-                    <li>Added JDBC actions: "Check JDBC connection", "Execute SQL query" and "Execute SQL script"</li>
-                    <li>Added XML modification actions: "Insert XML fragment into XML files" and "Remove nodes from XML
-                      files"
-                    </li>
-                    <li>Added HTTP and network actions: "HTTP request", "Upload file" and "Wait for Socket"</li>
-                    <li>The new "Test installer" tool bar button just recompiles scripts, screens and actions and
-                      updates an existing media file for a fast edit-compile-test loop.
-                    </li>
-                    <li>Support for very large installers: 4GB on Windows, no limitations on Mac OS X and Unix and on
-                      all platforms with external media files
-                    </li>
-                    <li>DMGs on Mac OS X</li>
-                    <li>Improved launchers on Mac OS X</li>
-                    <li>Many other improvements for Mac OS X</li>
-                    <li>Response file improvements</li>
-                    <li>Java code editor improvements</li>
-                    <li>Launcher improvements</li>
-                  </ul>
-                  <p>Please see the <a href="">what's new page</a> and the <a href="">change log</a> in the download
-                    section for more detailed information about new features and bug fixes.</p>
-                </div>
-              </div>
-            </div>
-            <div class="content-section clearfix">
-              <p>Showing 1 to 10 out of 55 news</p>
 
-              <div class="ej-pagination clearfix">
-                <ul class="list-unstyled clearfix">
-                  <li><a href=""><i class="fa fa-caret-left"></i></a></li>
-                  <li class="active"><a href="">1</a></li>
-                  <li><span><i class="fa fa-ellipsis-h"></i></span></li>
-                  <li><a href="">5</a></li>
-                  <li><a href="">6</a></li>
-                  <li><a href="">7</a></li>
-                  <li><span><i class="fa fa-ellipsis-h"></i></span></li>
-                  <li><a href="">36</a></li>
-                  <li><a href=""><i class="fa fa-caret-right"></i></a></li>
+                <p><strong>Bugs fixed:</strong></p>
+
+                <ul class="list-unstyled blue-list">
+                  <li><span>&bull;</span> Bundled Jetty server was vulnerable to the Logjam attack</li>
+                  <li><span>&bull;</span> JRE bundles are now Java 8 to avoid problems with weak ephemeral
+                    Diffie-Hellman keys
+                  </li>
+                  <li><span>&bull;</span> Improved performance of transaction consolidation</li>
+                  <li><span>&bull;</span> Fixed JDBC connection problems with older MySQL versions</li>
                 </ul>
-                <a href="">show all</a>
+              </div>
+            </div>
+            <div class="content-section">
+              <div class="change-log-section">
+                <div class="title clearfix">
+                  <div>
+                    <h5 class="site-subtitle">Release 2.0</h5>
+
+                    <p>2015-10-27</p>
+                  </div>
+                  <a href="" class="ej-btn btn-submit-transparent">Explore What's New</a>
+                </div>
+
+                <p><strong>New features:</strong></p>
+
+                <ul class="list-unstyled blue-list">
+                  <li><span>&bull;</span> Free for development with a single VM monitoring and 24 hour historical data
+                  </li>
+                  <li><span>&bull;</span> New look for the web frontend</li>
+                  <li><span>&bull;</span> Added an MBean browser view</li>
+                  <li><span>&bull;</span> Configurable telemetries based on MBean data</li>
+                  <li><span>&bull;</span> Enhanced Devops telemetries to match capabilities of MBean telemetries</li>
+                  <li><span>&bull;</span> REST API for exporting recorded data</li>
+                  <li><span>&bull;</span> Probe data in dashboard</li>
+                  <li><span>&bull;</span> Support for running the web frontend on Jetty 9 and Tomcat 8</li>
+                  <li><span>&bull;</span> Updated bundled Jetty web server to Jetty 9.2.6</li>
+                </ul>
+
+                <p><strong>Bugs fixed:</strong></p>
+
+                <ul class="list-unstyled blue-list">
+                  <li><span>&bull;</span> Bundled Jetty server was vulnerable to the Logjam attack</li>
+                  <li><span>&bull;</span> JRE bundles are now Java 8 to avoid problems with weak ephemeral
+                    Diffie-Hellman keys
+                  </li>
+                  <li><span>&bull;</span> Improved performance of transaction consolidation</li>
+                  <li><span>&bull;</span> Fixed JDBC connection problems with older MySQL versions</li>
+                </ul>
+              </div>
+            </div>
+            <div class="content-section">
+              <div class="change-log-section">
+                <div class="title clearfix">
+                  <div>
+                    <h5 class="site-subtitle">Release 2.0</h5>
+
+                    <p>2015-10-27</p>
+                  </div>
+                  <a href="" class="ej-btn btn-submit-transparent">Explore What's New</a>
+                </div>
+
+                <p><strong>New features:</strong></p>
+
+                <ul class="list-unstyled blue-list">
+                  <li><span>&bull;</span> Free for development with a single VM monitoring and 24 hour historical data
+                  </li>
+                  <li><span>&bull;</span> New look for the web frontend</li>
+                  <li><span>&bull;</span> Added an MBean browser view</li>
+                  <li><span>&bull;</span> Configurable telemetries based on MBean data</li>
+                  <li><span>&bull;</span> Enhanced Devops telemetries to match capabilities of MBean telemetries</li>
+                  <li><span>&bull;</span> REST API for exporting recorded data</li>
+                  <li><span>&bull;</span> Probe data in dashboard</li>
+                  <li><span>&bull;</span> Support for running the web frontend on Jetty 9 and Tomcat 8</li>
+                  <li><span>&bull;</span> Updated bundled Jetty web server to Jetty 9.2.6</li>
+                </ul>
+
+                <p><strong>Bugs fixed:</strong></p>
+
+                <ul class="list-unstyled blue-list">
+                  <li><span>&bull;</span> Bundled Jetty server was vulnerable to the Logjam attack</li>
+                  <li><span>&bull;</span> JRE bundles are now Java 8 to avoid problems with weak ephemeral
+                    Diffie-Hellman keys
+                  </li>
+                  <li><span>&bull;</span> Improved performance of transaction consolidation</li>
+                  <li><span>&bull;</span> Fixed JDBC connection problems with older MySQL versions</li>
+                </ul>
+              </div>
+            </div>
+            <div class="content-section">
+              <div class="change-log-section">
+                <div class="title clearfix">
+                  <div>
+                    <h5 class="site-subtitle">Release 2.0</h5>
+
+                    <p>2015-10-27</p>
+                  </div>
+                  <a href="" class="ej-btn btn-submit-transparent">Explore What's New</a>
+                </div>
+
+                <p><strong>New features:</strong></p>
+
+                <ul class="list-unstyled blue-list">
+                  <li><span>&bull;</span> Free for development with a single VM monitoring and 24 hour historical data
+                  </li>
+                  <li><span>&bull;</span> New look for the web frontend</li>
+                  <li><span>&bull;</span> Added an MBean browser view</li>
+                  <li><span>&bull;</span> Configurable telemetries based on MBean data</li>
+                  <li><span>&bull;</span> Enhanced Devops telemetries to match capabilities of MBean telemetries</li>
+                  <li><span>&bull;</span> REST API for exporting recorded data</li>
+                  <li><span>&bull;</span> Probe data in dashboard</li>
+                  <li><span>&bull;</span> Support for running the web frontend on Jetty 9 and Tomcat 8</li>
+                  <li><span>&bull;</span> Updated bundled Jetty web server to Jetty 9.2.6</li>
+                </ul>
+
+                <p><strong>Bugs fixed:</strong></p>
+
+                <ul class="list-unstyled blue-list">
+                  <li><span>&bull;</span> Bundled Jetty server was vulnerable to the Logjam attack</li>
+                  <li><span>&bull;</span> JRE bundles are now Java 8 to avoid problems with weak ephemeral
+                    Diffie-Hellman keys
+                  </li>
+                  <li><span>&bull;</span> Improved performance of transaction consolidation</li>
+                  <li><span>&bull;</span> Fixed JDBC connection problems with older MySQL versions</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 border-top-xs">
-          <div class="content site-padding-left">
+          <div class="content">
             <aside class="sidebar inner">
-
               <div class="widget subscribe">
                 <h5 class="site-title"><i class="fa fa-fw icon-rss"></i> <span>RSS</span></h5>
 
@@ -211,7 +264,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="widget versions">
                 <h5 class="site-title"><i class="fa fa-fw icon-versions"></i> <span>Latest Versions</span></h5>
 
@@ -240,32 +292,6 @@
                     <h6>exe4j: 4.5</h6>
                     <span class="date">2012-09-28</span>
                     <a href="">Download</a> &bullet; <a href="">Change log</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="widget awards clearfix">
-                <h5 class="site-title"><i class="fa fa-fw icon-award"></i> <span>Awards</span></h5>
-
-                <div class="award clearfix">
-                  <div class="img-wrapper">
-                    <img src="public/images/content/award-1.png" alt=""/>
-                  </div>
-                  <div class="text">
-                    <h6>JProfiler</h6>
-
-                    <p>Best Java Profiling / Testing Tool</p>
-                  </div>
-                </div>
-
-                <div class="award clearfix">
-                  <div class="img-wrapper">
-                    <img src="public/images/content/award-2.png" alt=""/>
-                  </div>
-                  <div class="text">
-                    <h6>Install4J</h6>
-
-                    <p>Finalist for Best Java Installation Tool</p>
                   </div>
                 </div>
               </div>
@@ -318,7 +344,7 @@
             <ul class="clearfix list-unstyled nav-mobile-menu">
               <li><a href="">Home</a></li>
               <li><a href="">Company</a></li>
-              <li class="active"><a href="">News</a></li>
+              <li><a href="">News</a></li>
               <li>
             <span class="toggler collapsed" data-toggle="collapse" data-target="#nav-mobile-1">
               Products <i class="fa fa-caret-down"></i><i class="fa fa-caret-up"></i>
@@ -329,7 +355,7 @@
                   <li><a href="">Install4J</a></li>
                 </ul>
               </li>
-              <li>
+              <li class="active">
             <span class="toggler collapsed" data-toggle="collapse" data-target="#nav-mobile-2">
               Download <i class="fa fa-caret-down"></i><i class="fa fa-caret-up"></i>
             </span>
