@@ -1384,7 +1384,8 @@ Download Page
 ****************************
 ***************************/
 .download-download-page .content-section:first-child,
-.download-trial-page .content-section:first-child {
+.download-trial-page .content-section:first-child,
+.download-change-log-page .content-section:first-child {
   margin-bottom: 0;
   padding-bottom: 20px;
   border: none; }
@@ -1459,6 +1460,38 @@ Download Page
             margin-top: 20px;
             margin-bottom: 0;
             font-size: 14px; } }
+
+.download-change-log-page .content-section:first-child .title {
+  margin-bottom: 0; }
+
+.change-log-section .title {
+  background: url("../images/sep-7.png") no-repeat 0% 100%;
+  padding-bottom: 16px;
+  margin-bottom: 16px; }
+  .change-log-section .title > div {
+    float: left; }
+    .change-log-section .title > div h5 {
+      margin-bottom: 0; }
+  .change-log-section .title > .ej-btn {
+    float: right; }
+
+.change-log-section p,
+.change-log-section ul {
+  margin-bottom: 25px; }
+  .change-log-section p:last-child,
+  .change-log-section ul:last-child {
+    margin-bottom: 0; }
+
+.content-section .change-log-section p,
+.content-section .change-log-section ul {
+  margin-bottom: 20px;
+  line-height: 21px; }
+  .content-section .change-log-section p li,
+  .content-section .change-log-section ul li {
+    line-height: 21px; }
+  .content-section .change-log-section p:last-child,
+  .content-section .change-log-section ul:last-child {
+    margin-bottom: 0; }
 
 /***************************
 ****************************

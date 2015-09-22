@@ -5,7 +5,8 @@ Download Page
 ***************************/
 
 .download-download-page,
-.download-trial-page {
+.download-trial-page,
+.download-change-log-page {
   .content-section {
     &:first-child {
       margin-bottom: 0;
@@ -118,6 +119,63 @@ Download Page
             }
           }
         }
+      }
+    }
+  }
+}
+
+.download-change-log-page {
+  .content-section {
+    &:first-child {
+      .title {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.change-log-section {
+  .title {
+    background: url("../images/sep-7.png") no-repeat 0% 100%;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+
+    > div {
+      float: left;
+
+      h5 {
+        margin-bottom: 0;
+      }
+    }
+
+    > .ej-btn {
+      float: right;
+    }
+  }
+
+  p,
+  ul {
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.content-section {
+  .change-log-section {
+    p,
+    ul {
+      margin-bottom: 20px;
+      line-height: 21px;
+
+      li {
+        line-height: 21px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
       }
     }
   }
