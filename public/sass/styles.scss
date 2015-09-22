@@ -223,6 +223,10 @@ a {
       }
     }
   }
+
+  .contact-form {
+    margin-top: 20px;
+  }
 }
 
 h5,
@@ -782,6 +786,26 @@ Pagination Classes
   }
 }
 
+.important {
+  padding: 20px;
+  background-color: $news-section;
+}
+
+.warning-text {
+
+  > div {
+    float: left;
+
+    &.icon-wrapper {
+      width: 42px;
+    }
+
+    &.text-wrapper {
+      width: calc(100% - 42px);
+    }
+  }
+}
+
 /***************************
 ****************************
 Helper Classes
@@ -820,4 +844,10 @@ Helper Classes
 
 .site-padding-left {
   @include site-padding-left;
+}
+
+.smt {
+  @media #{$small, $xs} {
+    margin-top: 15px;
+  }
 }
