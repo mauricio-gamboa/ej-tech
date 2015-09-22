@@ -11,6 +11,12 @@
     font-size: 13px;
     font-weight: normal;
     margin-bottom: 10px;
+    display: block;
+
+    span {
+      color: $date-color;
+      float: right;
+    }
   }
 
   .form-control,
@@ -58,14 +64,14 @@
     }
   }
 
-  .btn-submit {
-    height: 44px;
-    line-height: 44px;
-    padding: 0;
-    width: 170px;
-    text-align: center;
-    font-size: 14px;
-  }
+  //.btn-submit {
+  //  height: 44px;
+  //  line-height: 44px;
+  //  padding: 0;
+  //  width: 170px;
+  //  text-align: center;
+  //  font-size: 14px;
+  //}
 
   p {
     text-align: right;
