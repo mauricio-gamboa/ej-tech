@@ -798,6 +798,11 @@ Pagination Classes
 
     &.icon-wrapper {
       width: 42px;
+
+      > span {
+        color: $footer-font-color;
+        font-size: 32px;
+      }
     }
 
     &.text-wrapper {
