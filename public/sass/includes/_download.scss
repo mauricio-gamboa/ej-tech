@@ -62,6 +62,11 @@ Download Page
 
       &.icon-wrapper {
         width: 57px;
+
+        span {
+          color: $footer-font-color;
+          font-size: 40px;
+        }
       }
 
       &.text-wrapper {
@@ -99,6 +104,10 @@ Download Page
       > div {
         &.icon-wrapper {
           width: 78px;
+
+          span {
+            font-size: 50px;
+          }
         }
 
         &.text-wrapper {
