@@ -1383,6 +1383,87 @@ Product Docs Page
 
 /***************************
 ****************************
+Download Page
+****************************
+***************************/
+.download-download-page .content-section:first-child {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  border: none; }
+
+.download-section {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 20px; }
+  .download-section .download-selector {
+    margin-bottom: 21px; }
+    .download-section .download-selector .version-meta {
+      float: left; }
+      @media (max-width: 767px) {
+        .download-section .download-selector .version-meta {
+          border-top: 1px solid #f0f0f0;
+          float: none;
+          padding-top: 20px; } }
+      .download-section .download-selector .version-meta .site-subtitle {
+        margin: 0; }
+    .download-section .download-selector .selector {
+      float: right;
+      padding-bottom: 20px; }
+      @media (max-width: 767px) {
+        .download-section .download-selector .selector {
+          float: none; } }
+
+.download-items .download-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #f0f0f0; }
+  .download-items .download-item:last-of-type {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0; }
+  .download-items .download-item > div {
+    float: left; }
+    .download-items .download-item > div.icon-wrapper {
+      width: 57px; }
+    .download-items .download-item > div.text-wrapper {
+      position: relative;
+      width: calc(100% - 57px); }
+      .download-items .download-item > div.text-wrapper .site-subtitle {
+        margin-bottom: 15px; }
+      .download-items .download-item > div.text-wrapper p {
+        font-size: 12px;
+        line-height: 18px; }
+      .download-items .download-item > div.text-wrapper .ej-btn {
+        bottom: 25px;
+        position: absolute;
+        right: 0; }
+        @media (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
+          .download-items .download-item > div.text-wrapper .ej-btn {
+            position: static;
+            bottom: auto;
+            right: auto;
+            margin-top: 20px; } }
+  .download-items .download-item.yours {
+    padding: 16px 26px;
+    background-color: #f6fafb;
+    border-color: #f6fafb; }
+    .download-items .download-item.yours > div.icon-wrapper {
+      width: 78px; }
+    .download-items .download-item.yours > div.text-wrapper {
+      width: calc(100% - 78px);
+      min-height: 49px; }
+      .download-items .download-item.yours > div.text-wrapper .ej-btn {
+        bottom: 50%;
+        margin-bottom: -28px; }
+        @media (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
+          .download-items .download-item.yours > div.text-wrapper .ej-btn {
+            position: static;
+            bottom: auto;
+            right: auto;
+            margin-top: 20px;
+            margin-bottom: 0;
+            font-size: 14px; } }
+
+/***************************
+****************************
 General Styles
 ****************************
 ***************************/
@@ -1885,6 +1966,26 @@ Pagination Classes
     .single-item-slider .owl-controls .owl-pagination .owl-page.active span {
       border-color: #23cf3b;
       background-color: #23cf3b; }
+
+.selector {
+  position: relative;
+  color: black; }
+  .selector > * {
+    float: left; }
+  .selector > span {
+    height: 39px;
+    line-height: 37px;
+    margin-right: 11px; }
+  .selector .dropdown {
+    position: relative; }
+    .selector .dropdown .btn {
+      border-radius: 25px;
+      padding: 0 24px;
+      height: 39px;
+      line-height: 37px;
+      border-color: #e4e9ea; }
+    .selector .dropdown ul {
+      width: 100%; }
 
 /***************************
 ****************************
