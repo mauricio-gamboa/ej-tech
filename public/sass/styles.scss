@@ -822,6 +822,23 @@ Pagination Classes
   }
 }
 
+.select-file {
+  .ej-btn {
+    padding: 0 19px;
+    height: 34px;
+    line-height: 32px;
+    margin-right: 10px;
+
+    > span {
+      margin-right: 10px;
+    }
+  }
+
+  > span {
+    line-height: 34px;
+  }
+}
+
 /***************************
 ****************************
 Helper Classes

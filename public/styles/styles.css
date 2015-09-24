@@ -1517,6 +1517,11 @@ Download Page
   .content-section .change-log-section ul:last-child {
     margin-bottom: 0; }
 
+/***************************
+****************************
+Support Information Page
+****************************
+***************************/
 .content-section .support-section > * {
   margin-bottom: 10px; }
   .content-section .support-section > *:last-child {
@@ -1550,6 +1555,26 @@ Download Page
   margin-bottom: 10px; }
   .support-section > *:last-child {
     margin-bottom: 0; }
+
+/***************************
+****************************
+Request Support Page
+****************************
+***************************/
+.support-request-page .content-section:first-child .features-tabs p {
+  margin-bottom: 15px; }
+  .support-request-page .content-section:first-child .features-tabs p:last-of-type {
+    margin-bottom: 0; }
+
+.contact-form.support {
+  margin: -10px 0 0 0 !important; }
+  .contact-form.support label {
+    margin: 10px 0; }
+  .contact-form.support textarea {
+    height: 111px; }
+  .contact-form.support p {
+    margin: 10px 0;
+    text-align: left; }
 
 /***************************
 ****************************
@@ -2096,6 +2121,17 @@ Pagination Classes
       font-size: 32px; }
   .warning-text > div.text-wrapper {
     width: calc(100% - 42px); }
+
+.select-file .ej-btn {
+  padding: 0 19px;
+  height: 34px;
+  line-height: 32px;
+  margin-right: 10px; }
+  .select-file .ej-btn > span {
+    margin-right: 10px; }
+
+.select-file > span {
+  line-height: 34px; }
 
 /***************************
 ****************************

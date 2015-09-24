@@ -1,3 +1,9 @@
+/***************************
+****************************
+Support Information Page
+****************************
+***************************/
+
 .content-section {
   .support-section {
     > * {
@@ -53,6 +59,47 @@
 
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+}
+
+/***************************
+****************************
+Request Support Page
+****************************
+***************************/
+
+.support-request-page {
+  .content-section {
+    &:first-child {
+      .features-tabs {
+        p {
+          margin-bottom: 15px;
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contact-form {
+  &.support {
+    margin: -10px 0 0 0 !important;
+
+    label {
+      margin: 10px 0;
+    }
+
+    textarea {
+      height: 111px;
+    }
+
+    p {
+      margin: 10px 0;
+      text-align: left;
     }
   }
 }
