@@ -1561,9 +1561,11 @@ Support Information Page
 Request Support Page
 ****************************
 ***************************/
-.support-request-page .content-section:first-child .features-tabs p {
+.support-request-page .content-section:first-child .features-tabs p,
+.support-bug-page .content-section:first-child .features-tabs p {
   margin-bottom: 15px; }
-  .support-request-page .content-section:first-child .features-tabs p:last-of-type {
+  .support-request-page .content-section:first-child .features-tabs p:last-of-type,
+  .support-bug-page .content-section:first-child .features-tabs p:last-of-type {
     margin-bottom: 0; }
 
 .contact-form.support {
