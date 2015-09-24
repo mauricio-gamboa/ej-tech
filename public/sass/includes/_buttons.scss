@@ -67,6 +67,17 @@ Links
       color: $btn-secondary-hover;
     }
   }
+
+  &.btn-support {
+    background-color: white;
+    border: 1px solid $support-button;
+    color: $support-button;
+
+    &:hover {
+      border: 1px solid $support-button-hover;
+      color: $support-button-hover;
+    }
+  }
 }
 
 .ej-link {

@@ -18,6 +18,7 @@ Imports
 @import "includes/product";
 @import "includes/bottom_sidebar";
 @import "includes/download";
+@import "includes/support";
 
 /***************************
 ****************************
@@ -672,6 +673,16 @@ Pagination Classes
 
     span {
       color: $nav-color;
+    }
+  }
+}
+
+.green-list {
+  li {
+    line-height: 30px;
+
+    span {
+      color: $product-btn-color;
     }
   }
 }
