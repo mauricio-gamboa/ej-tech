@@ -165,6 +165,13 @@ Links
     .ej-btn.btn-secondary:hover {
       background-color: white;
       color: #c45841; }
+  .ej-btn.btn-support {
+    background-color: white;
+    border: 1px solid #33cac8;
+    color: #33cac8; }
+    .ej-btn.btn-support:hover {
+      border: 1px solid #2dadab;
+      color: #2dadab; }
 
 .ej-link {
   font-family: 'proxima_nova_semibold';
@@ -1510,6 +1517,40 @@ Download Page
   .content-section .change-log-section ul:last-child {
     margin-bottom: 0; }
 
+.content-section .support-section > * {
+  margin-bottom: 10px; }
+  .content-section .support-section > *:last-child {
+    margin-bottom: 0; }
+
+.support-section .title {
+  background: url("../images/sep-8.png") no-repeat 0 100%;
+  padding-bottom: 30px;
+  margin-bottom: 20px; }
+  .support-section .title > div {
+    float: left; }
+    .support-section .title > div.image-wrapper {
+      width: 62px;
+      padding-top: 10px; }
+    .support-section .title > div.text-wrapper {
+      width: calc(100% - 62px);
+      position: relative; }
+      .support-section .title > div.text-wrapper .site-subtitle {
+        margin-bottom: 15px; }
+        .support-section .title > div.text-wrapper .site-subtitle + .ej-btn {
+          position: absolute;
+          top: 22px;
+          left: 0; }
+      .support-section .title > div.text-wrapper .ej-btn {
+        font-size: 14px;
+        height: 25px;
+        line-height: 24px;
+        padding: 0 15px; }
+
+.support-section > * {
+  margin-bottom: 10px; }
+  .support-section > *:last-child {
+    margin-bottom: 0; }
+
 /***************************
 ****************************
 General Styles
@@ -1969,6 +2010,11 @@ Pagination Classes
   line-height: 30px; }
   .blue-list li span {
     color: #0993e2; }
+
+.green-list li {
+  line-height: 30px; }
+  .green-list li span {
+    color: #23cf3b; }
 
 .image-gallery ul {
   margin: 0; }

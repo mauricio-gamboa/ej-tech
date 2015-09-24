@@ -1,0 +1,58 @@
+.content-section {
+  .support-section {
+    > * {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.support-section {
+  .title {
+    background: url("../images/sep-8.png") no-repeat 0 100%;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+
+    > div {
+      float: left;
+
+      &.image-wrapper {
+        width: 62px;
+        padding-top: 10px;
+      }
+
+      &.text-wrapper {
+        width: calc(100% - 62px);
+        position: relative;
+
+        .site-subtitle {
+          margin-bottom: 15px;
+
+          & + .ej-btn {
+            position: absolute;
+            top: 22px;
+            left: 0;
+          }
+        }
+
+        .ej-btn {
+          font-size: 14px;
+          height: 25px;
+          line-height: 24px;
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+
+  > * {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
