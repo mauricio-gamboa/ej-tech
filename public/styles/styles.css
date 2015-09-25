@@ -977,7 +977,8 @@ Home Styles
   float: left; }
 
 .get-notified-item .contact-form {
-  width: 540px; }
+  width: 540px;
+  margin-top: 0 !important; }
   @media (min-width: 993px) and (max-width: 1200px) {
     .get-notified-item .contact-form {
       width: 440px; } }
@@ -1001,7 +1002,9 @@ Home Styles
         float: none;
         width: 100%; } }
   .get-notified-item .contact-form .form-group .ej-btn {
-    width: calc(100% - 400px); }
+    width: calc(100% - 400px);
+    height: 44px;
+    line-height: 44px; }
     @media (min-width: 993px) and (max-width: 1200px) {
       .get-notified-item .contact-form .form-group .ej-btn {
         width: calc(100% - 312px); } }
@@ -1015,7 +1018,7 @@ Home Styles
         margin-top: 11px; } }
 
 .get-notified-item > ul {
-  margin: 0;
+  margin: 0 0 0 0;
   width: calc(100% - 540px);
   text-align: right; }
   @media (min-width: 993px) and (max-width: 1200px) {
@@ -1391,7 +1394,7 @@ Product Docs Page
       float: none;
       text-align: center; } }
   .bottom-widget > div.icon-wrapper {
-    width: 79px; }
+    width: 80px; }
     @media (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
       .bottom-widget > div.icon-wrapper {
         width: 100%;
@@ -1411,10 +1414,16 @@ Product Docs Page
         .bottom-widget > div.icon-wrapper span {
           margin: 0; } }
       .bottom-widget > div.icon-wrapper span .fa {
+        display: block;
         position: relative;
-        top: -3px; }
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%); }
   .bottom-widget > div.text-wrapper {
-    width: calc(100% - 79px); }
+    width: calc(100% - 80px); }
     @media (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
       .bottom-widget > div.text-wrapper {
         width: 100%; } }
@@ -1893,7 +1902,14 @@ h5,
     left: 0; }
     .detail .ej-icon .fa {
       font-size: 16px;
-      margin-top: 8px; }
+      display: block;
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); }
   .detail a {
     color: #0993e2;
     text-decoration: underline; }
@@ -2038,9 +2054,15 @@ h5,
         border-radius: 100%;
         margin-right: 14px; }
         .action-links ul li a > span .fa {
-          vertical-align: middle;
           font-size: 18px;
-          margin-top: -5px; }
+          display: block;
+          position: relative;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          transform: translateY(-50%); }
         @media (max-width: 767px) {
           .action-links ul li a > span {
             margin: 0; } }
@@ -2095,11 +2117,11 @@ Pagination Classes
       .ej-pagination > ul li:last-of-type {
         margin-right: 0; }
       .ej-pagination > ul li.active a,
-      .ej-pagination > ul li.active span {
+      .ej-pagination > ul li.active > span {
         background-color: #c5c7c7;
         color: white; }
         .ej-pagination > ul li.active a:hover,
-        .ej-pagination > ul li.active span:hover {
+        .ej-pagination > ul li.active > span:hover {
           background-color: #c5c7c7;
           color: white; }
       @media (max-width: 767px) {
@@ -2110,7 +2132,7 @@ Pagination Classes
           .ej-pagination > ul li:last-of-type {
             display: block; } }
       .ej-pagination > ul li a,
-      .ej-pagination > ul li span {
+      .ej-pagination > ul li > span {
         height: 34px;
         width: 34px;
         text-align: center;
@@ -2119,14 +2141,33 @@ Pagination Classes
         border-radius: 100%;
         color: #23cf3b;
         border: 1px solid #c5c7c7; }
+        .ej-pagination > ul li a > span,
+        .ej-pagination > ul li > span > span {
+          display: block;
+          position: relative;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          transform: translateY(-50%); }
         .ej-pagination > ul li a:hover,
-        .ej-pagination > ul li span:hover {
+        .ej-pagination > ul li > span:hover {
           background-color: #f1f1f1; }
-      .ej-pagination > ul li span {
+      .ej-pagination > ul li > span {
         border-color: white;
         color: #c5c7c7;
         font-size: 20px; }
-        .ej-pagination > ul li span:hover {
+        .ej-pagination > ul li > span > span {
+          display: block;
+          position: relative;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          transform: translateY(-50%); }
+        .ej-pagination > ul li > span:hover {
           border-color: white;
           color: #c5c7c7;
           background-color: white; }

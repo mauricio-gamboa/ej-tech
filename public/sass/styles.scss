@@ -289,7 +289,7 @@ h5,
 
     .fa {
       font-size: 16px;
-      margin-top: 8px;
+      @include vertical-align;
     }
   }
 
@@ -493,9 +493,8 @@ h5,
           margin-right: 14px;
 
           .fa {
-            vertical-align: middle;
             font-size: 18px;
-            margin-top: -5px;
+            @include vertical-align;
           }
 
           @media #{$xs} {
@@ -583,7 +582,7 @@ Pagination Classes
 
       &.active {
         a,
-        span {
+        > span {
           background-color: $pagination-color;
           color: white;
 
@@ -607,19 +606,27 @@ Pagination Classes
       }
 
       a,
-      span {
+      > span {
         @include make-icon(34px, white, $product-btn-color);
         border: 1px solid $pagination-color;
+
+        > span {
+          @include vertical-align;
+        }
 
         &:hover {
           background-color: $pagination-color-hover;
         }
       }
 
-      span {
+      > span {
         border-color: white;
         color: $pagination-color;
         font-size: 20px;
+
+        > span {
+          @include vertical-align;
+        }
 
         &:hover {
           border-color: white;

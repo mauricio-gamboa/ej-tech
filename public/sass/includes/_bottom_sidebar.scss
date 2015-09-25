@@ -9,7 +9,7 @@
     }
 
     &.icon-wrapper {
-      width: 79px;
+      width: 80px;
 
       @media #{$small, $xs} {
         width: 100%;
@@ -27,14 +27,13 @@
         }
 
         .fa {
-          position: relative;
-          top: -3px;
+          @include vertical-align;
         }
       }
     }
 
     &.text-wrapper {
-      width: calc(100% - 79px);
+      width: calc(100% - 80px);
 
       @media #{$small, $xs} {
         width: 100%;
