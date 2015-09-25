@@ -1648,6 +1648,10 @@ Request Support Page
     text-align: center;
     font-size: 15px;
     margin-right: 10px; }
+    @media (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
+      .order-or .ej-btn {
+        width: 100%;
+        margin: 0; } }
   .order-or .or {
     background-color: #0993e2;
     font-size: 13px;
@@ -1659,8 +1663,16 @@ Request Support Page
 
 .order-section > div {
   float: left; }
+  @media (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
+    .order-section > div {
+      float: none;
+      text-align: center; } }
   .order-section > div.img-wrapper {
     width: 80px; }
+    @media (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
+      .order-section > div.img-wrapper {
+        width: 100%;
+        margin-bottom: 20px; } }
     .order-section > div.img-wrapper > span {
       height: 60px;
       width: 60px;
@@ -1682,6 +1694,9 @@ Request Support Page
         transform: translateY(-50%); }
   .order-section > div.text-wrapper {
     width: calc(100% - 80px); }
+    @media (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
+      .order-section > div.text-wrapper {
+        width: 100%; } }
 
 /***************************
 ****************************

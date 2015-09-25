@@ -55,6 +55,11 @@
     text-align: center;
     font-size: 15px;
     margin-right: 10px;
+
+    @media #{$small, $xs} {
+      width: 100%;
+      margin: 0;
+    }
   }
 
   .or {
@@ -72,8 +77,18 @@
   > div {
     float: left;
 
+    @media #{$small, $xs} {
+      float: none;
+      text-align: center;
+    }
+
     &.img-wrapper {
       width: 80px;
+
+      @media #{$small, $xs} {
+        width: 100%;
+        margin-bottom: 20px;
+      }
 
       > span {
         @include icon-bordered(60px, transparent, $footer-font-color, 2px);
@@ -88,6 +103,10 @@
 
     &.text-wrapper {
       width: calc(100% - 80px);
+
+      @media #{$small, $xs} {
+        width: 100%;
+      }
     }
   }
 }
