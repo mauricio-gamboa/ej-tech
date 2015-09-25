@@ -69,23 +69,6 @@ Request Support Page
 ****************************
 ***************************/
 
-.support-request-page,
-.support-bug-page {
-  .content-section {
-    &:first-child {
-      .features-tabs {
-        p {
-          margin-bottom: 15px;
-
-          &:last-of-type {
-            margin-bottom: 0;
-          }
-        }
-      }
-    }
-  }
-}
-
 .contact-form {
   &.support {
     margin: -10px 0 0 0 !important;

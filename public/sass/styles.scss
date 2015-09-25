@@ -235,6 +235,24 @@ h5,
 .site-subtitle {
   text-transform: uppercase;
   color: $nav-color;
+
+  &.icon {
+    border-bottom: 1px solid $nav-color;
+    padding-left: 60px;
+    position: relative;
+    height: 64px;
+    line-height: 48px;
+    padding-bottom: 16px;
+    margin-bottom: 0;
+
+    > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 48px;
+      width: auto;
+    }
+  }
 }
 
 .double-items {
@@ -844,6 +862,37 @@ Pagination Classes
 
   > span {
     line-height: 34px;
+  }
+}
+
+.tabs-wrapper {
+  margin-bottom: 30px;
+
+  .features-tabs {
+    p {
+      margin-bottom: 15px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &.bordered {
+    border-bottom: 1px solid $content-section-border;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.ej-action {
+  @include icon-bordered(32px, white, $product-btn-color, 1px);
+  color: $product-btn-color;
+  font-size: 20px;
+  line-height: normal;
+
+  > span {
+    @include vertical-align;
   }
 }
 
