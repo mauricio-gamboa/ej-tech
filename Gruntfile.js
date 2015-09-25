@@ -18,9 +18,10 @@ module.exports = function (grunt) {
         files: {
           'public/styles/libs.min.css': [
             'bower_components/bootstrap/dist/css/bootstrap.css',
-            'bower_components/font-awesome/css/font-awesome.min.css',
+            'bower_components/font-awesome/css/font-awesome.css',
             'bower_components/OwlCarousel/owl-carousel/owl.carousel.css',
-            'bower_components/OwlCarousel/owl-carousel/owl.theme.css'
+            'bower_components/OwlCarousel/owl-carousel/owl.theme.css',
+            'bower_components/hover/css/hover.css'
           ],
           'public/styles/styles.min.css': [
             'public/styles/styles.css'

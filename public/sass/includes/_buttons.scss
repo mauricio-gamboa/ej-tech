@@ -78,6 +78,17 @@ Links
       color: $support-button-hover;
     }
   }
+
+  &.btn-order {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+
+    &:hover {
+      background-color: white;
+      color: $product-btn-color;
+    }
+  }
 }
 
 .ej-link {

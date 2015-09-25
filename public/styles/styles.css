@@ -18,8 +18,8 @@ Fonts
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?zgu058");
-  src: url("../fonts/icomoon.eot?#iefixzgu058") format("embedded-opentype"), url("../fonts/icomoon.ttf?zgu058") format("truetype"), url("../fonts/icomoon.woff?zgu058") format("woff"), url("../fonts/icomoon.svg?zgu058#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?-hmqw6s");
+  src: url("../fonts/icomoon.eot?#iefix-hmqw6s") format("embedded-opentype"), url("../fonts/icomoon.ttf?-hmqw6s") format("truetype"), url("../fonts/icomoon.woff?-hmqw6s") format("woff"), url("../fonts/icomoon.svg?-hmqw6s#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -50,74 +50,83 @@ Fonts
 .icon-btn_check:before {
   content: "\e604"; }
 
-.icon-calendar:before {
+.icon-bug:before {
   content: "\e605"; }
 
-.icon-community:before {
+.icon-calendar:before {
   content: "\e606"; }
 
-.icon-cube:before {
+.icon-community:before {
   content: "\e607"; }
 
-.icon-directors:before {
+.icon-cube:before {
   content: "\e608"; }
 
-.icon-documentation:before {
+.icon-directors:before {
   content: "\e609"; }
 
-.icon-download:before {
+.icon-documentation:before {
   content: "\e60a"; }
 
-.icon-fax:before {
+.icon-download:before {
   content: "\e60b"; }
 
-.icon-license:before {
+.icon-faqs:before {
   content: "\e60c"; }
 
-.icon-linux:before {
+.icon-fax:before {
   content: "\e60d"; }
 
-.icon-mac:before {
+.icon-feedback:before {
   content: "\e60e"; }
 
-.icon-mail:before {
+.icon-license:before {
   content: "\e60f"; }
 
-.icon-order:before {
+.icon-linux:before {
   content: "\e610"; }
 
-.icon-phone:before {
+.icon-mac:before {
   content: "\e611"; }
 
-.icon-register:before {
+.icon-mail:before {
   content: "\e612"; }
 
-.icon-rss:before {
+.icon-order:before {
   content: "\e613"; }
 
-.icon-secure:before {
+.icon-phone:before {
   content: "\e614"; }
 
-.icon-see_more:before {
+.icon-register:before {
   content: "\e615"; }
 
-.icon-support:before {
+.icon-rss:before {
   content: "\e616"; }
 
-.icon-vat:before {
+.icon-secure:before {
   content: "\e617"; }
 
-.icon-versions:before {
+.icon-see_more:before {
   content: "\e618"; }
 
-.icon-view:before {
+.icon-support:before {
   content: "\e619"; }
 
-.icon-warning:before {
+.icon-vat:before {
   content: "\e61a"; }
 
-.icon-windows:before {
+.icon-versions:before {
   content: "\e61b"; }
+
+.icon-view:before {
+  content: "\e61c"; }
+
+.icon-warning:before {
+  content: "\e61d"; }
+
+.icon-windows:before {
+  content: "\e61e"; }
 
 /***************************
 ****************************
@@ -187,6 +196,13 @@ Links
     .ej-btn.btn-support:hover {
       border: 1px solid #2dadab;
       color: #2dadab; }
+  .ej-btn.btn-order {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white; }
+    .ej-btn.btn-order:hover {
+      background-color: white;
+      color: #23cf3b; }
 
 .ej-link {
   font-family: 'proxima_nova_semibold';
@@ -326,7 +342,6 @@ Navigation Styles
     background-color: #085c8c;
     border-radius: 100%;
     color: white;
-    line-height: 31px;
     font-size: 20px; }
     .menu-toggler.rounded.show-xs {
       display: none; }
@@ -712,7 +727,8 @@ Home Styles
   text-align: center; }
   .header-product .img-wrapper {
     margin-bottom: 25px;
-    position: relative; }
+    position: relative;
+    height: 132px; }
     .header-product .img-wrapper .version {
       position: absolute;
       top: 0;
@@ -731,7 +747,9 @@ Home Styles
     color: white;
     background: url("../images/sep-1.png") no-repeat 50% 100%;
     padding-bottom: 10px;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    float: none;
+    line-height: normal; }
   .header-product p {
     font-size: 15px;
     line-height: 22px;
@@ -760,7 +778,6 @@ Home Styles
         border: 3px solid transparent;
         background-color: transparent;
         border-radius: 100%;
-        line-height: 105px;
         line-height: normal; }
         @media (min-width: 768px) and (max-width: 992px) {
           .header-product .meta li a {
@@ -778,7 +795,6 @@ Home Styles
           border: 3px solid #84c7ff;
           background-color: white;
           border-radius: 100%;
-          line-height: 105px;
           color: #23cf3b;
           line-height: normal; }
           @media (min-width: 768px) and (max-width: 992px) {
@@ -1388,7 +1404,6 @@ Product Docs Page
       border: 3px solid #9ba4a8;
       background-color: white;
       border-radius: 100%;
-      line-height: 60px;
       color: #9ba4a8;
       font-size: 30px;
       margin-right: 19px; }
@@ -1593,6 +1608,81 @@ Request Support Page
     margin: 10px 0;
     text-align: left; }
 
+.order-page .header.order-header {
+  border-bottom: 1px solid #3aa9e8; }
+
+.order-page .header.product-overview {
+  padding: 0; }
+  .order-page .header.product-overview .product-overview-content {
+    padding: 45px 0; }
+  .order-page .header.product-overview .header-product .img-wrapper {
+    margin: 0; }
+  .order-page .header.product-overview .header-product h4 {
+    background: none;
+    padding: 0;
+    margin: 25px 0;
+    font-size: 18px; }
+  .order-page .header.product-overview .header-product .ej-btn {
+    height: 40px;
+    line-height: 36px;
+    width: 119px;
+    text-align: center;
+    font-size: 15px; }
+
+.order-or {
+  font-family: 'proxima_nova_semibold';
+  font-size: 15px;
+  padding: 33px 0;
+  border-top: 1px solid #3aa9e8;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  line-height: 32px;
+  font-weight: normal;
+  position: relative; }
+  .order-or .ej-btn {
+    height: 32px;
+    line-height: 32px;
+    padding: 0;
+    width: 117px;
+    text-align: center;
+    font-size: 15px;
+    margin-right: 10px; }
+  .order-or .or {
+    background-color: #0993e2;
+    font-size: 13px;
+    left: 50%;
+    margin-left: -24px;
+    padding: 0 16px;
+    position: absolute;
+    top: -16px; }
+
+.order-section > div {
+  float: left; }
+  .order-section > div.img-wrapper {
+    width: 80px; }
+    .order-section > div.img-wrapper > span {
+      height: 60px;
+      width: 60px;
+      text-align: center;
+      display: inline-block;
+      border: 2px solid #9ba4a8;
+      background-color: transparent;
+      border-radius: 100%;
+      color: #9ba4a8;
+      font-size: 29px; }
+      .order-section > div.img-wrapper > span .fa {
+        display: block;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%); }
+  .order-section > div.text-wrapper {
+    width: calc(100% - 80px); }
+
 /***************************
 ****************************
 General Styles
@@ -1781,7 +1871,6 @@ h5,
     background-color: #eef3f5;
     border-radius: 100%;
     color: #9ba4a8;
-    line-height: 32px;
     position: absolute;
     top: 0;
     left: 0; }
@@ -1930,7 +2019,6 @@ h5,
         border: 2px solid #f26c4f;
         background-color: white;
         border-radius: 100%;
-        line-height: 36px;
         margin-right: 14px; }
         .action-links ul li a > span .fa {
           vertical-align: middle;
@@ -2013,7 +2101,6 @@ Pagination Classes
         background-color: white;
         border-radius: 100%;
         color: #23cf3b;
-        line-height: 34px;
         border: 1px solid #c5c7c7; }
         .ej-pagination > ul li a:hover,
         .ej-pagination > ul li span:hover {

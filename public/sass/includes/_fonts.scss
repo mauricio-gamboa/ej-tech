@@ -19,11 +19,11 @@ Fonts
 
 @font-face {
   font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot?zgu058');
-  src: url('../fonts/icomoon.eot?#iefixzgu058') format('embedded-opentype'),
-  url('../fonts/icomoon.ttf?zgu058') format('truetype'),
-  url('../fonts/icomoon.woff?zgu058') format('woff'),
-  url('../fonts/icomoon.svg?zgu058#icomoon') format('svg');
+  src: url('../fonts/icomoon.eot?-hmqw6s');
+  src: url('../fonts/icomoon.eot?#iefix-hmqw6s') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?-hmqw6s') format('truetype'),
+  url('../fonts/icomoon.woff?-hmqw6s') format('woff'),
+  url('../fonts/icomoon.svg?-hmqw6s#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -62,96 +62,108 @@ Fonts
   content: "\e604";
 }
 
-.icon-calendar:before {
+.icon-bug:before {
   content: "\e605";
 }
 
-.icon-community:before {
+.icon-calendar:before {
   content: "\e606";
 }
 
-.icon-cube:before {
+.icon-community:before {
   content: "\e607";
 }
 
-.icon-directors:before {
+.icon-cube:before {
   content: "\e608";
 }
 
-.icon-documentation:before {
+.icon-directors:before {
   content: "\e609";
 }
 
-.icon-download:before {
+.icon-documentation:before {
   content: "\e60a";
 }
 
-.icon-fax:before {
+.icon-download:before {
   content: "\e60b";
 }
 
-.icon-license:before {
+.icon-faqs:before {
   content: "\e60c";
 }
 
-.icon-linux:before {
+.icon-fax:before {
   content: "\e60d";
 }
 
-.icon-mac:before {
+.icon-feedback:before {
   content: "\e60e";
 }
 
-.icon-mail:before {
+.icon-license:before {
   content: "\e60f";
 }
 
-.icon-order:before {
+.icon-linux:before {
   content: "\e610";
 }
 
-.icon-phone:before {
+.icon-mac:before {
   content: "\e611";
 }
 
-.icon-register:before {
+.icon-mail:before {
   content: "\e612";
 }
 
-.icon-rss:before {
+.icon-order:before {
   content: "\e613";
 }
 
-.icon-secure:before {
+.icon-phone:before {
   content: "\e614";
 }
 
-.icon-see_more:before {
+.icon-register:before {
   content: "\e615";
 }
 
-.icon-support:before {
+.icon-rss:before {
   content: "\e616";
 }
 
-.icon-vat:before {
+.icon-secure:before {
   content: "\e617";
 }
 
-.icon-versions:before {
+.icon-see_more:before {
   content: "\e618";
 }
 
-.icon-view:before {
+.icon-support:before {
   content: "\e619";
 }
 
-.icon-warning:before {
+.icon-vat:before {
   content: "\e61a";
 }
 
-.icon-windows:before {
+.icon-versions:before {
   content: "\e61b";
+}
+
+.icon-view:before {
+  content: "\e61c";
+}
+
+.icon-warning:before {
+  content: "\e61d";
+}
+
+.icon-windows:before {
+  content: "\e61e";
 }
 
 /***************************
