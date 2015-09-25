@@ -822,11 +822,11 @@ Home Styles
     margin-top: 25px; }
 
 .products-home-slider .owl-controls {
-  position: absolute;
-  width: 100%;
   left: 0;
-  top: 240px;
-  margin: 0; }
+  margin: -25px 0 0;
+  position: absolute;
+  top: 50%;
+  width: 100%; }
   .products-home-slider .owl-controls .owl-buttons > div {
     width: 54px;
     height: 51px;
@@ -1613,21 +1613,23 @@ Request Support Page
 
 .order-page .header.product-overview {
   padding: 0; }
-  .order-page .header.product-overview .product-overview-content {
+  .order-page .header.product-overview .products-home-slider {
+    position: relative; }
+  .order-page .header.product-overview .header-product {
     padding: 45px 0; }
-  .order-page .header.product-overview .header-product .img-wrapper {
-    margin: 0; }
-  .order-page .header.product-overview .header-product h4 {
-    background: none;
-    padding: 0;
-    margin: 25px 0;
-    font-size: 18px; }
-  .order-page .header.product-overview .header-product .ej-btn {
-    height: 40px;
-    line-height: 36px;
-    width: 119px;
-    text-align: center;
-    font-size: 15px; }
+    .order-page .header.product-overview .header-product .img-wrapper {
+      margin: 0; }
+    .order-page .header.product-overview .header-product h4 {
+      background: none;
+      padding: 0;
+      margin: 25px 0;
+      font-size: 18px; }
+    .order-page .header.product-overview .header-product .ej-btn {
+      height: 40px;
+      line-height: 36px;
+      width: 119px;
+      text-align: center;
+      font-size: 15px; }
 
 .order-or {
   font-family: 'proxima_nova_semibold';
@@ -1648,7 +1650,7 @@ Request Support Page
     text-align: center;
     font-size: 15px;
     margin-right: 10px; }
-    @media (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
+    @media (max-width: 767px) {
       .order-or .ej-btn {
         width: 100%;
         margin: 0; } }

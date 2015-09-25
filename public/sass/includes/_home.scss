@@ -172,11 +172,11 @@ Home Styles
 
 .products-home-slider {
   .owl-controls {
-    position: absolute;
-    width: 100%;
     left: 0;
-    top: 240px;
-    margin: 0;
+    margin: -25px 0 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
 
     .owl-buttons {
       > div {
