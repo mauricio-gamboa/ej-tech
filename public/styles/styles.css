@@ -1233,7 +1233,7 @@ Product Features Page
   height: 40px;
   border-bottom: 2px solid #eef3f5;
   line-height: normal;
-  margin-bottom: 20px; }
+  margin-bottom: 30px; }
   .features-tabs .title .site-title-line {
     padding-bottom: 0;
     border-bottom: none;
@@ -1448,26 +1448,23 @@ Download Page
   padding-bottom: 20px;
   border: none; }
 
-.download-section {
-  border-top: 1px solid #f0f0f0;
-  padding-top: 20px; }
-  .download-section .download-selector {
-    margin-bottom: 21px; }
-    .download-section .download-selector .version-meta {
-      float: left; }
-      @media (max-width: 767px) {
-        .download-section .download-selector .version-meta {
-          border-top: 1px solid #f0f0f0;
-          float: none;
-          padding-top: 20px; } }
-      .download-section .download-selector .version-meta .site-subtitle {
-        margin: 0; }
-    .download-section .download-selector .selector {
-      float: right;
-      padding-bottom: 20px; }
-      @media (max-width: 767px) {
-        .download-section .download-selector .selector {
-          float: none; } }
+.download-section .download-selector {
+  margin-bottom: 21px; }
+  .download-section .download-selector .version-meta {
+    float: left; }
+    @media (max-width: 767px) {
+      .download-section .download-selector .version-meta {
+        border-top: 1px solid #f0f0f0;
+        float: none;
+        padding-top: 20px; } }
+    .download-section .download-selector .version-meta .site-subtitle {
+      margin: 0; }
+  .download-section .download-selector .selector {
+    float: right;
+    padding-bottom: 20px; }
+    @media (max-width: 767px) {
+      .download-section .download-selector .selector {
+        float: none; } }
 
 .download-items .download-item {
   padding: 15px 0;
@@ -1600,13 +1597,6 @@ Support Information Page
 Request Support Page
 ****************************
 ***************************/
-.support-request-page .content-section:first-child .features-tabs p,
-.support-bug-page .content-section:first-child .features-tabs p {
-  margin-bottom: 15px; }
-  .support-request-page .content-section:first-child .features-tabs p:last-of-type,
-  .support-bug-page .content-section:first-child .features-tabs p:last-of-type {
-    margin-bottom: 0; }
-
 .contact-form.support {
   margin: -10px 0 0 0 !important; }
   .contact-form.support label {
@@ -1617,6 +1607,11 @@ Request Support Page
     margin: 10px 0;
     text-align: left; }
 
+/***************************
+****************************
+Product Selection Page
+****************************
+***************************/
 .order-page .header.order-header {
   border-bottom: 1px solid #3aa9e8; }
 
@@ -1708,6 +1703,16 @@ Request Support Page
     @media (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
       .order-section > div.text-wrapper {
         width: 100%; } }
+
+/***************************
+****************************
+Order Quote Page
+****************************
+***************************/
+.order-quote-page .content-section:first-child {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  border: none; }
 
 /***************************
 ****************************
@@ -2294,6 +2299,17 @@ Pagination Classes
 
 .select-file > span {
   line-height: 34px; }
+
+.tabs-wrapper {
+  margin-bottom: 30px; }
+  .tabs-wrapper .features-tabs p {
+    margin-bottom: 15px; }
+    .tabs-wrapper .features-tabs p:last-of-type {
+      margin-bottom: 0; }
+  .tabs-wrapper.bordered {
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 30px;
+    padding-bottom: 30px; }
 
 /***************************
 ****************************

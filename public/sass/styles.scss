@@ -847,6 +847,26 @@ Pagination Classes
   }
 }
 
+.tabs-wrapper {
+  margin-bottom: 30px;
+
+  .features-tabs {
+    p {
+      margin-bottom: 15px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &.bordered {
+    border-bottom: 1px solid $content-section-border;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+}
+
 /***************************
 ****************************
 Helper Classes
