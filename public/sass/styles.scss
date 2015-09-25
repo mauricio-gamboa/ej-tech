@@ -896,6 +896,33 @@ Pagination Classes
   }
 }
 
+.send-address {
+  h5 {
+    color: $main-color;
+    font-size: 15px;
+    @include lucida;
+    position: relative;
+    line-height: 13px;
+    padding: 0 0 15px 31px;
+    border-bottom: 1px solid $content-section-border;
+    margin-bottom: 14px;
+
+    > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  > div {
+    margin-bottom: 20px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
 /***************************
 ****************************
 Helper Classes

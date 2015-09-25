@@ -1777,6 +1777,59 @@ Order Quote Page
 
 /***************************
 ****************************
+FAQ's Page
+****************************
+***************************/
+.content-section .faq-section {
+  margin-bottom: 30px; }
+  .content-section .faq-section:last-of-type {
+    margin-bottom: 0; }
+  .content-section .faq-section > * {
+    margin-bottom: 20px; }
+    .content-section .faq-section > *:last-child {
+      margin-bottom: 0; }
+  .content-section .faq-section .site-subtitle.icon {
+    height: auto;
+    line-height: normal;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    padding-left: 0; }
+  .content-section .faq-section .send-address {
+    margin-top: 10px; }
+
+.faq {
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 20px; }
+  .faq:last-of-type {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0; }
+  .faq > div {
+    float: left; }
+    @media (max-width: 767px) {
+      .faq > div {
+        float: none; } }
+    .faq > div.title-wrapper {
+      width: 160px; }
+      @media (max-width: 767px) {
+        .faq > div.title-wrapper {
+          width: 100%; } }
+      .faq > div.title-wrapper > * {
+        margin-bottom: 20px; }
+        .faq > div.title-wrapper > *:last-child {
+          margin-bottom: 0; }
+    .faq > div.text-wrapper {
+      width: calc(100% - 160px); }
+      @media (max-width: 767px) {
+        .faq > div.text-wrapper {
+          width: 100%; } }
+      .faq > div.text-wrapper > * {
+        margin-bottom: 20px; }
+        .faq > div.text-wrapper > *:last-child {
+          margin-bottom: 0; }
+
+/***************************
+****************************
 General Styles
 ****************************
 ***************************/
@@ -2408,6 +2461,25 @@ Pagination Classes
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%); }
+
+.send-address h5 {
+  color: #303030;
+  font-size: 15px;
+  font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
+  position: relative;
+  line-height: 13px;
+  padding: 0 0 15px 31px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 14px; }
+  .send-address h5 > img {
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+.send-address > div {
+  margin-bottom: 20px; }
+  .send-address > div:last-of-type {
+    margin-bottom: 0; }
 
 /***************************
 ****************************
