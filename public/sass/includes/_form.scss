@@ -1,81 +1,72 @@
 .contact-form {
   line-height: normal;
 
-  .form-group {
-    &:last-of-type {
-      margin: 0;
-    }
-  }
-
-  .control-label {
-    font-size: 13px;
-    font-weight: normal;
-    margin-bottom: 10px;
-    display: block;
-
-    span {
-      color: $date-color;
-      float: right;
-    }
-  }
-
-  .form-control,
-  .dropdown-toggle {
-    resize: none;
-    border-radius: 2px;
-    background-color: white;
-    box-shadow: none;
-    height: 44px;
-    border: 1px solid $form-control-border;
-
-    &:focus {
-      border-color: $product-btn-color;
-    }
-
-    &:active
-    &:hover {
-      border: 1px solid $form-control-border;
-      background-color: white;
-    }
-  }
-
-  .dropdown {
-    > * {
-      width: 100%;
-      font-size: 13px;
-    }
-
-    .dropdown-toggle {
-      text-align: left;
-      position: relative;
-
-      .caret {
-        position: absolute;
-        right: 12px;
-        top: 20px;
-      }
-    }
-
-    &.open {
-      .dropdown-toggle {
-        background-color: white;
-        border-color: $product-btn-color;
-      }
-    }
-  }
-
-  //.btn-submit {
-  //  height: 44px;
-  //  line-height: 44px;
-  //  padding: 0;
-  //  width: 170px;
-  //  text-align: center;
-  //  font-size: 14px;
-  //}
-
   p {
     text-align: right;
     color: $date-color;
     @include font-settings-6;
+  }
+}
+
+.form-group {
+  &:last-of-type {
+    margin: 0;
+  }
+}
+
+.control-label {
+  font-size: 13px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  display: block;
+
+  span {
+    color: $date-color;
+    float: right;
+  }
+}
+
+.form-control,
+.dropdown-toggle {
+  resize: none;
+  border-radius: 2px;
+  background-color: white;
+  box-shadow: none !important;
+  height: 44px;
+  border: 1px solid $form-control-border;
+
+  &:focus {
+    border-color: $product-btn-color;
+  }
+
+  &:active
+  &:hover {
+    border: 1px solid $form-control-border;
+    background-color: white;
+  }
+}
+
+.dropdown {
+  > * {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .dropdown-toggle {
+    text-align: left;
+    position: relative;
+
+    .caret {
+      position: absolute;
+      right: 12px;
+      top: 20px;
+    }
+  }
+
+  &.open {
+    .dropdown-toggle {
+      background-color: white;
+      border-color: $product-btn-color;
+    }
   }
 }

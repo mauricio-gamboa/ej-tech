@@ -611,7 +611,7 @@ Sidebar Styles
 
 .sidebar.inner .site-title {
   background: url("../images/sep-5.png") no-repeat 0 100%;
-  padding-bottom: 18px;
+  height: 40px;
   margin-bottom: 19px; }
   .sidebar.inner .site-title .fa {
     color: #9ba4a8;
@@ -862,51 +862,57 @@ Home Styles
 
 .contact-form {
   line-height: normal; }
-  .contact-form .form-group:last-of-type {
-    margin: 0; }
-  .contact-form .control-label {
-    font-size: 13px;
-    font-weight: normal;
-    margin-bottom: 10px;
-    display: block; }
-    .contact-form .control-label span {
-      color: #898989;
-      float: right; }
-  .contact-form .form-control,
-  .contact-form .dropdown-toggle {
-    resize: none;
-    border-radius: 2px;
-    background-color: white;
-    box-shadow: none;
-    height: 44px;
-    border: 1px solid #c8c8c8; }
-    .contact-form .form-control:focus,
-    .contact-form .dropdown-toggle:focus {
-      border-color: #23cf3b; }
-    .contact-form .form-control:active
-.contact-form .form-control:hover,
-    .contact-form .dropdown-toggle:active
-.contact-form .dropdown-toggle:hover {
-      border: 1px solid #c8c8c8;
-      background-color: white; }
-  .contact-form .dropdown > * {
-    width: 100%;
-    font-size: 13px; }
-  .contact-form .dropdown .dropdown-toggle {
-    text-align: left;
-    position: relative; }
-    .contact-form .dropdown .dropdown-toggle .caret {
-      position: absolute;
-      right: 12px;
-      top: 20px; }
-  .contact-form .dropdown.open .dropdown-toggle {
-    background-color: white;
-    border-color: #23cf3b; }
   .contact-form p {
     text-align: right;
     color: #898989;
     font-size: 11px;
     line-height: 16px; }
+
+.form-group:last-of-type {
+  margin: 0; }
+
+.control-label {
+  font-size: 13px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  display: block; }
+  .control-label span {
+    color: #898989;
+    float: right; }
+
+.form-control,
+.dropdown-toggle {
+  resize: none;
+  border-radius: 2px;
+  background-color: white;
+  box-shadow: none !important;
+  height: 44px;
+  border: 1px solid #c8c8c8; }
+  .form-control:focus,
+  .dropdown-toggle:focus {
+    border-color: #23cf3b; }
+  .form-control:active
+.form-control:hover,
+  .dropdown-toggle:active
+.dropdown-toggle:hover {
+    border: 1px solid #c8c8c8;
+    background-color: white; }
+
+.dropdown > * {
+  width: 100%;
+  font-size: 13px; }
+
+.dropdown .dropdown-toggle {
+  text-align: left;
+  position: relative; }
+  .dropdown .dropdown-toggle .caret {
+    position: absolute;
+    right: 12px;
+    top: 20px; }
+
+.dropdown.open .dropdown-toggle {
+  background-color: white;
+  border-color: #23cf3b; }
 
 .contact-page .detail a {
   color: #23cf3b;
@@ -1714,6 +1720,61 @@ Order Quote Page
   padding-bottom: 20px;
   border: none; }
 
+.quote-section {
+  margin-bottom: 30px; }
+  .quote-section:last-of-type {
+    margin-bottom: 0; }
+
+.quote-item {
+  border-bottom: 1px solid #ededed; }
+  .quote-item .title {
+    line-height: 42px;
+    height: 42px; }
+    .quote-item .title > p {
+      margin: 0;
+      float: left; }
+    .quote-item .title .toggler {
+      color: #23cf3b;
+      background: none;
+      border: none;
+      padding: 0;
+      float: right; }
+      .quote-item .title .toggler .fa-chevron-up {
+        display: inline-block; }
+      .quote-item .title .toggler .fa-chevron-down {
+        display: none; }
+      .quote-item .title .toggler.collapsed .fa-chevron-up {
+        display: none; }
+      .quote-item .title .toggler.collapsed .fa-chevron-down {
+        display: inline-block; }
+  .quote-item .options {
+    background-color: #f6fafb;
+    padding: 0 15px; }
+    .quote-item .options .option {
+      padding: 11px 0;
+      border-bottom: 1px solid #ededed; }
+      .quote-item .options .option:last-of-type {
+        border-bottom: none; }
+      .quote-item .options .option .text-wrapper {
+        float: left; }
+        .quote-item .options .option .text-wrapper p {
+          font-size: 12px;
+          margin: 0;
+          line-height: 16px; }
+      .quote-item .options .option .controls {
+        float: right; }
+        .quote-item .options .option .controls > * {
+          float: left;
+          margin-left: 7px; }
+          .quote-item .options .option .controls > *:first-child {
+            margin-left: 0; }
+        .quote-item .options .option .controls .form-control {
+          height: 32px;
+          width: 52px;
+          border-radius: 25px;
+          vertical-align: middle;
+          text-align: center; }
+
 /***************************
 ****************************
 General Styles
@@ -1864,6 +1925,22 @@ h5,
 .site-subtitle {
   text-transform: uppercase;
   color: #0993e2; }
+  h5.icon,
+  .site-subtitle.icon {
+    border-bottom: 1px solid #0993e2;
+    padding-left: 60px;
+    position: relative;
+    height: 64px;
+    line-height: 48px;
+    padding-bottom: 16px;
+    margin-bottom: 0; }
+    h5.icon > img,
+    .site-subtitle.icon > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 48px;
+      width: auto; }
 
 .double-items .item {
   float: left;
@@ -2310,6 +2387,27 @@ Pagination Classes
     border-bottom: 1px solid #f0f0f0;
     margin-bottom: 30px;
     padding-bottom: 30px; }
+
+.ej-action {
+  height: 32px;
+  width: 32px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #23cf3b;
+  background-color: white;
+  border-radius: 100%;
+  color: #23cf3b;
+  font-size: 20px;
+  line-height: normal; }
+  .ej-action > span {
+    display: block;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
 
 /***************************
 ****************************
