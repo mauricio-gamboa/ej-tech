@@ -1520,19 +1520,21 @@ Download Page
             right: auto;
             margin-top: 20px; } }
   .download-items .download-item.yours {
-    padding: 16px 26px;
-    background-color: #f6fafb;
-    border-color: #f6fafb; }
+    padding: 26px;
+    background-color: #dcfee1;
+    border-color: #dcfee1;
+    margin-bottom: 27px; }
     .download-items .download-item.yours > div.icon-wrapper {
       width: 78px; }
       .download-items .download-item.yours > div.icon-wrapper span {
-        font-size: 50px; }
+        font-size: 50px;
+        color: black; }
     .download-items .download-item.yours > div.text-wrapper {
       width: calc(100% - 78px);
       min-height: 49px; }
       .download-items .download-item.yours > div.text-wrapper .ej-btn {
         bottom: 50%;
-        margin-bottom: -28px; }
+        margin-bottom: -24px; }
         @media (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
           .download-items .download-item.yours > div.text-wrapper .ej-btn {
             position: static;
@@ -1541,6 +1543,8 @@ Download Page
             margin-top: 20px;
             margin-bottom: 0;
             font-size: 14px; } }
+    .download-items .download-item.yours + .download-item {
+      border-top: 1px solid #f0f0f0; }
 
 .download-change-log-page .content-section:first-child .title {
   margin-bottom: 0; }
