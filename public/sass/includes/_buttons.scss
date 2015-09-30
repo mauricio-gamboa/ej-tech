@@ -5,7 +5,7 @@ Links
 ***************************/
 
 .ej-btn {
-  font-family: 'proxima_nova_semibold';
+  @include proxima;
   text-transform: uppercase;
   color: white;
   display: inline-block;
@@ -34,7 +34,8 @@ Links
   &.btn-primary {
     background-color: $nav-color;
 
-    &:hover {
+    &:hover,
+    &.active {
       background-color: $btn-primary-hover;
     }
   }
@@ -44,16 +45,18 @@ Links
     border: 1px solid $product-btn-color;
     color: $product-btn-color;
 
-    &:hover {
-      border-color: $product-btn-color-hover;
-      color: $product-btn-color-hover;
+    &:hover,
+    &.active {
+      background-color: $product-btn-color;
+      color: white;
     }
   }
 
   &.btn-submit {
     background-color: $product-btn-color;
 
-    &:hover {
+    &:hover,
+    &.active {
       background-color: $product-btn-color-hover;
     }
   }
@@ -62,7 +65,8 @@ Links
     background-color: white;
     color: $btn-secondary;
 
-    &:hover {
+    &:hover,
+    &.active {
       background-color: white;
       color: $btn-secondary-hover;
     }
@@ -73,7 +77,8 @@ Links
     border: 1px solid $support-button;
     color: $support-button;
 
-    &:hover {
+    &:hover,
+    &.active {
       border: 1px solid $support-button-hover;
       color: $support-button-hover;
     }
@@ -84,7 +89,8 @@ Links
     color: white;
     border: 2px solid white;
 
-    &:hover {
+    &:hover,
+    &.active {
       background-color: white;
       color: $product-btn-color;
     }
@@ -92,7 +98,7 @@ Links
 }
 
 .ej-link {
-  font-family: 'proxima_nova_semibold';
+  @include proxima;
   text-transform: uppercase;
   font-size: 12px;
 

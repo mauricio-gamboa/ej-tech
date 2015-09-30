@@ -153,4 +153,11 @@ Sidebar Styles
       }
     }
   }
+
+  &.text {
+    a {
+      text-transform: uppercase;
+      @include proxima;
+    }
+  }
 }

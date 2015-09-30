@@ -19,11 +19,11 @@ Fonts
 
 @font-face {
   font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot?-hmqw6s');
-  src: url('../fonts/icomoon.eot?#iefix-hmqw6s') format('embedded-opentype'),
-  url('../fonts/icomoon.ttf?-hmqw6s') format('truetype'),
-  url('../fonts/icomoon.woff?-hmqw6s') format('woff'),
-  url('../fonts/icomoon.svg?-hmqw6s#icomoon') format('svg');
+  src: url('../fonts/icomoon.eot?-z3drkg');
+  src: url('../fonts/icomoon.eot?#iefix-z3drkg') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?-z3drkg') format('truetype'),
+  url('../fonts/icomoon.woff?-z3drkg') format('woff'),
+  url('../fonts/icomoon.svg?-z3drkg#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -118,52 +118,60 @@ Fonts
   content: "\e612";
 }
 
-.icon-order:before {
+.icon-multiple:before {
   content: "\e613";
 }
 
-.icon-phone:before {
+.icon-order:before {
   content: "\e614";
 }
 
-.icon-register:before {
+.icon-phone:before {
   content: "\e615";
 }
 
-.icon-rss:before {
+.icon-quote:before {
   content: "\e616";
 }
 
-.icon-secure:before {
+.icon-register:before {
   content: "\e617";
 }
 
-.icon-see_more:before {
+.icon-rss:before {
   content: "\e618";
 }
 
-.icon-support:before {
+.icon-secure:before {
   content: "\e619";
 }
 
-.icon-vat:before {
+.icon-see_more:before {
   content: "\e61a";
 }
 
-.icon-versions:before {
+.icon-support:before {
   content: "\e61b";
 }
 
-.icon-view:before {
+.icon-vat:before {
   content: "\e61c";
 }
 
-.icon-warning:before {
+.icon-versions:before {
   content: "\e61d";
 }
 
-.icon-windows:before {
+.icon-view:before {
   content: "\e61e";
+}
+
+.icon-warning:before {
+  content: "\e61f";
+}
+
+.icon-windows:before {
+  content: "\e620";
 }
 
 /***************************
@@ -215,4 +223,8 @@ Fonts Mixins
 
 @mixin lucida {
   font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
+}
+
+@mixin proxima {
+  font-family: 'proxima_nova_semibold';
 }

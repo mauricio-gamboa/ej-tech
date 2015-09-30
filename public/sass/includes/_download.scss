@@ -94,9 +94,10 @@ Download Page
     }
 
     &.yours {
-      padding: 16px 26px;
-      background-color: $news-section;
-      border-color: $news-section;
+      padding: 26px;
+      background-color: $yours-color;
+      border-color: $yours-color;
+      margin-bottom: 27px;
 
       > div {
         &.icon-wrapper {
@@ -104,6 +105,7 @@ Download Page
 
           span {
             font-size: 50px;
+            color: black;
           }
         }
 
@@ -113,7 +115,7 @@ Download Page
 
           .ej-btn {
             bottom: 50%;
-            margin-bottom: -28px;
+            margin-bottom: -24px;
 
             @media #{$small, $xs} {
               position: static;
@@ -125,6 +127,10 @@ Download Page
             }
           }
         }
+      }
+
+      & + .download-item {
+        border-top: 1px solid $content-section-border;
       }
     }
   }

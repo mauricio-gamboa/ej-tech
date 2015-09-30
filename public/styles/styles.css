@@ -18,8 +18,8 @@ Fonts
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?-hmqw6s");
-  src: url("../fonts/icomoon.eot?#iefix-hmqw6s") format("embedded-opentype"), url("../fonts/icomoon.ttf?-hmqw6s") format("truetype"), url("../fonts/icomoon.woff?-hmqw6s") format("woff"), url("../fonts/icomoon.svg?-hmqw6s#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?-z3drkg");
+  src: url("../fonts/icomoon.eot?#iefix-z3drkg") format("embedded-opentype"), url("../fonts/icomoon.ttf?-z3drkg") format("truetype"), url("../fonts/icomoon.woff?-z3drkg") format("woff"), url("../fonts/icomoon.svg?-z3drkg#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -92,41 +92,47 @@ Fonts
 .icon-mail:before {
   content: "\e612"; }
 
-.icon-order:before {
+.icon-multiple:before {
   content: "\e613"; }
 
-.icon-phone:before {
+.icon-order:before {
   content: "\e614"; }
 
-.icon-register:before {
+.icon-phone:before {
   content: "\e615"; }
 
-.icon-rss:before {
+.icon-quote:before {
   content: "\e616"; }
 
-.icon-secure:before {
+.icon-register:before {
   content: "\e617"; }
 
-.icon-see_more:before {
+.icon-rss:before {
   content: "\e618"; }
 
-.icon-support:before {
+.icon-secure:before {
   content: "\e619"; }
 
-.icon-vat:before {
+.icon-see_more:before {
   content: "\e61a"; }
 
-.icon-versions:before {
+.icon-support:before {
   content: "\e61b"; }
 
-.icon-view:before {
+.icon-vat:before {
   content: "\e61c"; }
 
-.icon-warning:before {
+.icon-versions:before {
   content: "\e61d"; }
 
-.icon-windows:before {
+.icon-view:before {
   content: "\e61e"; }
+
+.icon-warning:before {
+  content: "\e61f"; }
+
+.icon-windows:before {
+  content: "\e620"; }
 
 /***************************
 ****************************
@@ -170,37 +176,43 @@ Links
     color: white; }
   .ej-btn.btn-primary {
     background-color: #0993e2; }
-    .ej-btn.btn-primary:hover {
+    .ej-btn.btn-primary:hover,
+    .ej-btn.btn-primary.active {
       background-color: #085c8c; }
   .ej-btn.btn-submit-transparent {
     background-color: white;
     border: 1px solid #23cf3b;
     color: #23cf3b; }
-    .ej-btn.btn-submit-transparent:hover {
-      border-color: #1fb434;
-      color: #1fb434; }
+    .ej-btn.btn-submit-transparent:hover,
+    .ej-btn.btn-submit-transparent.active {
+      background-color: #23cf3b;
+      color: white; }
   .ej-btn.btn-submit {
     background-color: #23cf3b; }
-    .ej-btn.btn-submit:hover {
+    .ej-btn.btn-submit:hover,
+    .ej-btn.btn-submit.active {
       background-color: #1fb434; }
   .ej-btn.btn-secondary {
     background-color: white;
     color: #f26c4f; }
-    .ej-btn.btn-secondary:hover {
+    .ej-btn.btn-secondary:hover,
+    .ej-btn.btn-secondary.active {
       background-color: white;
       color: #c45841; }
   .ej-btn.btn-support {
     background-color: white;
     border: 1px solid #33cac8;
     color: #33cac8; }
-    .ej-btn.btn-support:hover {
+    .ej-btn.btn-support:hover,
+    .ej-btn.btn-support.active {
       border: 1px solid #2dadab;
       color: #2dadab; }
   .ej-btn.btn-order {
     background-color: transparent;
     color: white;
     border: 2px solid white; }
-    .ej-btn.btn-order:hover {
+    .ej-btn.btn-order:hover,
+    .ej-btn.btn-order.active {
       background-color: white;
       color: #23cf3b; }
 
@@ -686,6 +698,9 @@ Sidebar Styles
         margin-bottom: 0; }
       .widget.blog ul li p {
         margin: 0; }
+  .widget.text a {
+    text-transform: uppercase;
+    font-family: 'proxima_nova_semibold'; }
 
 /***************************
 ****************************
@@ -1505,19 +1520,21 @@ Download Page
             right: auto;
             margin-top: 20px; } }
   .download-items .download-item.yours {
-    padding: 16px 26px;
-    background-color: #f6fafb;
-    border-color: #f6fafb; }
+    padding: 26px;
+    background-color: #dcfee1;
+    border-color: #dcfee1;
+    margin-bottom: 27px; }
     .download-items .download-item.yours > div.icon-wrapper {
       width: 78px; }
       .download-items .download-item.yours > div.icon-wrapper span {
-        font-size: 50px; }
+        font-size: 50px;
+        color: black; }
     .download-items .download-item.yours > div.text-wrapper {
       width: calc(100% - 78px);
       min-height: 49px; }
       .download-items .download-item.yours > div.text-wrapper .ej-btn {
         bottom: 50%;
-        margin-bottom: -28px; }
+        margin-bottom: -24px; }
         @media (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
           .download-items .download-item.yours > div.text-wrapper .ej-btn {
             position: static;
@@ -1526,6 +1543,8 @@ Download Page
             margin-top: 20px;
             margin-bottom: 0;
             font-size: 14px; } }
+    .download-items .download-item.yours + .download-item {
+      border-top: 1px solid #f0f0f0; }
 
 .download-change-log-page .content-section:first-child .title {
   margin-bottom: 0; }
@@ -1739,41 +1758,43 @@ Order Quote Page
       border: none;
       padding: 0;
       float: right; }
-      .quote-item .title .toggler .fa-chevron-up {
-        display: inline-block; }
-      .quote-item .title .toggler .fa-chevron-down {
-        display: none; }
-      .quote-item .title .toggler.collapsed .fa-chevron-up {
-        display: none; }
-      .quote-item .title .toggler.collapsed .fa-chevron-down {
-        display: inline-block; }
-  .quote-item .options {
-    background-color: #f6fafb;
-    padding: 0 15px; }
-    .quote-item .options .option {
-      padding: 11px 0;
-      border-bottom: 1px solid #ededed; }
-      .quote-item .options .option:last-of-type {
-        border-bottom: none; }
-      .quote-item .options .option .text-wrapper {
-        float: left; }
-        .quote-item .options .option .text-wrapper p {
-          font-size: 12px;
-          margin: 0;
-          line-height: 16px; }
-      .quote-item .options .option .controls {
-        float: right; }
-        .quote-item .options .option .controls > * {
-          float: left;
-          margin-left: 7px; }
-          .quote-item .options .option .controls > *:first-child {
-            margin-left: 0; }
-        .quote-item .options .option .controls .form-control {
-          height: 32px;
-          width: 52px;
-          border-radius: 25px;
-          vertical-align: middle;
-          text-align: center; }
+
+.perfino-option .options,
+.quote-item .options {
+  background-color: #f6fafb;
+  padding: 0 15px; }
+  .perfino-option .options .option,
+  .quote-item .options .option {
+    padding: 11px 0;
+    border-bottom: 1px solid #ededed; }
+    .perfino-option .options .option:last-of-type,
+    .quote-item .options .option:last-of-type {
+      border-bottom: none; }
+    .perfino-option .options .option .text-wrapper,
+    .quote-item .options .option .text-wrapper {
+      float: left; }
+      .perfino-option .options .option .text-wrapper p,
+      .quote-item .options .option .text-wrapper p {
+        font-size: 12px;
+        margin: 0;
+        line-height: 16px; }
+    .perfino-option .options .option .controls,
+    .quote-item .options .option .controls {
+      float: right; }
+      .perfino-option .options .option .controls > *,
+      .quote-item .options .option .controls > * {
+        float: left;
+        margin-left: 7px; }
+        .perfino-option .options .option .controls > *:first-child,
+        .quote-item .options .option .controls > *:first-child {
+          margin-left: 0; }
+      .perfino-option .options .option .controls .form-control,
+      .quote-item .options .option .controls .form-control {
+        height: 32px;
+        width: 52px;
+        border-radius: 25px;
+        vertical-align: middle;
+        text-align: center; }
 
 /***************************
 ****************************
@@ -1827,6 +1848,116 @@ FAQ's Page
         margin-bottom: 20px; }
         .faq > div.text-wrapper > *:last-child {
           margin-bottom: 0; }
+
+/***************************
+****************************
+Order Perfino Page
+****************************
+***************************/
+.order-perfino-page .order-controllers {
+  margin-bottom: 15px; }
+
+.order-perfino-page .disclaimer {
+  margin-top: 30px; }
+
+.order-controllers {
+  padding: 12px 0;
+  line-height: 39px;
+  border-bottom: 1px solid #ededed; }
+  .order-controllers > * {
+    float: left; }
+    @media (max-width: 767px) {
+      .order-controllers > * {
+        float: none; } }
+  .order-controllers p {
+    margin: 0;
+    width: calc(100% - 201px); }
+    @media (max-width: 767px) {
+      .order-controllers p {
+        width: auto; } }
+    @media (min-width: 768px) and (max-width: 992px) {
+      .order-controllers p {
+        line-height: 20px;
+        padding-right: 13px; } }
+  .order-controllers .selector {
+    width: 201px;
+    padding-left: 13px;
+    border-left: 1px solid #ededed; }
+    @media (max-width: 767px) {
+      .order-controllers .selector {
+        width: auto;
+        padding-left: 0;
+        border: none; } }
+    .order-controllers .selector > * {
+      float: left; }
+    .order-controllers .selector > span {
+      margin-right: 13px;
+      line-height: 42px;
+      height: 39px; }
+    .order-controllers .selector .caret {
+      top: 18px; }
+
+.perfino-options .perfino-option .title {
+  line-height: 66px;
+  border-bottom: 1px solid #0993e2; }
+
+.perfino-options .perfino-option .site-subtitle {
+  line-height: 66px;
+  float: left;
+  margin: 0; }
+
+.perfino-options .perfino-option .toggler {
+  color: #23cf3b;
+  background: none;
+  border: none;
+  padding: 0;
+  float: right; }
+
+.perfino-options .perfino-option .description {
+  padding: 19px 0; }
+  .perfino-options .perfino-option .description > div {
+    float: left; }
+    .perfino-options .perfino-option .description > div.icon-wrapper {
+      width: 54px; }
+    .perfino-options .perfino-option .description > div.text-wrapper {
+      width: calc(100% - 54px); }
+
+@media (max-width: 767px) {
+  .perfino-options .perfino-option .options .option > * {
+    float: left; } }
+
+@media (max-width: 767px) {
+  .perfino-options .perfino-option .options .option .text-wrapper {
+    width: calc(100% - 98px);
+    padding-right: 13px; } }
+
+.perfino-options .perfino-option .options .option .text-wrapper p {
+  line-height: 31px;
+  margin: 0; }
+  @media (max-width: 767px) {
+    .perfino-options .perfino-option .options .option .text-wrapper p {
+      line-height: 15px; } }
+
+@media (max-width: 767px) {
+  .perfino-options .perfino-option .options .option .controls {
+    width: 98px; } }
+
+.perfino-options .perfino-option .options .option .controls > * {
+  float: left;
+  line-height: 31px; }
+
+.perfino-options .perfino-option .options .option .controls > span {
+  margin-right: 29px;
+  text-align: right; }
+  @media (max-width: 767px) {
+    .perfino-options .perfino-option .options .option .controls > span {
+      display: none; } }
+
+.perfino-options .perfino-option .options .option .controls .ej-btn {
+  height: 31px;
+  line-height: 29px;
+  padding: 0 22px;
+  margin: 0; }
 
 /***************************
 ****************************
@@ -2440,6 +2571,10 @@ Pagination Classes
     border-bottom: 1px solid #f0f0f0;
     margin-bottom: 30px;
     padding-bottom: 30px; }
+  .tabs-wrapper.nm {
+    margin: 0; }
+    .tabs-wrapper.nm .title {
+      margin: 0; }
 
 .ej-action {
   height: 32px;
@@ -2480,6 +2615,31 @@ Pagination Classes
   margin-bottom: 20px; }
   .send-address > div:last-of-type {
     margin-bottom: 0; }
+
+.toggler .fa-chevron-up {
+  display: inline-block; }
+
+.toggler .fa-chevron-down {
+  display: none; }
+
+.toggler.collapsed .fa-chevron-up {
+  display: none; }
+
+.toggler.collapsed .fa-chevron-down {
+  display: inline-block; }
+
+.disclaimer {
+  color: #959595; }
+  .disclaimer p {
+    margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 18px; }
+    .disclaimer p:last-of-type {
+      margin-bottom: 0; }
+  .disclaimer > div {
+    border-top: 1px solid #ededed;
+    padding: 10px 0;
+    margin-top: 10px; }
 
 /***************************
 ****************************

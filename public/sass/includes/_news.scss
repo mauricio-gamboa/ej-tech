@@ -186,7 +186,7 @@
       }
 
       a {
-        font-family: 'proxima_nova_semibold';
+        @include proxima;
         color: $rss-links;
         text-transform: uppercase;
         font-size: 13px;

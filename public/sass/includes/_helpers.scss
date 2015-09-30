@@ -60,6 +60,11 @@ $support-button-hover: #2dadab;
 
 $quote-border: #ededed;
 
+$disclaimer-color: #959595;
+
+$yours-color: #dcfee1;
+
+
 /***************************
 ****************************
 Mixins
@@ -139,4 +144,11 @@ Mixins
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+@mixin toggler {
+  color: $product-btn-color;
+  background: none;
+  border: none;
+  padding: 0;
 }
