@@ -170,37 +170,43 @@ Links
     color: white; }
   .ej-btn.btn-primary {
     background-color: #0993e2; }
-    .ej-btn.btn-primary:hover {
+    .ej-btn.btn-primary:hover,
+    .ej-btn.btn-primary.active {
       background-color: #085c8c; }
   .ej-btn.btn-submit-transparent {
     background-color: white;
     border: 1px solid #23cf3b;
     color: #23cf3b; }
-    .ej-btn.btn-submit-transparent:hover {
-      border-color: #1fb434;
-      color: #1fb434; }
+    .ej-btn.btn-submit-transparent:hover,
+    .ej-btn.btn-submit-transparent.active {
+      background-color: #23cf3b;
+      color: white; }
   .ej-btn.btn-submit {
     background-color: #23cf3b; }
-    .ej-btn.btn-submit:hover {
+    .ej-btn.btn-submit:hover,
+    .ej-btn.btn-submit.active {
       background-color: #1fb434; }
   .ej-btn.btn-secondary {
     background-color: white;
     color: #f26c4f; }
-    .ej-btn.btn-secondary:hover {
+    .ej-btn.btn-secondary:hover,
+    .ej-btn.btn-secondary.active {
       background-color: white;
       color: #c45841; }
   .ej-btn.btn-support {
     background-color: white;
     border: 1px solid #33cac8;
     color: #33cac8; }
-    .ej-btn.btn-support:hover {
+    .ej-btn.btn-support:hover,
+    .ej-btn.btn-support.active {
       border: 1px solid #2dadab;
       color: #2dadab; }
   .ej-btn.btn-order {
     background-color: transparent;
     color: white;
     border: 2px solid white; }
-    .ej-btn.btn-order:hover {
+    .ej-btn.btn-order:hover,
+    .ej-btn.btn-order.active {
       background-color: white;
       color: #23cf3b; }
 
@@ -686,6 +692,9 @@ Sidebar Styles
         margin-bottom: 0; }
       .widget.blog ul li p {
         margin: 0; }
+  .widget.text a {
+    text-transform: uppercase;
+    font-family: 'proxima_nova_semibold'; }
 
 /***************************
 ****************************
@@ -1739,41 +1748,43 @@ Order Quote Page
       border: none;
       padding: 0;
       float: right; }
-      .quote-item .title .toggler .fa-chevron-up {
-        display: inline-block; }
-      .quote-item .title .toggler .fa-chevron-down {
-        display: none; }
-      .quote-item .title .toggler.collapsed .fa-chevron-up {
-        display: none; }
-      .quote-item .title .toggler.collapsed .fa-chevron-down {
-        display: inline-block; }
-  .quote-item .options {
-    background-color: #f6fafb;
-    padding: 0 15px; }
-    .quote-item .options .option {
-      padding: 11px 0;
-      border-bottom: 1px solid #ededed; }
-      .quote-item .options .option:last-of-type {
-        border-bottom: none; }
-      .quote-item .options .option .text-wrapper {
-        float: left; }
-        .quote-item .options .option .text-wrapper p {
-          font-size: 12px;
-          margin: 0;
-          line-height: 16px; }
-      .quote-item .options .option .controls {
-        float: right; }
-        .quote-item .options .option .controls > * {
-          float: left;
-          margin-left: 7px; }
-          .quote-item .options .option .controls > *:first-child {
-            margin-left: 0; }
-        .quote-item .options .option .controls .form-control {
-          height: 32px;
-          width: 52px;
-          border-radius: 25px;
-          vertical-align: middle;
-          text-align: center; }
+
+.perfino-option .options,
+.quote-item .options {
+  background-color: #f6fafb;
+  padding: 0 15px; }
+  .perfino-option .options .option,
+  .quote-item .options .option {
+    padding: 11px 0;
+    border-bottom: 1px solid #ededed; }
+    .perfino-option .options .option:last-of-type,
+    .quote-item .options .option:last-of-type {
+      border-bottom: none; }
+    .perfino-option .options .option .text-wrapper,
+    .quote-item .options .option .text-wrapper {
+      float: left; }
+      .perfino-option .options .option .text-wrapper p,
+      .quote-item .options .option .text-wrapper p {
+        font-size: 12px;
+        margin: 0;
+        line-height: 16px; }
+    .perfino-option .options .option .controls,
+    .quote-item .options .option .controls {
+      float: right; }
+      .perfino-option .options .option .controls > *,
+      .quote-item .options .option .controls > * {
+        float: left;
+        margin-left: 7px; }
+        .perfino-option .options .option .controls > *:first-child,
+        .quote-item .options .option .controls > *:first-child {
+          margin-left: 0; }
+      .perfino-option .options .option .controls .form-control,
+      .quote-item .options .option .controls .form-control {
+        height: 32px;
+        width: 52px;
+        border-radius: 25px;
+        vertical-align: middle;
+        text-align: center; }
 
 /***************************
 ****************************
@@ -1827,6 +1838,116 @@ FAQ's Page
         margin-bottom: 20px; }
         .faq > div.text-wrapper > *:last-child {
           margin-bottom: 0; }
+
+/***************************
+****************************
+Order Perfino Page
+****************************
+***************************/
+.order-perfino-page .order-controllers {
+  margin-bottom: 15px; }
+
+.order-perfino-page .disclaimer {
+  margin-top: 30px; }
+
+.order-controllers {
+  padding: 12px 0;
+  line-height: 39px;
+  border-bottom: 1px solid #ededed; }
+  .order-controllers > * {
+    float: left; }
+    @media (max-width: 767px) {
+      .order-controllers > * {
+        float: none; } }
+  .order-controllers p {
+    margin: 0;
+    width: calc(100% - 201px); }
+    @media (max-width: 767px) {
+      .order-controllers p {
+        width: auto; } }
+    @media (min-width: 768px) and (max-width: 992px) {
+      .order-controllers p {
+        line-height: 20px;
+        padding-right: 13px; } }
+  .order-controllers .selector {
+    width: 201px;
+    padding-left: 13px;
+    border-left: 1px solid #ededed; }
+    @media (max-width: 767px) {
+      .order-controllers .selector {
+        width: auto;
+        padding-left: 0;
+        border: none; } }
+    .order-controllers .selector > * {
+      float: left; }
+    .order-controllers .selector > span {
+      margin-right: 13px;
+      line-height: 42px;
+      height: 39px; }
+    .order-controllers .selector .caret {
+      top: 18px; }
+
+.perfino-options .perfino-option .title {
+  line-height: 66px;
+  border-bottom: 1px solid #0993e2; }
+
+.perfino-options .perfino-option .site-subtitle {
+  line-height: 66px;
+  float: left;
+  margin: 0; }
+
+.perfino-options .perfino-option .toggler {
+  color: #23cf3b;
+  background: none;
+  border: none;
+  padding: 0;
+  float: right; }
+
+.perfino-options .perfino-option .description {
+  padding: 19px 0; }
+  .perfino-options .perfino-option .description > div {
+    float: left; }
+    .perfino-options .perfino-option .description > div.icon-wrapper {
+      width: 54px; }
+    .perfino-options .perfino-option .description > div.text-wrapper {
+      width: calc(100% - 54px); }
+
+@media (max-width: 767px) {
+  .perfino-options .perfino-option .options .option > * {
+    float: left; } }
+
+@media (max-width: 767px) {
+  .perfino-options .perfino-option .options .option .text-wrapper {
+    width: calc(100% - 98px);
+    padding-right: 13px; } }
+
+.perfino-options .perfino-option .options .option .text-wrapper p {
+  line-height: 31px;
+  margin: 0; }
+  @media (max-width: 767px) {
+    .perfino-options .perfino-option .options .option .text-wrapper p {
+      line-height: 15px; } }
+
+@media (max-width: 767px) {
+  .perfino-options .perfino-option .options .option .controls {
+    width: 98px; } }
+
+.perfino-options .perfino-option .options .option .controls > * {
+  float: left;
+  line-height: 31px; }
+
+.perfino-options .perfino-option .options .option .controls > span {
+  margin-right: 29px;
+  text-align: right; }
+  @media (max-width: 767px) {
+    .perfino-options .perfino-option .options .option .controls > span {
+      display: none; } }
+
+.perfino-options .perfino-option .options .option .controls .ej-btn {
+  height: 31px;
+  line-height: 29px;
+  padding: 0 22px;
+  margin: 0; }
 
 /***************************
 ****************************
@@ -2440,6 +2561,10 @@ Pagination Classes
     border-bottom: 1px solid #f0f0f0;
     margin-bottom: 30px;
     padding-bottom: 30px; }
+  .tabs-wrapper.nm {
+    margin: 0; }
+    .tabs-wrapper.nm .title {
+      margin: 0; }
 
 .ej-action {
   height: 32px;
@@ -2480,6 +2605,31 @@ Pagination Classes
   margin-bottom: 20px; }
   .send-address > div:last-of-type {
     margin-bottom: 0; }
+
+.toggler .fa-chevron-up {
+  display: inline-block; }
+
+.toggler .fa-chevron-down {
+  display: none; }
+
+.toggler.collapsed .fa-chevron-up {
+  display: none; }
+
+.toggler.collapsed .fa-chevron-down {
+  display: inline-block; }
+
+.disclaimer {
+  color: #959595; }
+  .disclaimer p {
+    margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 18px; }
+    .disclaimer p:last-of-type {
+      margin-bottom: 0; }
+  .disclaimer > div {
+    border-top: 1px solid #ededed;
+    padding: 10px 0;
+    margin-top: 10px; }
 
 /***************************
 ****************************

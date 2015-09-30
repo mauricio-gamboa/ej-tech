@@ -96,7 +96,7 @@ Footer Styles
   }
 
   a {
-    font-family: 'proxima_nova_semibold';
+    @include proxima;
     color: $nav-color;
     text-transform: uppercase;
 

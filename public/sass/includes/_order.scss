@@ -43,7 +43,7 @@ Product Selection Page
 }
 
 .order-or {
-  font-family: 'proxima_nova_semibold';
+  @include proxima;
   font-size: 15px;
   padding: 33px 0;
   border-top: 1px solid $header-border;
@@ -155,32 +155,14 @@ Order Quote Page
     }
 
     .toggler {
-      color: $product-btn-color;
-      background: none;
-      border: none;
-      padding: 0;
+      @include toggler;
       float: right;
-
-      .fa-chevron-up {
-        display: inline-block;
-      }
-
-      .fa-chevron-down {
-        display: none;
-      }
-
-      &.collapsed {
-        .fa-chevron-up {
-          display: none;
-        }
-
-        .fa-chevron-down {
-          display: inline-block;
-        }
-      }
     }
   }
+}
 
+.perfino-option,
+.quote-item {
   .options {
     background-color: $news-section;
     padding: 0 15px;
@@ -308,6 +290,169 @@ FAQ's Page
 
         &:last-child {
           margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+/***************************
+****************************
+Order Perfino Page
+****************************
+***************************/
+
+.order-perfino-page {
+  .order-controllers {
+    margin-bottom: 15px;
+  }
+
+  .disclaimer {
+    margin-top: 30px;
+  }
+}
+
+.order-controllers {
+  padding: 12px 0;
+  line-height: 39px;
+  border-bottom: 1px solid $quote-border;
+
+  > * {
+    float: left;
+
+    @media #{$xs} {
+      float: none;
+    }
+  }
+
+  p {
+    margin: 0;
+    width: calc(100% - 201px);
+
+    @media #{$xs} {
+      width: auto;
+    }
+
+    @media #{$small} {
+      line-height: 20px;
+      padding-right: 13px;
+    }
+  }
+
+  .selector {
+    width: 201px;
+    padding-left: 13px;
+    border-left: 1px solid $quote-border;
+
+    @media #{$xs} {
+      width: auto;
+      padding-left: 0;
+      border: none;
+    }
+
+    > * {
+      float: left;
+    }
+
+    > span {
+      margin-right: 13px;
+      line-height: 42px;
+      height: 39px;
+    }
+
+    .caret {
+      top: 18px;
+    }
+  }
+}
+
+.perfino-options {
+  .perfino-option {
+    .title {
+      line-height: 66px;
+      border-bottom: 1px solid $nav-color;
+    }
+
+    .site-subtitle {
+      line-height: 66px;
+      float: left;
+      margin: 0;
+    }
+
+    .toggler {
+      @include toggler;
+      float: right;
+    }
+
+    .description {
+      padding: 19px 0;
+
+      > div {
+        float: left;
+
+        &.icon-wrapper {
+          width: 54px;
+        }
+
+        &.text-wrapper {
+          width: calc(100% - 54px);
+        }
+      }
+    }
+
+    .options {
+      .option {
+        @media #{$xs} {
+          > * {
+            float: left;
+          }
+        }
+
+        .text-wrapper {
+          @media #{$xs} {
+            width: calc(100% - 98px);
+            padding-right: 13px;
+          }
+
+          p {
+            line-height: 31px;
+            margin: 0;
+
+            @media #{$xs} {
+              line-height: 15px;
+            }
+          }
+        }
+
+        .controls {
+          @media #{$xs} {
+            width: 98px;
+          }
+
+          > * {
+            float: left;
+            line-height: 31px;
+          }
+
+          > span {
+            margin-right: 29px;
+            text-align: right;
+
+            @media #{$xs} {
+              display: none;
+            }
+          }
+
+          .ej-btn {
+            height: 31px;
+            line-height: 29px;
+            padding: 0 22px;
+            margin: 0;
+
+            @media #{$xs} {
+
+            }
+          }
         }
       }
     }

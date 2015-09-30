@@ -291,7 +291,7 @@ Product Features Page
           border-bottom: 2px solid $footer-color;
           color: $feature-tabs;
           text-transform: uppercase;
-          font-family: 'proxima_nova_semibold';
+          @include proxima;
           display: block;
           height: 40px;
 
@@ -367,7 +367,7 @@ Product Features Page
       a {
         float: right;
         text-transform: uppercase;
-        font-family: 'proxima_nova_semibold';
+        @include proxima;
         font-weight: normal;
       }
     }

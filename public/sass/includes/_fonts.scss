@@ -216,3 +216,7 @@ Fonts Mixins
 @mixin lucida {
   font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
 }
+
+@mixin proxima {
+  font-family: 'proxima_nova_semibold';
+}

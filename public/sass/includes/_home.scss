@@ -100,7 +100,7 @@ Home Styles
   }
 
   .meta {
-    font-family: 'proxima_nova_semibold';
+    @include proxima;
     background: url("../images/sep-2.png") no-repeat 50% 50%;
     min-height: 76px;
     margin: 45px 0 0 0;

@@ -54,7 +54,7 @@ $nav-line-height: 73px;
     > span {
       @include nav-font-settings;
       border-top: 6px solid white;
-      font-family: 'proxima_nova_semibold';
+      @include proxima;
       height: $nav-height;
       line-height: $nav-line-height;
       text-transform: uppercase;

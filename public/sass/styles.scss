@@ -38,7 +38,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'proxima_nova_semibold';
+  @include proxima;
   margin-top: 0;
   line-height: normal;
 }
@@ -442,7 +442,7 @@ h5,
 }
 
 .ribbon {
-  font-family: 'proxima_nova_semibold';
+  @include proxima;
   color: white;
   text-transform: uppercase;
   font-size: 15px;
@@ -521,7 +521,7 @@ h5,
         }
 
         > div {
-          font-family: 'proxima_nova_semibold';
+          @include proxima;
           width: calc(100% - 50px);
           line-height: 36px;
           text-transform: uppercase;
@@ -580,7 +580,7 @@ Pagination Classes
 ***************************/
 
 .ej-pagination {
-  font-family: 'proxima_nova_semibold';
+  @include proxima;
 
   > ul {
     margin: 0;
@@ -883,6 +883,14 @@ Pagination Classes
     margin-bottom: 30px;
     padding-bottom: 30px;
   }
+
+  &.nm {
+    margin: 0;
+
+    .title {
+      margin: 0;
+    }
+  }
 }
 
 .ej-action {
@@ -920,6 +928,45 @@ Pagination Classes
     &:last-of-type {
       margin-bottom: 0;
     }
+  }
+}
+
+.toggler {
+  .fa-chevron-up {
+    display: inline-block;
+  }
+
+  .fa-chevron-down {
+    display: none;
+  }
+
+  &.collapsed {
+    .fa-chevron-up {
+      display: none;
+    }
+
+    .fa-chevron-down {
+      display: inline-block;
+    }
+  }
+}
+
+.disclaimer {
+  color: $disclaimer-color;
+
+  p {
+    margin-bottom: 15px;
+    @include font-settings-1;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  > div {
+    border-top: 1px solid $quote-border;
+    padding: 10px 0;
+    margin-top: 10px;
   }
 }
 
