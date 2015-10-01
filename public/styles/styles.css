@@ -188,25 +188,27 @@ Links
       background-color: #23cf3b;
       color: white; }
   .ej-btn.btn-submit {
-    background-color: #23cf3b; }
+    background-color: #23cf3b;
+    border: 1px solid #23cf3b; }
     .ej-btn.btn-submit:hover,
     .ej-btn.btn-submit.active {
-      background-color: #1fb434; }
+      background-color: white;
+      color: #23cf3b; }
   .ej-btn.btn-secondary {
     background-color: white;
     color: #f26c4f; }
     .ej-btn.btn-secondary:hover,
     .ej-btn.btn-secondary.active {
-      background-color: white;
-      color: #c45841; }
+      background-color: #f26c4f;
+      color: white; }
   .ej-btn.btn-support {
     background-color: white;
     border: 1px solid #33cac8;
     color: #33cac8; }
     .ej-btn.btn-support:hover,
     .ej-btn.btn-support.active {
-      border: 1px solid #2dadab;
-      color: #2dadab; }
+      background-color: #33cac8;
+      color: white; }
   .ej-btn.btn-order {
     background-color: transparent;
     color: white;
@@ -2092,6 +2094,8 @@ a:visited,
     margin-bottom: 15px; }
     .content-section > p:last-child {
       margin-bottom: 0; }
+    .content-section > p + h6 {
+      margin-top: 25px; }
   .content-section .customers-grid {
     margin-top: 30px; }
   .content-section > .detail {
@@ -2109,6 +2113,11 @@ a:visited,
       margin-bottom: 0; }
   .content-section .contact-form {
     margin-top: 20px; }
+  .content-section > h6 {
+    font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 0; }
 
 h5,
 .site-subtitle {

@@ -54,10 +54,12 @@ Links
 
   &.btn-submit {
     background-color: $product-btn-color;
+    border: 1px solid $product-btn-color;
 
     &:hover,
     &.active {
-      background-color: $product-btn-color-hover;
+      background-color: white;
+      color: $product-btn-color;
     }
   }
 
@@ -67,8 +69,8 @@ Links
 
     &:hover,
     &.active {
-      background-color: white;
-      color: $btn-secondary-hover;
+      background-color: $btn-secondary;
+      color: white;
     }
   }
 
@@ -79,8 +81,8 @@ Links
 
     &:hover,
     &.active {
-      border: 1px solid $support-button-hover;
-      color: $support-button-hover;
+      background-color: $support-button;
+      color: white;
     }
   }
 
