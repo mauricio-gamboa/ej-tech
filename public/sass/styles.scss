@@ -253,6 +253,12 @@ h5,
       width: auto;
     }
   }
+
+  &.bordered {
+    border-bottom: 1px solid $nav-color;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+  }
 }
 
 .double-items {

@@ -224,6 +224,11 @@ Links
     color: #0993e2; }
     .ej-link.link-1:hover {
       color: #097abb; }
+  .ej-link.link-2 {
+    color: #23cf3b;
+    font-size: 13px; }
+    .ej-link.link-2:hover {
+      color: #1fb434; }
 
 /***************************
 ****************************
@@ -2125,6 +2130,11 @@ h5,
       left: 0;
       height: 48px;
       width: auto; }
+  h5.bordered,
+  .site-subtitle.bordered {
+    border-bottom: 1px solid #0993e2;
+    padding-bottom: 30px;
+    margin-bottom: 20px; }
 
 .double-items .item {
   float: left;

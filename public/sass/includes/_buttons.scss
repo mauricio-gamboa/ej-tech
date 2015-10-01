@@ -109,4 +109,13 @@ Links
       color: $nav-color-hover;
     }
   }
+
+  &.link-2 {
+    color: $product-btn-color;
+    font-size: 13px;
+
+    &:hover {
+      color: $product-btn-color-hover;
+    }
+  }
 }
