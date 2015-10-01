@@ -162,6 +162,7 @@ Order Quote Page
 }
 
 .perfino-option,
+.jprofiler-option,
 .quote-item {
   .options {
     background-color: $news-section;
@@ -326,15 +327,16 @@ Order Perfino Page
   }
 
   p {
+    line-height: 18px;
     margin: 0;
     width: calc(100% - 201px);
 
     @media #{$xs} {
       width: auto;
+      margin-bottom: 20px;
     }
 
     @media #{$small} {
-      line-height: 20px;
       padding-right: 13px;
     }
   }
@@ -366,8 +368,11 @@ Order Perfino Page
   }
 }
 
-.perfino-options {
-  .perfino-option {
+.perfino-options,
+.jprofiler-options {
+  .perfino-option,
+  .jprofiler-option {
+
     .title {
       line-height: 66px;
       border-bottom: 1px solid $nav-color;
@@ -451,6 +456,48 @@ Order Perfino Page
 
             @media #{$xs} {
 
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/***************************
+****************************
+Order JProfiler Page
+****************************
+***************************/
+
+.jprofiler-options {
+  .jprofiler-option {
+    .options {
+      .option {
+        .text-wrapper {
+          @media #{$small} {
+            float: left;
+            width: calc(100% - 225px);
+          }
+
+          p {
+            @media #{$small} {
+              line-height: 18px;
+            }
+          }
+        }
+        .controls {
+          @media #{$small} {
+            width: 225px;
+            float: left;
+          }
+
+          > span {
+            line-height: 15px;
+            text-align: left;
+
+            a {
+              font-size: 12px;
             }
           }
         }

@@ -1767,35 +1767,44 @@ Order Quote Page
       float: right; }
 
 .perfino-option .options,
+.jprofiler-option .options,
 .quote-item .options {
   background-color: #f6fafb;
   padding: 0 15px; }
   .perfino-option .options .option,
+  .jprofiler-option .options .option,
   .quote-item .options .option {
     padding: 11px 0;
     border-bottom: 1px solid #ededed; }
     .perfino-option .options .option:last-of-type,
+    .jprofiler-option .options .option:last-of-type,
     .quote-item .options .option:last-of-type {
       border-bottom: none; }
     .perfino-option .options .option .text-wrapper,
+    .jprofiler-option .options .option .text-wrapper,
     .quote-item .options .option .text-wrapper {
       float: left; }
       .perfino-option .options .option .text-wrapper p,
+      .jprofiler-option .options .option .text-wrapper p,
       .quote-item .options .option .text-wrapper p {
         font-size: 12px;
         margin: 0;
         line-height: 16px; }
     .perfino-option .options .option .controls,
+    .jprofiler-option .options .option .controls,
     .quote-item .options .option .controls {
       float: right; }
       .perfino-option .options .option .controls > *,
+      .jprofiler-option .options .option .controls > *,
       .quote-item .options .option .controls > * {
         float: left;
         margin-left: 7px; }
         .perfino-option .options .option .controls > *:first-child,
+        .jprofiler-option .options .option .controls > *:first-child,
         .quote-item .options .option .controls > *:first-child {
           margin-left: 0; }
       .perfino-option .options .option .controls .form-control,
+      .jprofiler-option .options .option .controls .form-control,
       .quote-item .options .option .controls .form-control {
         height: 32px;
         width: 52px;
@@ -1877,14 +1886,15 @@ Order Perfino Page
       .order-controllers > * {
         float: none; } }
   .order-controllers p {
+    line-height: 18px;
     margin: 0;
     width: calc(100% - 201px); }
     @media (max-width: 767px) {
       .order-controllers p {
-        width: auto; } }
+        width: auto;
+        margin-bottom: 20px; } }
     @media (min-width: 768px) and (max-width: 992px) {
       .order-controllers p {
-        line-height: 20px;
         padding-right: 13px; } }
   .order-controllers .selector {
     width: 201px;
@@ -1904,67 +1914,140 @@ Order Perfino Page
     .order-controllers .selector .caret {
       top: 18px; }
 
-.perfino-options .perfino-option .title {
+.perfino-options .perfino-option .title,
+.perfino-options .jprofiler-option .title,
+.jprofiler-options .perfino-option .title,
+.jprofiler-options .jprofiler-option .title {
   line-height: 66px;
   border-bottom: 1px solid #0993e2; }
 
-.perfino-options .perfino-option .site-subtitle {
+.perfino-options .perfino-option .site-subtitle,
+.perfino-options .jprofiler-option .site-subtitle,
+.jprofiler-options .perfino-option .site-subtitle,
+.jprofiler-options .jprofiler-option .site-subtitle {
   line-height: 66px;
   float: left;
   margin: 0; }
 
-.perfino-options .perfino-option .toggler {
+.perfino-options .perfino-option .toggler,
+.perfino-options .jprofiler-option .toggler,
+.jprofiler-options .perfino-option .toggler,
+.jprofiler-options .jprofiler-option .toggler {
   color: #23cf3b;
   background: none;
   border: none;
   padding: 0;
   float: right; }
 
-.perfino-options .perfino-option .description {
+.perfino-options .perfino-option .description,
+.perfino-options .jprofiler-option .description,
+.jprofiler-options .perfino-option .description,
+.jprofiler-options .jprofiler-option .description {
   padding: 19px 0; }
-  .perfino-options .perfino-option .description > div {
+  .perfino-options .perfino-option .description > div,
+  .perfino-options .jprofiler-option .description > div,
+  .jprofiler-options .perfino-option .description > div,
+  .jprofiler-options .jprofiler-option .description > div {
     float: left; }
-    .perfino-options .perfino-option .description > div.icon-wrapper {
+    .perfino-options .perfino-option .description > div.icon-wrapper,
+    .perfino-options .jprofiler-option .description > div.icon-wrapper,
+    .jprofiler-options .perfino-option .description > div.icon-wrapper,
+    .jprofiler-options .jprofiler-option .description > div.icon-wrapper {
       width: 54px; }
-    .perfino-options .perfino-option .description > div.text-wrapper {
+    .perfino-options .perfino-option .description > div.text-wrapper,
+    .perfino-options .jprofiler-option .description > div.text-wrapper,
+    .jprofiler-options .perfino-option .description > div.text-wrapper,
+    .jprofiler-options .jprofiler-option .description > div.text-wrapper {
       width: calc(100% - 54px); }
 
 @media (max-width: 767px) {
-  .perfino-options .perfino-option .options .option > * {
+  .perfino-options .perfino-option .options .option > *,
+  .perfino-options .jprofiler-option .options .option > *,
+  .jprofiler-options .perfino-option .options .option > *,
+  .jprofiler-options .jprofiler-option .options .option > * {
     float: left; } }
 
 @media (max-width: 767px) {
-  .perfino-options .perfino-option .options .option .text-wrapper {
+  .perfino-options .perfino-option .options .option .text-wrapper,
+  .perfino-options .jprofiler-option .options .option .text-wrapper,
+  .jprofiler-options .perfino-option .options .option .text-wrapper,
+  .jprofiler-options .jprofiler-option .options .option .text-wrapper {
     width: calc(100% - 98px);
     padding-right: 13px; } }
 
-.perfino-options .perfino-option .options .option .text-wrapper p {
+.perfino-options .perfino-option .options .option .text-wrapper p,
+.perfino-options .jprofiler-option .options .option .text-wrapper p,
+.jprofiler-options .perfino-option .options .option .text-wrapper p,
+.jprofiler-options .jprofiler-option .options .option .text-wrapper p {
   line-height: 31px;
   margin: 0; }
   @media (max-width: 767px) {
-    .perfino-options .perfino-option .options .option .text-wrapper p {
+    .perfino-options .perfino-option .options .option .text-wrapper p,
+    .perfino-options .jprofiler-option .options .option .text-wrapper p,
+    .jprofiler-options .perfino-option .options .option .text-wrapper p,
+    .jprofiler-options .jprofiler-option .options .option .text-wrapper p {
       line-height: 15px; } }
 
 @media (max-width: 767px) {
-  .perfino-options .perfino-option .options .option .controls {
+  .perfino-options .perfino-option .options .option .controls,
+  .perfino-options .jprofiler-option .options .option .controls,
+  .jprofiler-options .perfino-option .options .option .controls,
+  .jprofiler-options .jprofiler-option .options .option .controls {
     width: 98px; } }
 
-.perfino-options .perfino-option .options .option .controls > * {
+.perfino-options .perfino-option .options .option .controls > *,
+.perfino-options .jprofiler-option .options .option .controls > *,
+.jprofiler-options .perfino-option .options .option .controls > *,
+.jprofiler-options .jprofiler-option .options .option .controls > * {
   float: left;
   line-height: 31px; }
 
-.perfino-options .perfino-option .options .option .controls > span {
+.perfino-options .perfino-option .options .option .controls > span,
+.perfino-options .jprofiler-option .options .option .controls > span,
+.jprofiler-options .perfino-option .options .option .controls > span,
+.jprofiler-options .jprofiler-option .options .option .controls > span {
   margin-right: 29px;
   text-align: right; }
   @media (max-width: 767px) {
-    .perfino-options .perfino-option .options .option .controls > span {
+    .perfino-options .perfino-option .options .option .controls > span,
+    .perfino-options .jprofiler-option .options .option .controls > span,
+    .jprofiler-options .perfino-option .options .option .controls > span,
+    .jprofiler-options .jprofiler-option .options .option .controls > span {
       display: none; } }
 
-.perfino-options .perfino-option .options .option .controls .ej-btn {
+.perfino-options .perfino-option .options .option .controls .ej-btn,
+.perfino-options .jprofiler-option .options .option .controls .ej-btn,
+.jprofiler-options .perfino-option .options .option .controls .ej-btn,
+.jprofiler-options .jprofiler-option .options .option .controls .ej-btn {
   height: 31px;
   line-height: 29px;
   padding: 0 22px;
   margin: 0; }
+
+/***************************
+****************************
+Order JProfiler Page
+****************************
+***************************/
+@media (min-width: 768px) and (max-width: 992px) {
+  .jprofiler-options .jprofiler-option .options .option .text-wrapper {
+    float: left;
+    width: calc(100% - 225px); } }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .jprofiler-options .jprofiler-option .options .option .text-wrapper p {
+    line-height: 18px; } }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .jprofiler-options .jprofiler-option .options .option .controls {
+    width: 225px;
+    float: left; } }
+
+.jprofiler-options .jprofiler-option .options .option .controls > span {
+  line-height: 15px;
+  text-align: left; }
+  .jprofiler-options .jprofiler-option .options .option .controls > span a {
+    font-size: 12px; }
 
 /***************************
 ****************************
