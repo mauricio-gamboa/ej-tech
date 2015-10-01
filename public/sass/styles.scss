@@ -193,6 +193,10 @@ a {
     &:last-child {
       margin-bottom: 0;
     }
+
+    & + h6 {
+      margin-top: 25px;
+    }
   }
 
   .customers-grid {
@@ -228,6 +232,13 @@ a {
 
   .contact-form {
     margin-top: 20px;
+  }
+
+  > h6 {
+    @include lucida;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 0;
   }
 }
 
