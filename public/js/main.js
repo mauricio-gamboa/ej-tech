@@ -1,6 +1,22 @@
 (function (w, d, $, u) {
   'use strict';
 
+  var $menuTogglers = $('.main-navigation .toggler');
+
+  $menuTogglers.on('mouseenter', function () {
+    var _this = $(this);
+    var $menu = _this.next();
+    _this.removeClass('collapsed');
+    $menu.addClass('in');
+  });
+
+  $menuTogglers.on('mouseleave', function () {
+    var _this = $(this);
+    var $menu = _this.next();
+    _this.addClass('collapsed');
+    $menu.removeClass('in');
+  });
+
   $('#products-home-slider').owlCarousel({
     autoPlay: true,
     singleItem: true,
