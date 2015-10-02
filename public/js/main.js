@@ -18,7 +18,7 @@
   });
 
   $('#products-home-slider').owlCarousel({
-    autoPlay: true,
+    autoPlay: false,
     singleItem: true,
     navigation: true,
     pagination: false,
@@ -26,22 +26,22 @@
   });
 
   $('#latest-news-slider').owlCarousel({
-    autoPlay: true,
+    autoPlay: false,
     singleItem: true
   });
 
   $('#latest-blog-posts').owlCarousel({
-    autoPlay: true,
+    autoPlay: false,
     singleItem: true
   });
 
   $('#product-overview-slider').owlCarousel({
-    autoPlay: true,
+    autoPlay: false,
     singleItem: true
   });
 
   $('.single-item-slider').owlCarousel({
-    autoPlay: true,
+    autoPlay: false,
     singleItem: true
   });
 
