@@ -94,6 +94,14 @@ $nav-line-height: 73px;
         color: $nav-color;
       }
     }
+
+    .toggler {
+      color: $nav-color;
+
+      &.collapsed {
+        color: $main-color;
+      }
+    }
   }
 
   .sub-menu {
