@@ -1,8 +1,24 @@
 (function (w, d, $, u) {
   'use strict';
 
+  var $menuTogglers = $('.main-navigation .toggler');
+
+  $menuTogglers.on('mouseenter', function () {
+    var _this = $(this);
+    var $menu = _this.next();
+    _this.removeClass('collapsed');
+    $menu.addClass('in');
+  });
+
+  $menuTogglers.on('mouseleave', function () {
+    var _this = $(this);
+    var $menu = _this.next();
+    _this.addClass('collapsed');
+    $menu.removeClass('in');
+  });
+
   $('#products-home-slider').owlCarousel({
-    autoPlay: true,
+    autoPlay: false,
     singleItem: true,
     navigation: true,
     pagination: false,
@@ -10,22 +26,22 @@
   });
 
   $('#latest-news-slider').owlCarousel({
-    autoPlay: true,
+    autoPlay: false,
     singleItem: true
   });
 
   $('#latest-blog-posts').owlCarousel({
-    autoPlay: true,
+    autoPlay: false,
     singleItem: true
   });
 
   $('#product-overview-slider').owlCarousel({
-    autoPlay: true,
+    autoPlay: false,
     singleItem: true
   });
 
   $('.single-item-slider').owlCarousel({
-    autoPlay: true,
+    autoPlay: false,
     singleItem: true
   });
 
