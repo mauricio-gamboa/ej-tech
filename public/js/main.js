@@ -2,20 +2,62 @@
   'use strict';
 
   var $menuTogglers = $('.main-navigation .toggler');
+  var $menus = $('.main-navigation .toggler + .sub-menu');
 
-  $menuTogglers.on('mouseenter', function () {
+  $menuTogglers.on('click', function () {
     var _this = $(this);
     var $menu = _this.next();
+    var $parent = _this.parent();
+    var $siblings = $parent.siblings()
+
+    $siblings.removeClass('opened');
+
+    $parent.toggleClass('opened');
+
+    $menuTogglers.addClass('collapsed');
+    $menus.removeClass('in');
+
     _this.removeClass('collapsed');
     $menu.addClass('in');
   });
 
-  $menuTogglers.on('mouseleave', function () {
+  var $menuItems = $('.main-navigation > li');
+
+  $menuItems.on('mouseenter', function () {
     var _this = $(this);
-    var $menu = _this.next();
-    _this.addClass('collapsed');
-    $menu.removeClass('in');
+    var $toggler = _this.find('.toggler');
+    var $menu = _this.find('.sub-menu');
+    var $siblings = _this.siblings();
+    var $siblingsMenus = $siblings.find('.sub-menu');
+    var $siblingsTogglers = $siblings.find('.toggler');
+
+    $siblings.removeClass('opened');
+    $siblingsMenus.removeClass('in');
+    $siblingsTogglers.addClass('collapsed');
+
+    if (!_this.hasClass('opened')) {
+      $toggler.removeClass('collapsed');
+      $menu.addClass('in');
+    }
   });
+
+  $menuItems.on('mouseleave', function () {
+    var _this = $(this);
+    var $toggler = _this.find('.toggler');
+    var $menu = _this.find('.sub-menu');
+
+    if (!_this.hasClass('opened')) {
+      $toggler.addClass('collapsed');
+      $menu.removeClass('in');
+    }
+  });
+
+  //$menuItems.on('mouseleave', function () {
+  //  var _this = $(this);
+  //  var $menu = _this.next();
+  //  _this.addClass('collapsed');
+  //  $menu.removeClass('in');
+  //});
 
   $('#products-home-slider').owlCarousel({
     autoPlay: false,

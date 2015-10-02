@@ -324,6 +324,10 @@ Navigation Styles
   .main-navigation > li.active span {
     border-top-color: #0993e2;
     color: #0993e2; }
+  .main-navigation > li .toggler {
+    color: #0993e2; }
+    .main-navigation > li .toggler.collapsed {
+      color: #303030; }
 
 .main-navigation .sub-menu {
   background-color: white;
