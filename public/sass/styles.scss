@@ -984,6 +984,21 @@ Pagination Classes
         margin-bottom: 0;
       }
     }
+
+    &.with-selector {
+      .title {
+        @media #{$xs} {
+          .site-title-line {
+            float: none;
+            width: 100%;
+          }
+
+          .selector {
+            float: none;
+          }
+        }
+      }
+    }
   }
 
   &.bordered {

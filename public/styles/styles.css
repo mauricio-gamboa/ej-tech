@@ -2699,6 +2699,12 @@ Pagination Classes
     margin-bottom: 15px; }
     .tabs-wrapper .features-tabs p:last-of-type {
       margin-bottom: 0; }
+  @media (max-width: 767px) {
+    .tabs-wrapper .features-tabs.with-selector .title .site-title-line {
+      float: none;
+      width: 100%; }
+    .tabs-wrapper .features-tabs.with-selector .title .selector {
+      float: none; } }
   .tabs-wrapper.bordered {
     border-bottom: 1px solid #f0f0f0;
     margin-bottom: 30px;
