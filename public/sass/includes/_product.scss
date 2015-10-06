@@ -37,7 +37,8 @@ Product Overview Page
     }
   }
 
-  .btn-secondary {
+  .btn-secondary,
+  .btn-jprofiler {
     margin-bottom: 25px;
   }
 
@@ -65,6 +66,11 @@ Product Overview Page
       &.version-1 {
         margin-right: -62px;
         top: 2px;
+      }
+
+      &.version-2 {
+        margin-right: -45px;
+        top: -11px;
       }
     }
   }
