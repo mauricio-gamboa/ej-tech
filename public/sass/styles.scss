@@ -909,6 +909,74 @@ Pagination Classes
   margin-bottom: 30px;
 
   .features-tabs {
+    .title {
+      border-bottom: 2px solid $footer-color;
+      line-height: normal;
+      margin-bottom: 30px;
+
+      .site-title-line {
+        @include reset-last;
+        background: none;
+        float: left;
+        height: 40px;
+      }
+
+      ul {
+        float: right;
+        margin: 0;
+
+        @media #{$xs} {
+          float: none;
+        }
+
+        > li {
+          float: left;
+          margin: 0 17px;
+
+          &:first-of-type {
+            margin-left: 0;
+          }
+
+          &:last-of-type {
+            margin-right: 0;
+
+            @media #{$xs} {
+              float: right;
+            }
+          }
+
+          a {
+            border-bottom: 2px solid $footer-color;
+            color: $feature-tabs;
+            text-transform: uppercase;
+            @include proxima;
+            display: block;
+            height: 40px;
+
+            &:hover {
+              color: $product-btn-color;
+            }
+          }
+
+          &.active {
+            a {
+              color: $product-btn-color;
+              border-color: $product-btn-color;
+
+              &:hover {
+                color: $product-btn-color;
+              }
+            }
+          }
+        }
+      }
+
+      .selector {
+        float: right;
+        margin-bottom: 10px;
+      }
+    }
+
     p {
       margin-bottom: 15px;
 

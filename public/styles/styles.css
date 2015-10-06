@@ -1275,48 +1275,6 @@ Product Features Page
   padding-bottom: 20px;
   border: none; }
 
-.features-tabs .title {
-  height: 40px;
-  border-bottom: 2px solid #eef3f5;
-  line-height: normal;
-  margin-bottom: 30px; }
-  .features-tabs .title .site-title-line {
-    padding-bottom: 0;
-    border-bottom: none;
-    margin-bottom: 0;
-    background: none;
-    float: left; }
-  .features-tabs .title ul {
-    float: right;
-    margin: 0; }
-    @media (max-width: 767px) {
-      .features-tabs .title ul {
-        float: none; } }
-    .features-tabs .title ul > li {
-      float: left;
-      margin: 0 17px; }
-      .features-tabs .title ul > li:first-of-type {
-        margin-left: 0; }
-      .features-tabs .title ul > li:last-of-type {
-        margin-right: 0; }
-        @media (max-width: 767px) {
-          .features-tabs .title ul > li:last-of-type {
-            float: right; } }
-      .features-tabs .title ul > li a {
-        border-bottom: 2px solid #eef3f5;
-        color: #363636;
-        text-transform: uppercase;
-        font-family: 'proxima_nova_semibold';
-        display: block;
-        height: 40px; }
-        .features-tabs .title ul > li a:hover {
-          color: #23cf3b; }
-      .features-tabs .title ul > li.active a {
-        color: #23cf3b;
-        border-color: #23cf3b; }
-        .features-tabs .title ul > li.active a:hover {
-          color: #23cf3b; }
-
 .feature-section .feature-title {
   border-bottom: 1px solid #eef3f5;
   padding-bottom: 20px; }
@@ -2693,6 +2651,50 @@ Pagination Classes
 
 .tabs-wrapper {
   margin-bottom: 30px; }
+  .tabs-wrapper .features-tabs .title {
+    border-bottom: 2px solid #eef3f5;
+    line-height: normal;
+    margin-bottom: 30px; }
+    .tabs-wrapper .features-tabs .title .site-title-line {
+      padding-bottom: 0;
+      border-bottom: none;
+      margin-bottom: 0;
+      background: none;
+      float: left;
+      height: 40px; }
+    .tabs-wrapper .features-tabs .title ul {
+      float: right;
+      margin: 0; }
+      @media (max-width: 767px) {
+        .tabs-wrapper .features-tabs .title ul {
+          float: none; } }
+      .tabs-wrapper .features-tabs .title ul > li {
+        float: left;
+        margin: 0 17px; }
+        .tabs-wrapper .features-tabs .title ul > li:first-of-type {
+          margin-left: 0; }
+        .tabs-wrapper .features-tabs .title ul > li:last-of-type {
+          margin-right: 0; }
+          @media (max-width: 767px) {
+            .tabs-wrapper .features-tabs .title ul > li:last-of-type {
+              float: right; } }
+        .tabs-wrapper .features-tabs .title ul > li a {
+          border-bottom: 2px solid #eef3f5;
+          color: #363636;
+          text-transform: uppercase;
+          font-family: 'proxima_nova_semibold';
+          display: block;
+          height: 40px; }
+          .tabs-wrapper .features-tabs .title ul > li a:hover {
+            color: #23cf3b; }
+        .tabs-wrapper .features-tabs .title ul > li.active a {
+          color: #23cf3b;
+          border-color: #23cf3b; }
+          .tabs-wrapper .features-tabs .title ul > li.active a:hover {
+            color: #23cf3b; }
+    .tabs-wrapper .features-tabs .title .selector {
+      float: right;
+      margin-bottom: 10px; }
   .tabs-wrapper .features-tabs p {
     margin-bottom: 15px; }
     .tabs-wrapper .features-tabs p:last-of-type {
