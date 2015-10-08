@@ -946,12 +946,14 @@ Pagination Classes
           }
 
           a {
+            @include proxima;
             border-bottom: 2px solid $footer-color;
             color: $feature-tabs;
             text-transform: uppercase;
-            @include proxima;
             display: block;
-            height: 40px;
+            height: 42px;
+            position: relative;
+            bottom: -2px;
 
             &:hover {
               color: $product-btn-color;

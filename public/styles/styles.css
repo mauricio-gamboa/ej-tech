@@ -2679,12 +2679,14 @@ Pagination Classes
             .tabs-wrapper .features-tabs .title > ul > li:last-of-type {
               float: right; } }
         .tabs-wrapper .features-tabs .title > ul > li a {
+          font-family: 'proxima_nova_semibold';
           border-bottom: 2px solid #eef3f5;
           color: #363636;
           text-transform: uppercase;
-          font-family: 'proxima_nova_semibold';
           display: block;
-          height: 40px; }
+          height: 42px;
+          position: relative;
+          bottom: -2px; }
           .tabs-wrapper .features-tabs .title > ul > li a:hover {
             color: #23cf3b; }
         .tabs-wrapper .features-tabs .title > ul > li.active a {
