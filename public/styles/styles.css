@@ -2149,6 +2149,8 @@ a:visited,
     margin-bottom: 20px; }
   .content-section p {
     margin-bottom: 0; }
+    .content-section p > .fa {
+      color: #23cf3b; }
   .content-section > p {
     margin-bottom: 15px; }
     .content-section > p:last-child {
@@ -2182,6 +2184,14 @@ a:visited,
   .content-section .screencasts {
     margin: 19px 0; }
 
+blockquote {
+  background-color: #f6fafb;
+  border: none;
+  font-size: 13px;
+  line-height: 21px;
+  padding: 15px 30px;
+  margin-bottom: 15px; }
+
 h5,
 .site-subtitle {
   text-transform: uppercase;
@@ -2205,8 +2215,11 @@ h5,
   h5.bordered,
   .site-subtitle.bordered {
     border-bottom: 1px solid #0993e2;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     margin-bottom: 20px; }
+    h5.bordered.double,
+    .site-subtitle.bordered.double {
+      border-bottom: 2px solid #0993e2; }
 
 .double-items .item {
   float: left;

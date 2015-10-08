@@ -185,6 +185,10 @@ a {
 
   p {
     margin-bottom: 0;
+
+    > .fa {
+      color: $product-btn-color;
+    }
   }
 
   > p {
@@ -250,6 +254,14 @@ a {
   }
 }
 
+blockquote {
+  background-color: $news-section;
+  border: none;
+  @include font-settings-3;
+  padding: 15px 30px;
+  margin-bottom: 15px;
+}
+
 h5,
 .site-subtitle {
   text-transform: uppercase;
@@ -275,8 +287,12 @@ h5,
 
   &.bordered {
     border-bottom: 1px solid $nav-color;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     margin-bottom: 20px;
+
+    &.double {
+      border-bottom: 2px solid $nav-color;
+    }
   }
 }
 
