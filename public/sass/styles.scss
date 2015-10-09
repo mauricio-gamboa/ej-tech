@@ -930,11 +930,20 @@ Pagination Classes
       line-height: normal;
       margin-bottom: 30px;
 
+      @media #{$xs} {
+        border-bottom: none;
+      }
+
       .site-title-line {
         @include reset-last;
         background: none;
         float: left;
         height: 40px;
+
+        @media #{$xs} {
+          float: none;
+          border-bottom: 2px solid $footer-color;
+        }
       }
 
       > ul {
@@ -949,16 +958,22 @@ Pagination Classes
           float: left;
           margin: 0 17px;
 
+          @media #{$small} {
+            margin: 0 10px;
+          }
+
+          @media #{$xs} {
+            width: 50%;
+            margin: 0;
+            text-align: center;
+          }
+
           &:first-of-type {
             margin-left: 0;
           }
 
           &:last-of-type {
             margin-right: 0;
-
-            @media #{$xs} {
-              float: right;
-            }
           }
 
           a {
@@ -970,6 +985,16 @@ Pagination Classes
             height: 42px;
             position: relative;
             bottom: -2px;
+
+            @media #{$xs} {
+              position: static;
+              bottom: auto;
+              line-height: 42px;
+            }
+
+            @media #{$small} {
+              font-size: 12px;
+            }
 
             &:hover {
               color: $product-btn-color;

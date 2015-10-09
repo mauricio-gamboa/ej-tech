@@ -2736,6 +2736,9 @@ Pagination Classes
     border-bottom: 2px solid #eef3f5;
     line-height: normal;
     margin-bottom: 30px; }
+    @media (max-width: 767px) {
+      .tabs-wrapper .features-tabs .title {
+        border-bottom: none; } }
     .tabs-wrapper .features-tabs .title .site-title-line {
       padding-bottom: 0;
       border-bottom: none;
@@ -2743,6 +2746,10 @@ Pagination Classes
       background: none;
       float: left;
       height: 40px; }
+      @media (max-width: 767px) {
+        .tabs-wrapper .features-tabs .title .site-title-line {
+          float: none;
+          border-bottom: 2px solid #eef3f5; } }
     .tabs-wrapper .features-tabs .title > ul {
       float: right;
       margin: 0; }
@@ -2752,13 +2759,18 @@ Pagination Classes
       .tabs-wrapper .features-tabs .title > ul > li {
         float: left;
         margin: 0 17px; }
+        @media (min-width: 768px) and (max-width: 992px) {
+          .tabs-wrapper .features-tabs .title > ul > li {
+            margin: 0 10px; } }
+        @media (max-width: 767px) {
+          .tabs-wrapper .features-tabs .title > ul > li {
+            width: 50%;
+            margin: 0;
+            text-align: center; } }
         .tabs-wrapper .features-tabs .title > ul > li:first-of-type {
           margin-left: 0; }
         .tabs-wrapper .features-tabs .title > ul > li:last-of-type {
           margin-right: 0; }
-          @media (max-width: 767px) {
-            .tabs-wrapper .features-tabs .title > ul > li:last-of-type {
-              float: right; } }
         .tabs-wrapper .features-tabs .title > ul > li a {
           font-family: 'proxima_nova_semibold';
           border-bottom: 2px solid #eef3f5;
@@ -2768,6 +2780,14 @@ Pagination Classes
           height: 42px;
           position: relative;
           bottom: -2px; }
+          @media (max-width: 767px) {
+            .tabs-wrapper .features-tabs .title > ul > li a {
+              position: static;
+              bottom: auto;
+              line-height: 42px; } }
+          @media (min-width: 768px) and (max-width: 992px) {
+            .tabs-wrapper .features-tabs .title > ul > li a {
+              font-size: 12px; } }
           .tabs-wrapper .features-tabs .title > ul > li a:hover {
             color: #23cf3b; }
         .tabs-wrapper .features-tabs .title > ul > li.active a {
