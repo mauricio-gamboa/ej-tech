@@ -1407,6 +1407,58 @@ Product Our Users Page
       margin-top: 20px;
       padding-top: 20px; }
 
+/***************************
+****************************
+Product Training Page
+****************************
+***************************/
+.training-section > div {
+  float: left; }
+  @media (max-width: 767px) {
+    .training-section > div {
+      float: none; } }
+  .training-section > div.flag-wrapper {
+    width: 235px; }
+    @media (min-width: 768px) and (max-width: 992px) {
+      .training-section > div.flag-wrapper {
+        width: 150px; } }
+    @media (max-width: 767px) {
+      .training-section > div.flag-wrapper {
+        width: auto; } }
+    .training-section > div.flag-wrapper h5 {
+      color: #303030; }
+      @media (max-width: 767px) {
+        .training-section > div.flag-wrapper h5 {
+          border-bottom: 1px solid #f0f0f0;
+          padding-bottom: 20px;
+          margin-bottom: 20px; } }
+      .training-section > div.flag-wrapper h5 img {
+        margin-right: 15px; }
+  .training-section > div.text-wrapper {
+    width: calc(100% - 235px); }
+    @media (min-width: 768px) and (max-width: 992px) {
+      .training-section > div.text-wrapper {
+        width: calc(100% - 150px); } }
+    @media (max-width: 767px) {
+      .training-section > div.text-wrapper {
+        width: auto; } }
+    .training-section > div.text-wrapper .training {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #f0f0f0; }
+      .training-section > div.text-wrapper .training:last-of-type {
+        padding-bottom: 0;
+        border-bottom: none;
+        margin-bottom: 0; }
+      .training-section > div.text-wrapper .training > p {
+        margin-bottom: 10px; }
+      .training-section > div.text-wrapper .training ul {
+        margin: 0; }
+        .training-section > div.text-wrapper .training ul li {
+          line-height: 25px; }
+          .training-section > div.text-wrapper .training ul li .fa {
+            color: #9ba4a8; }
+
 .bottom-widget > div {
   float: left; }
   @media (min-width: 768px) and (max-width: 992px), (max-width: 767px) {

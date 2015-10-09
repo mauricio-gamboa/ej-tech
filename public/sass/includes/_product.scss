@@ -461,3 +461,83 @@ Product Our Users Page
     }
   }
 }
+
+/***************************
+****************************
+Product Training Page
+****************************
+***************************/
+
+.training-section {
+  > div {
+    float: left;
+
+    @media #{$xs} {
+      float: none;
+    }
+
+    &.flag-wrapper {
+      width: 235px;
+
+      @media #{$small} {
+        width: 150px;
+      }
+
+      @media #{$xs} {
+        width: auto;
+      }
+
+      h5 {
+        color: $main-color;
+
+        @media #{$xs} {
+          border-bottom: 1px solid $content-section-border;
+          padding-bottom: 20px;
+          margin-bottom: 20px;
+        }
+
+        img {
+          margin-right: 15px;
+        }
+      }
+    }
+
+    &.text-wrapper {
+      width: calc(100% - 235px);
+
+      @media #{$small} {
+        width: calc(100% - 150px);
+      }
+
+      @media #{$xs} {
+        width: auto;
+      }
+
+      .training {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid $content-section-border;
+
+        &:last-of-type {
+          @include reset-last;
+        }
+
+        > p {
+          margin-bottom: 10px;
+        }
+
+        ul {
+          margin: 0;
+
+          li {
+            line-height: 25px;
+
+            .fa {
+              color: $footer-font-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
