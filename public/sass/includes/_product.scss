@@ -37,7 +37,8 @@ Product Overview Page
     }
   }
 
-  .btn-secondary {
+  .btn-secondary,
+  .btn-jprofiler {
     margin-bottom: 25px;
   }
 
@@ -65,6 +66,11 @@ Product Overview Page
       &.version-1 {
         margin-right: -62px;
         top: 2px;
+      }
+
+      &.version-2 {
+        margin-right: -45px;
+        top: -11px;
       }
     }
   }
@@ -250,71 +256,6 @@ Product Features Page
   }
 }
 
-.features-tabs {
-  .title {
-    height: 40px;
-    border-bottom: 2px solid $footer-color;
-    line-height: normal;
-    margin-bottom: 30px;
-
-    .site-title-line {
-      @include reset-last;
-      background: none;
-      float: left;
-    }
-
-    ul {
-      float: right;
-      margin: 0;
-
-      @media #{$xs} {
-        float: none;
-      }
-
-      > li {
-        float: left;
-        margin: 0 17px;
-
-        &:first-of-type {
-          margin-left: 0;
-        }
-
-        &:last-of-type {
-          margin-right: 0;
-
-          @media #{$xs} {
-            float: right;
-          }
-        }
-
-        a {
-          border-bottom: 2px solid $footer-color;
-          color: $feature-tabs;
-          text-transform: uppercase;
-          @include proxima;
-          display: block;
-          height: 40px;
-
-          &:hover {
-            color: $product-btn-color;
-          }
-        }
-
-        &.active {
-          a {
-            color: $product-btn-color;
-            border-color: $product-btn-color;
-
-            &:hover {
-              color: $product-btn-color;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
 .feature-section {
   .feature-title {
     border-bottom: 1px solid $footer-color;
@@ -489,6 +430,206 @@ Product Docs Page
           top: auto;
           right: auto;
           margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+/***************************
+****************************
+Product Our Users Page
+****************************
+***************************/
+
+.testimonial {
+  > div {
+    float: left;
+
+    &.img-wrapper {
+      width: 80px;
+    }
+
+    &.text-wrapper {
+      width: calc(100% - 80px);
+
+      .quote {
+        background: url("../images/sep-9.png") no-repeat 0 0;
+        margin-top: 20px;
+        padding-top: 20px;
+      }
+    }
+  }
+}
+
+/***************************
+****************************
+Product Training Page
+****************************
+***************************/
+
+.training-section {
+  > div {
+    float: left;
+
+    @media #{$xs} {
+      float: none;
+    }
+
+    &.flag-wrapper {
+      width: 235px;
+
+      @media #{$small} {
+        width: 150px;
+      }
+
+      @media #{$xs} {
+        width: auto;
+      }
+
+      h5 {
+        color: $main-color;
+
+        @media #{$xs} {
+          border-bottom: 1px solid $content-section-border;
+          padding-bottom: 20px;
+          margin-bottom: 20px;
+        }
+
+        img {
+          margin-right: 15px;
+        }
+      }
+    }
+
+    &.text-wrapper {
+      width: calc(100% - 235px);
+
+      @media #{$small} {
+        width: calc(100% - 150px);
+      }
+
+      @media #{$xs} {
+        width: auto;
+      }
+
+      .training {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid $content-section-border;
+
+        &:last-of-type {
+          @include reset-last;
+        }
+
+        > p {
+          margin-bottom: 10px;
+        }
+
+        ul {
+          margin: 0;
+
+          li {
+            line-height: 25px;
+
+            .fa {
+              color: $footer-font-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/***************************
+****************************
+Product Docs Page
+****************************
+***************************/
+
+.doc-section {
+  .doc {
+    margin-bottom: 30px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    > div {
+      float: left;
+
+      &.img-wrapper {
+        width: 48px;
+      }
+
+      &.text-wrapper {
+        width: calc(100% - 168px);
+
+        @media #{$xs} {
+          width: calc(100% - 48px);
+        }
+
+        h5 {
+          margin-bottom: 0;
+        }
+      }
+
+      &.btn-wrapper {
+        width: 120px;
+        text-align: right;
+        padding-top: 20px;
+
+        @media #{$xs} {
+          width: 100%;
+          padding-left: 48px;
+          text-align: left;
+        }
+
+        .ej-btn {
+          width: 90%;
+          padding: 0;
+          text-align: center;
+
+          @media #{$xs} {
+            width: 102px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ej-screencasts {
+  margin: 0;
+
+  .ej-screencast {
+    padding: 19px 0;
+    border-bottom: 1px solid $content-section-border;
+
+    &:last-of-type {
+      @include reset-last;
+    }
+
+    > div {
+      float: left;
+
+      &.text-wrapper {
+        width: calc(100% - 130px);
+
+        p {
+          margin: 0;
+          line-height: 15px;
+        }
+      }
+
+      &.btn-wrapper {
+        width: 130px;
+
+        .ej-btn {
+          width: 100%;
+          padding: 0;
+          text-align: center;
         }
       }
     }

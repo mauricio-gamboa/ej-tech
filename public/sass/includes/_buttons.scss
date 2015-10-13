@@ -97,6 +97,17 @@ Links
       color: $product-btn-color;
     }
   }
+
+  &.btn-jprofiler {
+    background-color: white;
+    color: $download-link;
+
+    &:hover,
+    &.active {
+      background-color: $download-link;
+      color: white;
+    }
+  }
 }
 
 .ej-link {

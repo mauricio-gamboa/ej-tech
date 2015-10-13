@@ -268,16 +268,16 @@ $nav-line-height: 73px;
       border-bottom: 1px solid $btn-primary;
     }
 
+    @media #{$small} {
+      margin: 0;
+    }
+
     &:first-of-type {
       margin-left: 0;
     }
 
     &:last-of-type {
       margin-right: 0;
-
-      @media #{$xs} {
-        border-bottom: none;
-      }
     }
 
     .ej-btn {
@@ -288,6 +288,10 @@ $nav-line-height: 73px;
         height: 50px;
         line-height: 50px;
         font-size: 14px;
+      }
+
+      @media #{$small} {
+        padding: 0 14px;
       }
 
       &:hover {

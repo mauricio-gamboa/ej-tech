@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>EJ Technologies - Perfino - Features - Supported Platforms &amp; VM's</title>
+  <title>EJ Technologies - JProfiler - What's New</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="public/styles/libs.min.css">
   <link rel="stylesheet" href="public/styles/styles.min.css">
 </head>
 <body>
-<div class="page-wrap product-features-page">
+<div class="page-wrap product-whats-new-page">
   <nav id="navigation" class="navigation">
     <div class="container">
       <div class="row">
@@ -52,7 +52,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h4><img src="public/images/content/icon-app-1.png" alt=""/> Perfino</h4>
+          <h4><img src="public/images/content/icon-app-2.png" alt=""/> jprofiler</h4>
           <button
             type="button"
             class="menu-toggler rounded caret collapsed show-xs pull-right"
@@ -64,14 +64,17 @@
             <li>
               <a href="" class="ej-btn hvr-fade btn-primary">Overview</a>
             </li>
-            <li>
+            <li class="active">
               <a href="" class="ej-btn hvr-fade btn-primary">What's new</a>
             </li>
-            <li class="active">
+            <li>
               <a href="" class="ej-btn hvr-fade btn-primary">Features</a>
             </li>
             <li>
-              <a href="" class="ej-btn hvr-fade btn-primary">Live demo</a>
+              <a href="" class="ej-btn hvr-fade btn-primary">Our Users</a>
+            </li>
+            <li>
+              <a href="" class="ej-btn hvr-fade btn-primary">Training</a>
             </li>
             <li>
               <a href="" class="ej-btn hvr-fade btn-primary">Docs</a>
@@ -85,13 +88,13 @@
                   <span class="pull-right"><i class="fa fa-check"></i></span>
                 </a>
               </li>
-              <li>
+              <li class="active">
                 <a href="" class="ej-btn hvr-fade btn-primary">
                   what's new
                   <span class="pull-right"><i class="fa fa-check"></i></span>
                 </a>
               </li>
-              <li class="active">
+              <li>
                 <a href="" class="ej-btn hvr-fade btn-primary">
                   features
                   <span class="pull-right"><i class="fa fa-check"></i></span>
@@ -99,7 +102,13 @@
               </li>
               <li>
                 <a href="" class="ej-btn hvr-fade btn-primary">
-                  live demo
+                  Our Users
+                  <span class="pull-right"><i class="fa fa-check"></i></span>
+                </a>
+              </li>
+              <li>
+                <a href="" class="ej-btn hvr-fade btn-primary">
+                  Training
                   <span class="pull-right"><i class="fa fa-check"></i></span>
                 </a>
               </li>
@@ -121,123 +130,96 @@
         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 right-bordered">
           <div class="content">
             <div class="tabs-wrapper">
-              <div class="features-tabs">
+              <div class="features-tabs with-selector">
                 <div class="title clearfix">
-                  <h4 class="site-title-line">Features</h4>
-                  <ul class="list-unstyled clearfix">
-                    <li><a href="">Features</a></li>
-                    <li class="active show-xs"><a href="">Platforms &amp; VM's</a></li>
-                    <li class="active hide-xs"><a href="">Supported Platforms &amp; VM's</a></li>
-                  </ul>
+                  <h4 class="site-title-line">What's New in perfino 2.0</h4>
+
+                  <div class="selector clearfix">
+                    <span class="hide-s hide-xs">Version</span>
+
+                    <div class="dropdown">
+                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        JProfiler Version 9.0
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">JProfiler Version 9.0</a></li>
+                        <li><a href="#">JProfiler Version 9.0</a></li>
+                        <li><a href="#">JProfiler Version 9.0</a></li>
+                        <li><a href="#">JProfiler Version 9.0</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  Please see the <a href="">change log</a> for a detailed list of changes.
+                  <br/>
+                  <strong>perfino 2.0 introduces the following notable new features:</strong>
+                </p>
+              </div>
+            </div>
+            <div class="whats-new-section">
+              <div class="clearfix info">
+                <div>
+                  <img src="public/images/whats-new-icon.png" alt=""/>
+                </div>
+                <div>
+                  <p>perfino is now <strong>free for development</strong> with a single VM and 24 hours of historical
+                    data.
+                  </p>
+
+                  <p>The free development license and an evaluation license for 20 VMs can be activated directly in the
+                    installer after you download perfino.</p>
                 </div>
               </div>
             </div>
-            <div class="content-section">
-              <h5 class="site-subtitle">Requirements for monitored VMs</h5>
-
-              <p>perfino can monitor all OpenJDK-derived JVMs such as the <a href="">Oracle HotSpot JVMs</a>.</p>
-
-              <p>The supported JVM versions are:</p>
-              <ul class="list-unstyled">
-                <li><i class="fa fa-check"></i> Java 6</li>
-                <li><i class="fa fa-check"></i> Java 7</li>
-                <li><i class="fa fa-check"></i> Java 8</li>
-              </ul>
+            <div class="whats-new-section">
+              <div class="clearfix info">
+                <div>
+                  <img src="public/images/whats-new-icon.png" alt=""/>
+                </div>
+                <div>
+                  <p>perfino has a <strong>new look</strong>. New design, new colors, new icons and now also optimized
+                    for Retina displays.</p>
+                </div>
+              </div>
             </div>
-            <div class="content-section">
-              <h5 class="site-subtitle">Requirements for full VM sampling</h5>
-
-              <p>The "Record fine-grained CPU data in profiling mode" action uses native libraries that are available
-                for the following platforms:</p>
-
-              <table class="table">
-                <thead>
-                <tr>
-                  <th>OS</th>
-                  <th class="text-center">32-BIT JVM</th>
-                  <th class="text-center">64-BIT JVM</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td>
-                    Windows 10 <br/>
-                    Windows 8 <br/>
-                    Windows 7 <br/>
-                    Windows Vista <br/>
-                    Windows Server 2012 <br/>
-                    Windows Server 2008
-                  </td>
-                  <td class="text-center">
-                    <i class="fa fa-check"></i> <br/>
-                    <i class="fa fa-check"></i> <br/>
-                    <i class="fa fa-check"></i> <br/>
-                    <i class="fa fa-check"></i> <br/>
-                    <i class="fa fa-check"></i> <br/>
-                    <i class="fa fa-check"></i>
-                  </td>
-                  <td class="text-center">
-                    <i class="fa fa-check"></i> <br/>
-                    <i class="fa fa-check"></i> <br/>
-                    <i class="fa fa-check"></i> <br/>
-                    <i class="fa fa-check"></i> <br/>
-                    <i class="fa fa-check"></i> <br/>
-                    <i class="fa fa-check"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Mac OS X 10.7 - 10.11</td>
-                  <td class="text-center"><i class="fa fa-check"></i></td>
-                  <td class="text-center"><i class="fa fa-check"></i></td>
-                </tr>
-                <tr>
-                  <td>Linux x86</td>
-                  <td class="text-center"><i class="fa fa-check"></i></td>
-                  <td class="text-center"><i class="fa fa-check"></i></td>
-                </tr>
-                <tr>
-                  <td>
-                    Solaris SPARC <br/>
-                    Solaris x86
-                  </td>
-                  <td class="text-center">
-                    <i class="fa fa-check"></i><br/>
-                    <i class="fa fa-check"></i>
-                  </td>
-                  <td class="text-center">
-                    <i class="fa fa-check"></i><br/>
-                    <i class="fa fa-check"></i>
-                  </td>
-                </tr>
-                </tbody>
-              </table>
+            <div class="whats-new-section">
+              <div class="img">
+                <img src="public/images/content/whats-new-1.png" alt=""/>
+              </div>
             </div>
-            <div class="content-section">
-              <h5 class="site-subtitle">Requirements for profiling</h5>
 
-              <p>The "Detach for JProfiler" action in perfino uses the native JProfiler libraries of a separate
-                JProfiler installation. The platform requirements in that case are the same as those of JProfiler.</p>
+            <div class="whats-new-section">
+              <p>Editable attributes of all simple types and their arrays can be edited by the MBean browser. The
+                default MBeans in the JVM already expose a lot of interesting diagnostic options. Many frameworks and
+                most application servers can be configured with their MBeans.</p>
+
+              <div class="img">
+                <img src="public/images/content/whats-new-1.png" alt=""/>
+              </div>
             </div>
-            <div class="content-section">
-              <h5 class="site-subtitle">Requirements for the perfino server</h5>
 
-              <p>The perfino server requires a Java 7 runtime environment. On Windows and Mac OS X, a JRE is bundled in
-                the installer. On Linux and Unix, you have to install Java 7 before installing the perfino server.</p>
+            <div class="whats-new-section">
+              <p>The <samp>@Telemetry</samp> annotation now has a format parameter of type <samp>@TelemetryFormat</samp>
+                that allows you to set
+                the telemetry unit
+                and scale factor. Also, you can determine whether the telemetry lines should be stacked and whether
+                telemetry values for multiple VMs should be grouped or summed.</p>
+
+              <p>A typical usage now looks like</p>
+              <pre>@Telemetry(value = "Job latency",
+  format = @TelemetryFormat(value = Unit.MICROSECONDS,
+    scale = -3))</pre>
             </div>
           </div>
         </div>
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 border-top-xs">
           <div class="content">
             <aside class="sidebar inner">
-              <div class="widget action-links">
+              <div class="widget action-links double">
                 <ul class="list-unstyled clearfix">
-                  <li>
-                    <a href="" class="clearfix">
-                      <span><i class="fa icon-see_more"></i></span>
-
-                      <div>Live demo</div>
-                    </a>
-                  </li>
                   <li>
                     <a href="" class="clearfix">
                       <span><i class="fa icon-download"></i></span>
