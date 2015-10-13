@@ -1459,6 +1459,66 @@ Product Training Page
           .training-section > div.text-wrapper .training ul li .fa {
             color: #9ba4a8; }
 
+/***************************
+****************************
+Product Docs Page
+****************************
+***************************/
+.doc-section .doc {
+  margin-bottom: 30px; }
+  .doc-section .doc:last-of-type {
+    margin-bottom: 0; }
+  .doc-section .doc > div {
+    float: left; }
+    .doc-section .doc > div.img-wrapper {
+      width: 48px; }
+    .doc-section .doc > div.text-wrapper {
+      width: calc(100% - 168px); }
+      @media (max-width: 767px) {
+        .doc-section .doc > div.text-wrapper {
+          width: calc(100% - 48px); } }
+      .doc-section .doc > div.text-wrapper h5 {
+        margin-bottom: 0; }
+    .doc-section .doc > div.btn-wrapper {
+      width: 120px;
+      text-align: right;
+      padding-top: 20px; }
+      @media (max-width: 767px) {
+        .doc-section .doc > div.btn-wrapper {
+          width: 100%;
+          padding-left: 48px;
+          text-align: left; } }
+      .doc-section .doc > div.btn-wrapper .ej-btn {
+        width: 90%;
+        padding: 0;
+        text-align: center; }
+        @media (max-width: 767px) {
+          .doc-section .doc > div.btn-wrapper .ej-btn {
+            width: 102px; } }
+
+.ej-screencasts {
+  margin: 0; }
+  .ej-screencasts .ej-screencast {
+    padding: 19px 0;
+    border-bottom: 1px solid #f0f0f0; }
+    .ej-screencasts .ej-screencast:last-of-type {
+      padding-bottom: 0;
+      border-bottom: none;
+      margin-bottom: 0; }
+    .ej-screencasts .ej-screencast > div {
+      float: left; }
+      .ej-screencasts .ej-screencast > div.text-wrapper {
+        width: calc(100% - 130px); }
+        .ej-screencasts .ej-screencast > div.text-wrapper p {
+          margin: 0;
+          line-height: 15px; }
+      .ej-screencasts .ej-screencast > div.btn-wrapper {
+        width: 130px; }
+        .ej-screencasts .ej-screencast > div.btn-wrapper .ej-btn {
+          width: 100%;
+          padding: 0;
+          text-align: center; }
+
 .bottom-widget > div {
   float: left; }
   @media (min-width: 768px) and (max-width: 992px), (max-width: 767px) {

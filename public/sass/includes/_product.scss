@@ -541,3 +541,97 @@ Product Training Page
     }
   }
 }
+
+/***************************
+****************************
+Product Docs Page
+****************************
+***************************/
+
+.doc-section {
+  .doc {
+    margin-bottom: 30px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    > div {
+      float: left;
+
+      &.img-wrapper {
+        width: 48px;
+      }
+
+      &.text-wrapper {
+        width: calc(100% - 168px);
+
+        @media #{$xs} {
+          width: calc(100% - 48px);
+        }
+
+        h5 {
+          margin-bottom: 0;
+        }
+      }
+
+      &.btn-wrapper {
+        width: 120px;
+        text-align: right;
+        padding-top: 20px;
+
+        @media #{$xs} {
+          width: 100%;
+          padding-left: 48px;
+          text-align: left;
+        }
+
+        .ej-btn {
+          width: 90%;
+          padding: 0;
+          text-align: center;
+
+          @media #{$xs} {
+            width: 102px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ej-screencasts {
+  margin: 0;
+
+  .ej-screencast {
+    padding: 19px 0;
+    border-bottom: 1px solid $content-section-border;
+
+    &:last-of-type {
+      @include reset-last;
+    }
+
+    > div {
+      float: left;
+
+      &.text-wrapper {
+        width: calc(100% - 130px);
+
+        p {
+          margin: 0;
+          line-height: 15px;
+        }
+      }
+
+      &.btn-wrapper {
+        width: 130px;
+
+        .ej-btn {
+          width: 100%;
+          padding: 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
