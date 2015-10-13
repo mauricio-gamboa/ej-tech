@@ -59,6 +59,10 @@ Product Overview Page
     margin-right: 16px;
     position: relative;
 
+    > img {
+      max-width: 100%;
+    }
+
     .version {
       position: absolute;
       right: 50%;
@@ -71,6 +75,11 @@ Product Overview Page
       &.version-2 {
         margin-right: -45px;
         top: -11px;
+      }
+
+      &.version-3 {
+        margin-right: -79px;
+        top: -7px;
       }
     }
   }

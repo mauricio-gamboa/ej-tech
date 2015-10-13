@@ -1154,6 +1154,8 @@ Product Overview Page
   width: 132px;
   margin-right: 16px;
   position: relative; }
+  .product-summary .img-wrapper > img {
+    max-width: 100%; }
   .product-summary .img-wrapper .version {
     position: absolute;
     right: 50%; }
@@ -1163,6 +1165,9 @@ Product Overview Page
     .product-summary .img-wrapper .version.version-2 {
       margin-right: -45px;
       top: -11px; }
+    .product-summary .img-wrapper .version.version-3 {
+      margin-right: -79px;
+      top: -7px; }
 
 .product-summary .product-text {
   width: calc(100% - 148px); }
