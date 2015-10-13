@@ -59,6 +59,10 @@ Product Overview Page
     margin-right: 16px;
     position: relative;
 
+    > img {
+      max-width: 100%;
+    }
+
     .version {
       position: absolute;
       right: 50%;
@@ -71,6 +75,11 @@ Product Overview Page
       &.version-2 {
         margin-right: -45px;
         top: -11px;
+      }
+
+      &.version-3 {
+        margin-right: -79px;
+        top: -7px;
       }
     }
   }
@@ -632,6 +641,68 @@ Product Docs Page
           text-align: center;
         }
       }
+    }
+
+    &.video {
+
+      > div {
+        &.video-wrapper {
+          width: 187px;
+          margin-right: 18px;
+
+          > img {
+            max-width: 100%;
+
+            @media #{$xs} {
+              width: 100%;
+            }
+          }
+
+          @media #{$xs} {
+            width: 100%;
+            margin-bottom: 20px;
+          }
+        }
+
+        &.text-wrapper {
+          width: calc(100% - 205px);
+
+          @media #{$xs} {
+            width: 100%;
+          }
+
+          p {
+            line-height: 19px;
+          }
+        }
+
+        @media #{$xs} {
+          float: none;
+        }
+      }
+    }
+  }
+}
+
+.ej-demos {
+  margin: 0;
+
+  li {
+    float: left;
+    width: calc(100% / 3);
+    padding-right: 15px;
+
+    @media #{$xs} {
+      float: none;
+      width: 100%;
+      border-bottom: 1px solid $content-section-border;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      padding-right: 0;
+    }
+
+    &:last-of-type {
+      @include reset-last;
     }
   }
 }
