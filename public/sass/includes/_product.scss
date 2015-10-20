@@ -52,12 +52,22 @@ Product Overview Page
 .product-summary {
   > div {
     float: left;
+
+    @media #{$xs} {
+      float: none;
+    }
   }
 
   .img-wrapper {
     width: 132px;
     margin-right: 16px;
     position: relative;
+
+    @media #{$xs} {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 20px;
+    }
 
     > img {
       max-width: 100%;
@@ -75,6 +85,10 @@ Product Overview Page
       &.version-2 {
         margin-right: -45px;
         top: -11px;
+
+        @media #{$xs} {
+          margin-right: -60px;
+        }
       }
 
       &.version-3 {
@@ -86,6 +100,10 @@ Product Overview Page
 
   .product-text {
     width: calc(100% - 148px);
+
+    @media #{$xs} {
+      width: 100%;
+    }
 
     h6 {
       @include small-title;
