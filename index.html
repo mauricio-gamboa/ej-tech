@@ -4,10 +4,14 @@
   <title>EJ Technologies</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="public/styles/libs.min.css">
   <link rel="stylesheet" href="public/styles/styles.min.css">
 </head>
 <body>
+<!--[if IE 8]>
+<div class="alert alert-danger" role="alert"><strong>Your browser is out of date.</strong> It has known security flaws and may not display all features of this and other websites.</div>
+<![endif]-->
 <div class="page-wrap">
   <nav id="navigation" class="navigation">
     <div class="container">
@@ -455,5 +459,15 @@
 </div>
 <script src="public/js/libs.min.js"></script>
 <script src="public/js/main.min.js"></script>
+<script>
+  var $buoop = {c:2};
+  function $buo_f(){
+    var e = document.createElement("script");
+    e.src = "//browser-update.org/update.min.js";
+    document.body.appendChild(e);
+  };
+  try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+  catch(e){window.attachEvent("onload", $buo_f)}
+</script>
 </body>
 </html>
