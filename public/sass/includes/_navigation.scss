@@ -102,15 +102,24 @@ $nav-line-height: 73px;
         color: $main-color;
       }
     }
+
+    &:hover .sub-menu {
+      display: block;
+    }
   }
 
   .sub-menu {
     background-color: white;
     position: absolute;
+    display: none;
     width: 100%;
     left: 0;
     top: 79px;
     z-index: 10;
+
+    &.display {
+      display: block;
+    }
 
     li {
       a {

@@ -335,14 +335,19 @@ Navigation Styles
     color: #0993e2; }
     .main-navigation > li .toggler.collapsed {
       color: #303030; }
+  .main-navigation > li:hover .sub-menu {
+    display: block; }
 
 .main-navigation .sub-menu {
   background-color: white;
   position: absolute;
+  display: none;
   width: 100%;
   left: 0;
   top: 79px;
   z-index: 10; }
+  .main-navigation .sub-menu.display {
+    display: block; }
   .main-navigation .sub-menu li a {
     display: block;
     padding: 0 17px;
