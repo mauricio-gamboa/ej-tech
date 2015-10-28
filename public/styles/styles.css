@@ -176,52 +176,45 @@ Links
     color: white; }
   .ej-btn.btn-primary {
     background-color: #0993e2; }
-    .ej-btn.btn-primary:hover,
-    .ej-btn.btn-primary.active {
+    .ej-btn.btn-primary:hover, .ej-btn.btn-primary.active {
       background-color: #085c8c; }
   .ej-btn.btn-submit-transparent {
     background-color: white;
     border: 1px solid #23cf3b;
     color: #23cf3b; }
-    .ej-btn.btn-submit-transparent:hover,
-    .ej-btn.btn-submit-transparent.active {
+    .ej-btn.btn-submit-transparent:hover, .ej-btn.btn-submit-transparent.active {
       background-color: #23cf3b;
       color: white; }
   .ej-btn.btn-submit {
     background-color: #23cf3b;
     border: 1px solid #23cf3b; }
-    .ej-btn.btn-submit:hover,
-    .ej-btn.btn-submit.active {
+    .ej-btn.btn-submit:hover, .ej-btn.btn-submit.active {
       background-color: white;
       color: #23cf3b; }
   .ej-btn.btn-secondary {
     background-color: white;
     color: #f26c4f; }
-    .ej-btn.btn-secondary:hover,
-    .ej-btn.btn-secondary.active {
+    .ej-btn.btn-secondary:hover, .ej-btn.btn-secondary.active {
       background-color: #f26c4f;
       color: white; }
   .ej-btn.btn-support {
     background-color: white;
     border: 1px solid #33cac8;
     color: #33cac8; }
-    .ej-btn.btn-support:hover,
-    .ej-btn.btn-support.active {
+    .ej-btn.btn-support:hover, .ej-btn.btn-support.active {
       background-color: #33cac8;
       color: white; }
   .ej-btn.btn-order {
     background-color: transparent;
     color: white;
     border: 2px solid white; }
-    .ej-btn.btn-order:hover,
-    .ej-btn.btn-order.active {
+    .ej-btn.btn-order:hover, .ej-btn.btn-order.active {
       background-color: white;
       color: #23cf3b; }
   .ej-btn.btn-jprofiler {
     background-color: white;
     color: #1cbbb4; }
-    .ej-btn.btn-jprofiler:hover,
-    .ej-btn.btn-jprofiler.active {
+    .ej-btn.btn-jprofiler:hover, .ej-btn.btn-jprofiler.active {
       background-color: #1cbbb4;
       color: white; }
 
@@ -932,10 +925,11 @@ Home Styles
   .form-control:focus,
   .dropdown-toggle:focus {
     border-color: #23cf3b; }
-  .form-control:active
-.form-control:hover,
+  .form-control:active .form-control:hover,
+  .dropdown-toggle:active .form-control:hover, .form-control:active
+  .dropdown-toggle:hover,
   .dropdown-toggle:active
-.dropdown-toggle:hover {
+  .dropdown-toggle:hover {
     border: 1px solid #c8c8c8;
     background-color: white; }
 
@@ -2239,11 +2233,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   color: #23cf3b; }
-  a:link
-a:visited,
-  a:hover,
-  a:active,
-  a:focus {
+  a:link a:visited, a:hover, a:active, a:focus {
     color: #23cf3b;
     outline: none;
     text-decoration: none; }
