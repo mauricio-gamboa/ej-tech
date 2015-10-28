@@ -2922,6 +2922,7 @@ Pagination Classes
       float: none;
       width: 100%; }
     .tabs-wrapper .features-tabs.with-selector .title .selector {
+      margin-top: 20px;
       float: none; } }
   .tabs-wrapper.bordered {
     border-bottom: 1px solid #f0f0f0;
